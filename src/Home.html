@@ -6,7 +6,7 @@
     <title>Jeevan Jyot Hospital</title>
     <link rel="icon" href="../images/logo.png" type="image">
     <!-- remixicon -->
-    <link rel="stylesheet" href="remix/remixicon.css" type="text/css" />
+    <link rel="stylesheet" href="../dist/remix/remixicon.css" type="text/css" />
     <!-- main-css -->
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link
@@ -38,7 +38,8 @@
   <body>
     <!-- header section Start-->
 
-    <header class="bg-white shadow sm:py-5 pt-[18px] pb-[18px]">
+    <header class="bg-white transition-all duration-300 
+     shadow sm:py-5 pt-[18px] pb-[18px]">
       <div class="2xl:w-[1320px] xl:w-[1260px] w-full max-xl:px-4 mx-auto">
         <div class="flex items-center gap-10 w-full justify-between">
           <!-- logo -->
@@ -304,6 +305,78 @@
               class="w-full h-full object-cover"
             />
             <div class="absolute inset-0 bg-opacity-40">
+              <div class="container bottom-10  mx-auto px-4 h-full flex items-center">
+                <div class="top-8  left-4 max-w-2xl">
+                  <h1
+                    class="text-4xl lg:text-6xl font-bold mb-4 top text-blue-900"
+                  >
+                    Your Partner in Health And Wellness
+                  </h1>
+                  <p class="text-lg mb-8 text-blue-400">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <div class="flex flex-col md:flex-row gap-4">
+                    <button
+                      class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full"
+                    >
+                      Book An Appointment
+                    </button>
+                    <button class="flex items-center text-white">
+                      <span
+                        class="w-12 h-12 flex items-center justify-center border-2 border-dotted border-blue-500 rounded-full mr-4"
+                      >
+                        ▶
+                      </span>
+                      See How we work
+                    </button>     
+                  </div>
+                  <div
+                  class="absolute py-10 ml-11 left-2/2 -translate-x-1/2 flex gap-2"
+                >
+                <div class="flex items-center justify-center  space-x-4 p-4 rounded-lg">
+                  <div class="w-4 h-4 rounded-full bg-blue-900 border-2  ring-1 ring-blue-900"></div>
+                  <div class="w-4 h-4 rounded-full bg-white"></div>
+                  <div class="w-4 h-4 rounded-full bg-white"></div>
+                </div>
+                </div>
+                  <div
+                    class="absolute my-20
+                     right-40 top-1/2 transform -translate-y-1/2"
+                  >
+                    <img
+                      src="../images/banner_img.png"
+                      alt="Doctor"
+                      class="h-full w-auto rounded-lg" 
+                    />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="line-sec ">
+                  <div class="first-line absolute  left-[4.6%] top-[16%] z-20 w-full">
+                    <img src="../images/BannerLine1.png" alt="banner-line">
+                  </div>
+                  <div class="first-line absolute left-[4.6%] top-[50%]  w-full">
+                    <img src="../images/BannerLine2.png" alt="bannerline">
+                  </div>
+                </div>
+                <img src="../images/facebook.svg" alt="" class="absolute top-72  left-10 z-20">
+                <img src="../images/Instagram.svg" alt="" class="absolute top-72 py-12 left-10 z-20">
+                <img src="../images/Twitter.svg" alt="" class="absolute top-72 py-24 left-10 z-20">
+              </div>
+            </div>
+          </div> 
+
+          <!-- Slide 2 -->
+          <!-- <div class="swiper-slide relative">
+            <img
+              src="../images/banner-1.jpeg"
+              alt="Banner"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-opacity-40">
               <div class="container mx-auto px-4 h-full flex items-center">
                 <div class="top-8 left-4 max-w-2xl">
                   <h1
@@ -329,8 +402,17 @@
                         ▶
                       </span>
                       See How we work
-                    </button>
+                    </button>     
                   </div>
+                  <div
+                  class="absolute py-10 ml-11 left-2/2 -translate-x-1/2 flex gap-2"
+                >
+                <div class="flex items-center justify-center  space-x-4 p-4 rounded-lg">
+                  <div class="w-4 h-4 rounded-full bg-white"></div>
+                  <div class="w-4 h-4 rounded-full bg-blue-900 border-2  ring-1 ring-blue-900"></div>
+                  <div class="w-4 h-4 rounded-full bg-white"></div>
+                </div>
+                </div>
                   <div
                     class="absolute right-40 top-1/2 transform -translate-y-1/2"
                   >
@@ -342,72 +424,26 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2"
-              >
-                <div class="w-2 h-2 rounded-full bg-blue-900"></div>
-                <div class="w-2 h-2 rounded-full bg-white"></div>
-                <div class="w-2 h-2 rounded-full bg-white"></div>
+              
+              <div>
+                <div class="line-sec relative">
+                  <div class="first-line absolute left-0 top-[50%] w-full" >
+                    <img src="../images/BannerLine1.png" alt="banner-line">
+                  </div>
+                  <div class="first-line absolute left-0 top-0 w-full">
+                    <img src="../images/BannerLine2.png" alt="bannerline">
+                  </div>
+                </div>
+                <img src="../images/facebook.svg" alt="" class="absolute top-72  left-10 z-20">
+                <img src="../images/Instagram.svg" alt="" class="absolute top-72 py-12 left-10 z-20">
+                <img src="../images/Twitter.svg" alt="" class="absolute top-72 py-24 left-10 z-20">
               </div>
             </div>
-          </div>
+          </div>  -->
 
-          <!-- Slide 2 -->
-          <div class="swiper-slide relative">
-            <img
-              src="../images/banner-1.jpeg"
-              alt="Banner"
-              class="w-full h-full object-cover"
-            />
-            <div class="absolute inset-0 bg-opacity-40">
-              <div class="container mx-auto px-4 h-full flex items-center">
-                <div class="text-white max-w-2xl">
-                  <h1 class="text-4xl lg:text-6xl font-bold mb-4 text-blue-900">
-                    Your Partner in Health And Wellness
-                  </h1>
-                  <p class="text-lg mb-8 text-blue-400">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                  <div class="flex flex-col md:flex-row gap-4">
-                    <button
-                      class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full"
-                    >
-                      Book An Appointment
-                    </button>
-                    <button class="flex items-center text-white">
-                      <span
-                        class="w-12 h-12 flex items-center justify-center border-2 border-dotted border-blue-500 rounded-full mr-4"
-                      >
-                        ▶
-                      </span>
-                      See How we work
-                    </button>
-                  </div>
-                  <div
-                    class="absolute right-40 top-1/2 transform -translate-y-1/2"
-                  >
-                    <img
-                      src="../images/Docter-Images.png"
-                      alt="Doctor"
-                      class="h-full w-auto rounded-lg"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                class="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2"
-              >
-                <div class="w-2 h-2 rounded-full bg-white"></div>
-                <div class="w-2 h-2 rounded-full bg-blue-900"></div>
-                <div class="w-2 h-2 rounded-full bg-white"></div>
-              </div>
-            </div>
-          </div>
 
           <!-- Slide 3 -->
-          <div class="swiper-slide relative">
+          <!-- <div class="swiper-slide relative">
             <img
               src="../images/banner-1.jpeg"
               alt="Banner"
@@ -415,8 +451,10 @@
             />
             <div class="absolute inset-0 bg-opacity-40">
               <div class="container mx-auto px-4 h-full flex items-center">
-                <div class="text-white max-w-2xl">
-                  <h1 class="text-4xl lg:text-6xl font-bold mb-4 text-blue-900">
+                <div class="top-8 left-4 max-w-2xl">
+                  <h1
+                    class="text-4xl lg:text-6xl font-bold mb-4 top text-blue-900"
+                  >
                     Your Partner in Health And Wellness
                   </h1>
                   <p class="text-lg mb-8 text-blue-400">
@@ -437,8 +475,17 @@
                         ▶
                       </span>
                       See How we work
-                    </button>
+                    </button>     
                   </div>
+                  <div
+                  class="absolute py-10 ml-11 left-2/2 -translate-x-1/2 flex gap-2"
+                >
+                <div class="flex items-center justify-center  space-x-4 p-4 rounded-lg">
+                  <div class="w-4 h-4 rounded-full bg-white"></div>
+                  <div class="w-4 h-4 rounded-full bg-white"></div>
+                  <div class="w-4 h-4 rounded-full bg-blue-900 border-2  ring-1 ring-blue-900"></div>
+                </div>
+                </div>
                   <div
                     class="absolute right-40 top-1/2 transform -translate-y-1/2"
                   >
@@ -450,84 +497,16 @@
                   </div>
                 </div>
               </div>
-
-              <div
-                class="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2"
-              >
-                <div class="w-2 h-2 rounded-full bg-white"></div>
-                <div class="w-2 h-2 rounded-full bg-white"></div>
-                <div class="w-2 h-2 rounded-full bg-blue-900"></div>
+              <div>
+                <img src="../images/facebook.svg" alt="" class="absolute top-72  left-10 z-20">
+                <img src="../images/Instagram.svg" alt="" class="absolute top-72 py-12 left-10 z-20">
+                <img src="../images/Twitter.svg" alt="" class="absolute top-72 py-24 left-10 z-20">
               </div>
             </div>
-          </div>
+          </div>  -->
 
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- Add Navigation -->
-          <!-- <div class="swiper-button-prev text-white"></div>
-      <div class="swiper-button-next text-white"></div> -->
         </div>
       </div>
-
-      <!-- <section class="relative">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="bg-[url('../images/header-1.jpg')] w-full h-screen bg-no-repeat bg-center bg-cover">
-                <div class="container mx-auto">
-                <h1>Growth Partners</h1>  
-                <p>Connect with top consultants hand-picked by Elixir consulting and finance.</p>
-                <a href="javascript:void(0)">Read more
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                  </svg>
-                  
-                </a>
-                <a href="javascript:void(0)">Contact us
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                  </svg>
-                </a>
-                </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="bg-[url('../images/header-5.jpg')] w-full h-screen bg-no-repeat bg-center bg-cover"></div>
-          </div>
-          <div class="swiper-slide">
-            <div class="bg-[url('../images/header-6.jpg')] w-full h-screen bg-no-repeat bg-center bg-cover"></div>
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-
-    </section> -->
-
-      <!-- About -->
-
-      <!-- <section class="py-24">
-        <div class="container mx-auto">
-          <div class="flex flex-wrap">
-              <div class="w-5/12">
-                 <div class="relative">
-                    <img src="../images/Rectangle 34.png" alt="about-1">
-                   
-                 </div>
-                 <div class="bg-[url('../images/Rectangle.png')] w-full h-[550px] bg-no-repeat bg-center bg-cover relative rounded-[70px]">
-                    <img src="../images/about-1.png" alt="about-1"  class="absolute w-[458px] h-[460px] top-[30px] left-10 rounded-[60px]">
-                 </div>
-              </div>
-              <div class="w-7/12">
-                <div class="">
-                    <h2>About Us</h2>
-
-                </div>
-              </div>
-          </div>
-      </div>
-    </section> -->
 
       <!-- Banner section End-->
 
@@ -1343,54 +1322,9 @@
     <!-- Footer End -->
 
     <!-- j-query cdn -->
-    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="../dist/js/jquery.min.js" type="text/javascript"></script>
+    <script src="../dist/js/Script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-      $(document).ready(function () {
-        $("#sidebar-toggle").click(function () {
-          $("#sidebar").toggleClass("transform-none");
-        });
-      });
-
-      // Add event listeners to the dropdown menu
-      document
-        .querySelector(".dropdown")
-        .addEventListener("click", function () {
-          this.classList.toggle("show");
-        });
-
-      // Close the dropdown menu if the user clicks outside of it
-      window.addEventListener("click", function (event) {
-        if (!event.target.matches(".dropbtn")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
-            }
-          }
-        }
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const swiper = new Swiper(".swiper-container", {
-          loop: true, // Enables continuous loop mode
-          autoplay: {
-            delay: 5000, // Time between slides (in milliseconds)
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          effect: "slide", // Choose 'slide', 'fade', 'cube', etc.
-        });
-      });
-    </script>
+   
   </body>
 </html>
