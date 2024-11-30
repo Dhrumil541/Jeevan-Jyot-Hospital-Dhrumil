@@ -1738,3 +1738,12 @@ video {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.about-banner-img0{
+  background-image: url('../images/banner-1.jpeg');
+  overflow: hidden;
+  padding: 280px 0px ;
+  background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
