@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".swiper-container", {
     loop: true,
     autoplay: {
-      delay: 3000,
+      delay: 5000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -23,4 +23,17 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     effect: "slide",
   });
+
+  // module.exports = {
+  //   theme: {
+  //     extend: {
+  //       fontFamily: {
+  //         lato: ['Lato', 'sans-serif'],
+  //       },
+  //     },
+  //   },
+  // };
+  
 });
+
+

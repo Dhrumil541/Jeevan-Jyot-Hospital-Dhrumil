@@ -1,3 +1,6 @@
+
+
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1723,4 +1726,15 @@ video {
   .\32xl\:w-\[1320px\] {
     width: 1320px;
   }
+}
+
+
+
+.banner-img0{
+  background-image: url('../images/banner-1.jpeg');
+  overflow: hidden;
+  padding: 420px 0px;
+  background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
