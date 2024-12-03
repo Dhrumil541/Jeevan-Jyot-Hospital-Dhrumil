@@ -24,15 +24,15 @@ document.addEventListener("DOMContentLoaded", function () {
     effect: "slide",
   });
 
-  // module.exports = {
-  //   theme: {
-  //     extend: {
-  //       fontFamily: {
-  //         lato: ['Lato', 'sans-serif'],
-  //       },
-  //     },
-  //   },
-  // };
+  module.exports = {
+    theme: {
+      extend: {
+        fontFamily: {
+          lato: ['Lato', 'sans-serif'],
+        },
+      },
+    },
+  };
   
 });
 
