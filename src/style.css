@@ -1747,3 +1747,9 @@ video {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+.map iframe{
+  width: 648px;
+  height: 473px;
+}
