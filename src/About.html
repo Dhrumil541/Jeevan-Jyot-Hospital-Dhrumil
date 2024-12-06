@@ -1,291 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeevan Jyot Hospital</title>
-    <link rel="icon" href="../images/logo.png" type="image">
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"rel="stylesheet"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        * {
-          padding: 0;
-          margin: 0;
-          box-sizing: border-box;
-          text-decoration: none;
-        }
-        body{
-            min-height: 100vh;
-            width: 100vw;
-            overflow-x: hidden;
-        }
-        /* .container {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeevan Jyot Hospital</title>
+  <link rel="icon" href="../images/logo.png" type="image">
+  <link rel="stylesheet" href="../src/Font/Font.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+    body {
+      min-height: 100vh;
+      width: 100vw;
+      overflow-x: hidden;
+    }
+
+    /* .container {
           width: 1320px;
           margin: 0 auto;
           padding: 0 15px;
         } */
-      </style>
+  </style>
 </head>
-<body>
-     <!-- header Start-->
 
-     <header class="bg-white shadow sm:py-5 pt-[18px] pb-[18px]">
-        <div class="2xl:w-[1320px] xl:w-[1260px] w-full max-xl:px-4 mx-auto">
-          <div class="flex items-center gap-10 w-full justify-between">
-            <!-- logo -->
-          <div class="flex items-center justify-center">
-             <a href="../src/Home.html">
-              <img
-                src="../images/logo.png"
-                alt="Jeevan-Jyot-Hospital"
-                class="w-[222px] h-[60px] object-contain pr-[5%]"
-              />
-            </a>
-          </div>
-            <nav class="xl:block hidden">
-              <ul class="flex gap-5">
-                <li>
-                  <a
-                    href="./Home.html"
-                    data-nav="home"
-                    class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                    >Home<span
-                      class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                      style="bottom: -6px"
-                    ></span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="./About.html"
-                    data-nav="about"
-                    class="inline-block relative group text-[#064681] font-bold text-[18px] hover:text-[#064681] hover:font-normal transition"
-                    >About<span
-                      class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                      style="bottom: -6px"
-                    ></span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="./Maternity.html"
-                    data-nav="maternity"
-                    class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                    >Maternity<span
-                      class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                      style="bottom: -6px"
-                    ></span>
-                  </a>
-                </li>
-                <!-- Dropdown Example -->
-                <li class="relative group">
-                  <a href="./Department.html">
-                    <button
-                      data-nav="department"
-                      class="relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                    >
-                      Department<i class="ri-arrow-down-s-line text-lg"></i>
-                      <span
-                        class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                        style="bottom: -6px"
-                      ></span>
-                    </button>
-                    <div
-                      class="absolute z-10 top-full left-[50%] translate-x-[-50%] min-w-[220px] hidden group-hover:block"
-                    >
-                      <ul
-                        class="mt-5 transition duration-700 overflow-hidden ease-in-out rounded-3xl bg-white shadow-lg mb-2"
-                      >
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                            >Gynecology</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                            >Pediatric</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                            >Heart Specialist</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                            >Pulmonology</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                            >Neurology</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                            >Neprology</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                            >Orthopaedic</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                            >General Surgery</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                            >Urology</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                            >Cardiology</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                            >Sonography</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                            >Phychiatrist</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100"
-                            >Skin Care</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="./Gallery.html"
-                    data-nav="gallery"
-                    class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                    >Gallery
-                    <span
-                      class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                      style="bottom: -6px"
-                    ></span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="./Doctors.html"
-                    data-nav="doctors"
-                    class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                    >Doctors
-                    <span
-                      class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                      style="bottom: -6px"
-                    ></span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="./CashlessMediclaim.html"
-                    data-nav="cashless"
-                    class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                    >CashlessMediclaim
-                    <span
-                      class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                      style="bottom: -6px"
-                    ></span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="./OurServices.html"
-                    data-nav="cashless"
-                    class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                    >OurServices
-                    <span
-                      class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                      style="bottom: -6px"
-                    ></span>
-                  </a>
-                </li>
-                <li>
-                <a
-                  href="./Appointment.html"
-                  data-nav="appointment"
-                  class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                  >Appointment
+<body>
+  <!-- header Start-->
+
+  <header class="bg-white shadow sm:py-5 pt-[18px] pb-[18px]">
+    <div class="2xl:w-[1320px] xl:w-[1260px] w-full max-xl:px-4 mx-auto">
+      <div class="flex items-center gap-10 w-full justify-between">
+        <!-- logo -->
+        <div class="flex items-center justify-center">
+          <a href="../src/Home.html">
+            <img src="../images/logo.png" alt="Jeevan-Jyot-Hospital"
+              class="w-[222px] h-[60px] object-contain pr-[5%]" />
+          </a>
+        </div>
+        <nav class="xl:block hidden">
+          <ul class="flex gap-5">
+            <li>
+              <a href="./Home.html" data-nav="home"
+                class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition">Home<span
+                  class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
+                  style="bottom: -6px"></span>
+              </a>
+            </li>
+            <li>
+              <a href="./About.html" data-nav="about"
+                class="inline-block relative group text-[#064681] font-bold text-[18px] hover:text-[#064681] hover:font-normal transition">About<span
+                  class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
+                  style="bottom: -6px"></span>
+              </a>
+            </li>
+            <li>
+              <a href="./Maternity.html" data-nav="maternity"
+                class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition">Maternity<span
+                  class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
+                  style="bottom: -6px"></span>
+              </a>
+            </li>
+            <!-- Dropdown Example -->
+            <li class="relative group">
+              <a href="./Department.html">
+                <button data-nav="department"
+                  class="relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition">
+                  Department<i class="ri-arrow-down-s-line text-lg"></i>
                   <span
                     class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                    style="bottom: -6px"
-                  ></span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <!-- Contact Us Button -->
-          <div>
-            <a href="../src/ContactUs.html">
-            <div class="btn  bg-red-500 text-white px-7 py-3 rounded-full flex items-center justify-between  hover:bg-red-600 transition">
+                    style="bottom: -6px"></span>
+                </button>
+                <div
+                  class="absolute z-10 top-full left-[50%] translate-x-[-50%] min-w-[220px] hidden group-hover:block">
+                  <ul
+                    class="mt-5 transition duration-700 overflow-hidden ease-in-out rounded-3xl bg-white shadow-lg mb-2">
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Gynecology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Pediatric</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Heart
+                        Specialist</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Pulmonology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Neurology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Neprology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Orthopaedic</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">General
+                        Surgery</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Urology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Cardiology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Sonography</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Phychiatrist</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100">Skin
+                        Care</a>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./Gallery.html" data-nav="gallery"
+                class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition">Gallery
+                <span
+                  class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
+                  style="bottom: -6px"></span>
+              </a>
+            </li>
+            <li>
+              <a href="./Doctors.html" data-nav="doctors"
+                class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition">Doctors
+                <span
+                  class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
+                  style="bottom: -6px"></span>
+              </a>
+            </li>
+            <li>
+              <a href="./CashlessMediclaim.html" data-nav="cashless"
+                class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition">CashlessMediclaim
+                <span
+                  class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
+                  style="bottom: -6px"></span>
+              </a>
+            </li>
+            <li>
+              <a href="./OurServices.html" data-nav="cashless"
+                class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition">OurServices
+                <span
+                  class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
+                  style="bottom: -6px"></span>
+              </a>
+            </li>
+            <li>
+              <a href="./Appointment.html" data-nav="appointment"
+                class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition">Appointment
+                <span
+                  class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
+                  style="bottom: -6px"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Contact Us Button -->
+        <div>
+          <a href="../src/ContactUs.html">
+            <div
+              class="btn  bg-red-500 text-white px-7 py-3 rounded-full flex items-center justify-between  hover:bg-red-600 transition">
               <div class="content mr-3">
                 ContactUs
               </div>
               <div class="btn-img w-full">
-                <img src="../images/next.png" 
-                alt="next"
-                class="inline-block w-[50px]">
+                <img src="../images/next.png" alt="next" class="inline-block w-[50px]">
               </div>
             </div>
 
             <a href="#" class="xl:hidden block">
-              <img
-                src="../images/Frame.jpg"
-                alt="next"
-                class="inline-block w-[18px]"
-              />
+              <img src="../images/Frame.jpg" alt="next" class="inline-block w-[18px]" />
             </a>
           </a>
-          </div>
         </div>
-      </header>
-  
-      <!-- header End -->
+      </div>
+  </header>
 
-<!-- Banner section Start-->
-<div class="swiper-container w-screen  relative">
+  <!-- header End -->
+
+  <!-- Banner section Start-->
+  <div class="swiper-container w-screen  relative">
     <div class="swiper-wrapper">
       <!-- Slide 1 -->
       <div class="swiper-slide relative about-banner-img0">
@@ -298,18 +227,14 @@
               <h1 class="text-4xl lg:text-6xl font-bold text-[#064681] mb-4 ">
                 About Us
               </h1>
-                <div class="flex gap-3">
-                  <div class="w-[87px] h-[6px] bg-[#064681] rounded-full"></div>
-                  <div class="w-[20px] h-[6px] bg-[#064681] rounded-full"></div>
-                </div>
+              <div class="flex gap-3">
+                <div class="w-[87px] h-[6px] bg-[#064681] rounded-full"></div>
+                <div class="w-[20px] h-[6px] bg-[#064681] rounded-full"></div>
+              </div>
             </div>
             <!-- Right Image -->
             <div class="lg:w-1/2 flex justify-end ">
-              <img
-                src="../images/3docter.png"
-                alt="Doctor"
-                class=" max-w-full "
-              />
+              <img src="../images/3docter.png" alt="Doctor" class=" max-w-full " />
             </div>
           </div>
         </div>
@@ -335,384 +260,473 @@
       </div>
     </div>
     <div class="backgrounds ">
-      <div class="first absolute bottom-[-0%] left-[0%] w-full  z-20" >
+      <div class="first absolute bottom-[-0%] left-[0%] w-full  z-20">
         <img src="../images/background-2.png" alt="form">
       </div>
     </div>
   </div>
- 
+
   <!-- Banner section End -->
-  
-      <!-- About Section start -->
-      <!-- Section-1 Start  -->
-      
+
+  <!-- About Section start -->
+  <!-- Section-1 Start  -->
   <section class="py-12">
     <div class="2xl:w-[1320px] xl:w-[1200px] w-full px-4 mx-auto">
       <div class="flex flex-wrap">
-          <div class="w-6/12">
-            <div class="relative">
-                <img src="../images/about5 (2).png" alt="about5" class="h-[507px] w-[551px]">
+        <div class="w-6/12">
+          <div class="relative">
+            <img src="../images/about5 (2).png" alt="about5" class="h-[507px] w-[551px]">
             <div class="absolute bottom-[-84px] right-[-20px] drop-shadow-[0px 0px 40px 0px #0000000D]">
-                <img src="../images/about6.png" alt="about6" class="w-[309px] h-[355px]">
+              <img src="../images/about6.png" alt="about6" class="w-[309px] h-[355px]">
             </div>
             <div class="absolute bottom-[67%] left-[58%]">
-              <img src="../images/About-3Image.png" alt="about6" class="w-[212.48px] h-[212.48px]" >
-          </div>
-          </div>
-          </div>
-          <div class="w-6/12 justify-center items-center my-[4%] pl-[6%]">
-            <div class="">
-              <h1 class="text-4xl last-of-type: font-bold  text-[#333333] leading-[48px] mb-4">
-                Welcome to Jeevan Jyot <br> Hospital
-              </h1>
-              <ul>
-                <li class="flex"><img src="../images/arrow-right.png" alt="arrow-right" class="object-cover w-[35px] h-[35px]">
-                  <p class="text-[20px] text-[#7F7F7F] font-normal leading-[30px] ml-2">Jeevan Jyot Hospital is situated at Navi Mumbai with a 10 bedded ICU.This Maternity and Multispeciality hospital is a well known centre for complete medical care.</p>
-                </li>
-                <li class="flex"><img src="../images/arrow-right.png" alt="arrow-right" class="object-cover w-[35px] h-[35px]">
-                  <p class="text-[20px] text-[#7F7F7F] font-normal leading-[30px] ml-2">The services provided are Laparoscopic & General surgery including all superspeciality branches and other specialities like
-                     Opthalmology,otorhinolarynogology,dermatology, pediatric,psychiatry,Haemotology,Oncology, Urology, Orthopaedic & Plastic Surgery.</p>
-                </li>
-                <li class="flex"><img src="../images/arrow-right.png" alt="arrow-right" class="object-cover w-[35px] h-[35px]">
-                  <p class="text-[20px] text-[#7F7F7F] font-normal leading-[30px] ml-2">All the medical superspecialities like endocrinology, neurology, gastroenterology, cardiology, nephrology, respiratory are also covered.
-                     Our doctors are experts in taking care of your health problems.</p>
-                </li>  
-              </ul>
+              <img src="../images/About-3Image.png" alt="about6" class="w-[212.48px] h-[212.48px]">
             </div>
           </div>
-      </div>  
+        </div>
+        <div class="w-6/12 justify-center items-center my-[4%] pl-[6%]">
+          <div class="">
+            <h1 class="text-4xl last-of-type: font-bold  text-[#333333] leading-[48px] mb-4">
+              Welcome to Jeevan Jyot <br> Hospital
+            </h1>
+            <ul>
+              <li class="flex"><img src="../images/arrow-right.png" alt="arrow-right"
+                  class="object-cover w-[35px] h-[35px]">
+                <p class="text-[20px] text-[#7F7F7F] font-normal leading-[30px] ml-2">Jeevan Jyot Hospital is situated
+                  at Navi Mumbai with a 10 bedded ICU.This Maternity and Multispeciality hospital is a well known centre
+                  for complete medical care.</p>
+              </li>
+              <li class="flex"><img src="../images/arrow-right.png" alt="arrow-right"
+                  class="object-cover w-[35px] h-[35px]">
+                <p class="text-[20px] text-[#7F7F7F] font-normal leading-[30px] ml-2">The services provided are
+                  Laparoscopic & General surgery including all superspeciality branches and other specialities like
+                  Opthalmology,otorhinolarynogology,dermatology, pediatric,psychiatry,Haemotology,Oncology, Urology,
+                  Orthopaedic & Plastic Surgery.</p>
+              </li>
+              <li class="flex"><img src="../images/arrow-right.png" alt="arrow-right"
+                  class="object-cover w-[35px] h-[35px]">
+                <p class="text-[20px] text-[#7F7F7F] font-normal leading-[30px] ml-2">All the medical superspecialities
+                  like endocrinology, neurology, gastroenterology, cardiology, nephrology, respiratory are also covered.
+                  Our doctors are experts in taking care of your health problems.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-      <!-- Section-1 End  -->
-      <!-- Section-2 Start  -->
-      <main>
-        <section class="w-full flex flex-col py-[80px] justify-center items-center">
-            <div class="2xl:w-[1320px] xl:w-[1200px] w-full flex justify-between gap-[50px] items-center">
-              
-              <!-- target -->
+  <!-- Section-1 End  -->
+  <!-- Section-2 Start  -->
+  <main>
+    <section class="w-full flex flex-col py-[80px] justify-center items-center">
+      <div class="2xl:w-[1320px] xl:w-[1200px] w-full flex justify-between gap-[50px] items-center">
 
-              <div class="w-full py-[5%] ">
-                <div class="flex  flex-col w-full gap-10  relative">
-                  <div class="w-[720px] min-h-[186px]  relative z-50 bg-[white] text-[white] shadow-[0_0_35px_0_#0000000d] rounded-[20px] overflow-hidden flex gap-5 justify-center items-center">
-                      <div class="w-[170px] h-[170px] shrink-0 rounded-[0_0_60%_0] bg-[#0646811a] relative flex justify-center items-center self-start">
-                        <img src="../images/eye.png"
-                        alt="next"
-                        class="w-[70px] h-[70px] object-cover rounded-[70px] absolute top-[50%] left-[50%] translate-x-[-60%] translate-y-[-60%]" />
-                      </div>
-                      <div class="flex flex-col gap-2">
-                          <h1 class="font-semibold text-[30px] leading-[20px] text-[#333333]">Our vision</h1>
-                          <p class="text-[20px] leading-[30px] font-[400] text-[#7F7F7F]">To ensure accessible and affordable quality healthcare by compassionate medical professionals for all medical specialities.</p>
-                      </div>
-                  </div>
-                  <div class="relative z-20 w-full min-h-[186px]">
-                    <div class="absolute left-[15px] top-[-100px] bg-[red] rotate-[10deg] w-[334px]">
-                      <img
-                      src="../images/Vector.jpg"
-                      alt="next"
-                      class="w-full h-full object-fill"
-                    />  
-                    </div>
-                    <div class="w-[720px] bg-[white] absolute h-full  left-[220px] text-[white] shadow-[0_0_35px_0_#0000000d] rounded-[20px] overflow-hidden flex gap-5 justify-center items-center">
-                      <div class="w-[170px] h-[170px] shrink-0 px-[5%] rounded-[0_0_60%_0] bg-[#0646811a] relative flex justify-center items-center self-start">
-                        <img src="../images/training.png"
-                        alt="next"
-                        class="w-[70px] h-[70px] object-cover rounded-[70px] absolute top-[50%] left-[50%] translate-x-[-60%] translate-y-[-60%]" />
-                      </div>
-                      <div class="flex flex-col gap-2">
-                          <h1 class="font-semibold text-[30px] leading-[20px] text-[#333333]">Our Mission</h1>
-                          <p class="text-[20px] leading-[30px] font-[400] text-[#7F7F7F]">To provide our patients and their families a safe,clean and perfect environment where they would receive ethical health care, at a reasonable cost at...</p>
-                      </div>
-                  </div>
-                  </div>
-                  <div class="w-[720px] min-h-[186px]  relative z-50 bg-[white] text-[white] shadow-[0_0_35px_0_#0000000d] rounded-[20px] overflow-hidden flex gap-5 justify-center items-center">
-                    <div class="w-[170px] h-[170px] shrink-0 rounded-[0_0_60%_0] bg-[#0646811a] relative flex justify-center items-center self-start">
-                      <img src="../images/eye.png"
-                      alt="next"
-                      class="w-[70px] h-[70px] object-cover rounded-[70px] absolute top-[50%] left-[50%] translate-x-[-60%] translate-y-[-60%]" />
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <h1 class="font-semibold text-[30px] leading-[20px] text-[#333333]">Our Goals</h1>
-                        <p class="text-[20px] leading-[30px] font-[400] text-[#7F7F7F]">To ensure accessible and affordable quality healthcare by compassionate medical professionals for all medical specialities.</p>
-                    </div>
-                </div>
-              </div>
-              </div>
-              <div class="w-full h-full  relative flex justify-end items-end">
-                <div class="w-[581px] h-[590px] bg-[white] relative z-10 shrink-0 p-4 flex justify-center items-center ">
-                  <img src="../images/Group 279.png" alt="next" class="w-full h-full object-cover rounded-[70px]"/>
-              </div>
-            
-              </div>
-          </div>
-        </section>
-    </main>
-       <!-- About Section End -->
+        <!-- target -->
 
-       <!-- Our Video Section Start -->
-       <section class="py-12 relative px-4 flex justify-center">
-        <div class="backgrounds ">
-          <div class="first absolute top-[0%] left-[0%] w-full  z-20" >
-            <img src="../images/form-background-1.png" alt="form">
-          </div>
-          <div class="first absolute bottom-[0%] left-0 w-full z-20">
-            <img src="../images/background-2.png" alt="background">
-          </div>
-        </div>
-        <div class="absolute bottom-0 left-0 w-full h-full z-0">
-          <img src="../images/Vector2.png" alt="Blue Background" class="w-full h-full object-cover" />
-        </div>    
-        <div class="max-w-7xl mx-auto relative z-20">
-          <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
-            <!-- Left Content -->
-            <div class=" lg:w-4/12  text-center lg:text-left">
-              <div>
-              <h2 class="text-[40px] font-bold text-[#064681] ">Our Video</h2>
-            </div>
-                <div class="flex gap-3">
-                  <div class="w-[87px] h-[6px] bg-[#064681] rounded-full"></div>
-                  <div class="w-[20px] h-[6px] bg-[#064681] rounded-full"></div>
-                </div>
-              <p class="text-[#FFFFFF] py-[5%] leading-[30px] mb-6">
-                The services provided are Laparoscopic & General surgery, including all superspeciality branches and other specialties like Ophthalmology, Otorhinolaryngology, Dermatology, Pediatrics, Psychiatry, Hematology, Oncology, Urology, Orthopedic & Plastic Surgery.
-              </p>
-              <div class="flex absolute items-center justify-center  my-[-2%] mr-[15%] space-x-4 p-4 rounded-lg">
-                <div class="w-4 h-4 rounded-full bg-blue-900 border-2  ring-1 ring-blue-900"></div>
-                <div class="w-4 h-4 rounded-full bg-white"></div>
-                <div class="w-4 h-4 rounded-full bg-white"></div>
-                <div class="w-4 h-4 rounded-full bg-white"></div>
+        <div class="w-full py-[5%] ">
+          <div class="flex  flex-col w-full gap-10  relative">
+            <div
+              class="w-[720px] min-h-[186px]  relative z-50 bg-[white] text-[white] shadow-[0_0_35px_0_#0000000d] rounded-[20px] overflow-hidden flex gap-5 justify-center items-center">
+              <div
+                class="w-[170px] h-[170px] shrink-0 rounded-[0_0_60%_0] bg-[#0646811a] relative flex justify-center items-center self-start">
+                <img src="../images/eye.png" alt="next"
+                  class="w-[70px] h-[70px] object-cover rounded-[70px] absolute top-[50%] left-[50%] translate-x-[-60%] translate-y-[-60%]" />
               </div>
-              <!-- Swiper Pagination -->
-              <div class="swiper-pagination"></div>
+              <div class="flex flex-col gap-2">
+                <h1 class="font-semibold text-[30px] leading-[20px] text-[#333333]">Our vision</h1>
+                <p class="text-[20px] leading-[30px] font-[400] text-[#7F7F7F]">To ensure accessible and affordable
+                  quality healthcare by compassionate medical professionals for all medical specialities.</p>
+              </div>
             </div>
-    
-            <!-- Right Content (Swiper Slider) -->
-            <div class="lg:w-6/12 my-[12%]">
-              <div class="swiper rounded-lg overflow-hidden">
-                <div class="swiper-wrapper">
-                  <!-- Slide 1 -->
-                  <div class="swiper-slide">
-                    <div class="relative bg-white py-3 px-3 rounded">
-                      <img src="../images/Abt-vi-Image.png" alt="Slide 1" class="w-full object-cover right-0 ">
-                      <img src="../images/Group 12 (1).png" alt=""  class="absolute left-[23%] top-[35%] items-center px-[20%] ">
-                      <div class="absolute inset-0 flex items-center justify-center">
-                    </div>
-                  </div>
-                  <!-- Add more slides as needed -->
+            <div class="relative z-20 w-full min-h-[186px]">
+              <div class="absolute left-[15px] top-[-100px] bg-[red] rotate-[10deg] w-[334px]">
+                <img src="../images/Vector.jpg" alt="next" class="w-full h-full object-fill" />
+              </div>
+              <div
+                class="w-[720px] bg-[white] absolute h-full  left-[220px] text-[white] shadow-[0_0_35px_0_#0000000d] rounded-[20px] overflow-hidden flex gap-5 justify-center items-center">
+                <div
+                  class="w-[170px] h-[170px] shrink-0 px-[5%] rounded-[0_0_60%_0] bg-[#0646811a] relative flex justify-center items-center self-start">
+                  <img src="../images/training.png" alt="next"
+                    class="w-[70px] h-[70px] object-cover rounded-[70px] absolute top-[50%] left-[50%] translate-x-[-60%] translate-y-[-60%]" />
                 </div>
+                <div class="flex flex-col gap-2">
+                  <h1 class="font-semibold text-[30px] leading-[20px] text-[#333333]">Our Mission</h1>
+                  <p class="text-[20px] leading-[30px] font-[400] text-[#7F7F7F]">To provide our patients and their
+                    families a safe,clean and perfect environment where they would receive ethical health care, at a
+                    reasonable cost at...</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[720px] min-h-[186px]  relative z-50 bg-[white] text-[white] shadow-[0_0_35px_0_#0000000d] rounded-[20px] overflow-hidden flex gap-5 justify-center items-center">
+              <div
+                class="w-[170px] h-[170px] shrink-0 rounded-[0_0_60%_0] bg-[#0646811a] relative flex justify-center items-center self-start">
+                <img src="../images/eye.png" alt="next"
+                  class="w-[70px] h-[70px] object-cover rounded-[70px] absolute top-[50%] left-[50%] translate-x-[-60%] translate-y-[-60%]" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <h1 class="font-semibold text-[30px] leading-[20px] text-[#333333]">Our Goals</h1>
+                <p class="text-[20px] leading-[30px] font-[400] text-[#7F7F7F]">To ensure accessible and affordable
+                  quality healthcare by compassionate medical professionals for all medical specialities.</p>
               </div>
             </div>
           </div>
         </div>
+        <div class="w-full h-full  relative flex justify-end items-end">
+          <div class="w-[581px] h-[590px] bg-[white] relative z-10 shrink-0 p-4 flex justify-center items-center ">
+            <img src="../images/Group 279.png" alt="next" class="w-full h-full object-cover rounded-[70px]" />
+          </div>
 
-      </section>
-       <!-- Our Video Section End -->
-
-     
-
-     <!-- Tag Section Start -->
-<main class="bg-gray-100  py-12">
-  <div class="container rounded-full mx-auto px-4 xl:w-[1260px]">
-    <div class="bg-white  shadow-lg rounded-3xl flex items-center overflow-hidden">
-      <div class="p-8 lg:w-1/2">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4 leading-tight">
-          We Always Ready To <br />
-          Help Your
-        </h2>
-        <p class="text-gray-600 mb-6">
-          It is a long established fact that a reader will be distracted by
-          the readable content of a page when looking at its layout. The
-          point of using Lorem Ipsum is that it has.
-        </p>
-        <a
-          href="#"
-          class="inline-flex items-center bg-red-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-red-600 transition"
-        >
-          Get In Touch
-          <img
-            src="../images/next.png"
-            alt="next"
-            class="inline-block w-[18px] ml-2"
-          />
-        </a>
+        </div>
       </div>
-      <div class="relative lg:w-1/2 flex justify-center items-center p-6 ">  
-        <div
-          class="absolute top-4 left-4  flex items-center justify-center p-6"
-        >
-          <div class="text-center">
-             <img
-              src="../images/DoctoreIcon.png"
-              alt="Doctor Icon"
-              class="max-w-full h-auto relative z-10"
-            />
+    </section>
+  </main>
+  <!-- About Section End -->
+
+  <!-- Our Video Section Start -->
+  <section class="py-12 relative px-4 flex justify-center ">
+    <div class="backgrounds ">
+      <div class="first absolute top-[0%] left-[0%] w-full  z-20">
+        <img src="../images/form-background-1.png" alt="form">
+      </div>
+      <div class="first absolute bottom-[0%] left-0 w-full z-20">
+        <img src="../images/background-2.png" alt="background">
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 w-full h-full z-0">
+      <img src="../images/Vector2.png" alt="Blue Background" class="w-full h-full object-cover" />
+    </div>
+    <div class="max-w-7xl mx-auto relative z-20">
+      <div class="flex flex-col lg:flex-row items-center justify-between  gap-8">
+        <!-- Left Content -->
+        <div class=" lg:w-4/12  text-center lg:text-left relative overflow-hidden  mb-24">
+
+          <div class="">
+            <div class="swiper-container4">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div>
+                    <h2 class="text-[40px]  font-bold text-[#064681] ">Our Video</h2>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="w-[87px] h-[6px] bg-[#064681] rounded-full"></div>
+                    <div class="w-[20px] h-[6px] bg-[#064681] rounded-full"></div>
+                  </div>
+                  <p class="text-[#FFFFFF] py-[5%] leading-[30px] mb-6">
+                    The services provided are Laparoscopic & General surgery, including all superspeciality branches and
+                    other specialties like Ophthalmology, Otorhinolaryngology, Dermatology, Pediatrics, Psychiatry,
+                    Hematology, Oncology, Urology, Orthopedic & Plastic Surgery.
+                  </p>
+                  <div
+                    class="flex absolute items-center justify-center bottom-[0%] left-[-3%]   my-[-2%] space-x-4 p-4 rounded-lg">
+                    <div class="w-4 h-4 rounded-full bg-blue-900 border-2  ring-1 ring-blue-900"></div>
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
+                  </div>
+                  <!-- Swiper Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <h2 class="text-[40px] font-bold text-[#064681] ">Our Video</h2>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="w-[87px] h-[6px] bg-[#064681] rounded-full"></div>
+                    <div class="w-[20px] h-[6px] bg-[#064681] rounded-full"></div>
+                  </div>
+                  <p class="text-[#FFFFFF] py-[5%] leading-[30px] mb-6">
+                    The services provided are Laparoscopic & General surgery, including all superspeciality branches and
+                    other specialties like Ophthalmology, Otorhinolaryngology, Dermatology, Pediatrics, Psychiatry,
+                    Hematology, Oncology, Urology, Orthopedic & Plastic Surgery.
+                  </p>
+                  <div
+                    class="flex absolute items-center justify-center bottom-[0%] left-[-3%]   my-[-2%] mr-[15%] space-x-4 p-4 rounded-lg">
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
+                    <div class="w-4 h-4 rounded-full bg-blue-900 border-2  ring-1 ring-blue-900"></div>
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
+                  </div>
+                  <!-- Swiper Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <h2 class="text-[40px] font-bold text-[#064681] ">Our Video</h2>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="w-[87px] h-[6px] bg-[#064681] rounded-full"></div>
+                    <div class="w-[20px] h-[6px] bg-[#064681] rounded-full"></div>
+                  </div>
+                  <p class="text-[#FFFFFF] py-[5%] leading-[30px] mb-6">
+                    The services provided are Laparoscopic & General surgery, including all superspeciality branches and
+                    other specialties like Ophthalmology, Otorhinolaryngology, Dermatology, Pediatrics, Psychiatry,
+                    Hematology, Oncology, Urology, Orthopedic & Plastic Surgery.
+                  </p>
+                  <div
+                    class="flex absolute items-center justify-center bottom-[0%] left-[-3%]   my-[-2%] mr-[15%] space-x-4 p-4 rounded-lg">
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
+                    <div class="w-4 h-4 rounded-full bg-blue-900 border-2  ring-1 ring-blue-900"></div>
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
+                  </div>
+                  <!-- Swiper Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <h2 class="text-[40px] font-bold text-[#064681] ">Our Video</h2>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="w-[87px] h-[6px] bg-[#064681] rounded-full"></div>
+                    <div class="w-[20px] h-[6px] bg-[#064681] rounded-full"></div>
+                  </div>
+                  <p class="text-[#FFFFFF] py-[5%] leading-[30px] mb-6">
+                    The services provided are Laparoscopic & General surgery, including all superspeciality branches and
+                    other specialties like Ophthalmology, Otorhinolaryngology, Dermatology, Pediatrics, Psychiatry,
+                    Hematology, Oncology, Urology, Orthopedic & Plastic Surgery.
+                  </p>
+                  <div
+                    class="flex absolute items-center justify-center bottom-[0%] left-[-3%]   my-[-2%] mr-[15%] space-x-4 p-4 rounded-lg">
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
+                    <div class="w-4 h-4 rounded-full bg-blue-900 border-2  ring-1 ring-blue-900"></div>
+                  </div>
+                  <!-- Swiper Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-               <img
-          src="../images/TagSectionDoctore.png"
-          alt="Doctor"
-          class="max-w-full h-auto relative z-10"
-        />
+
+        <!-- Right Content (Swiper Slider) -->
+        <div class="lg:w-6/12 my-[12%]">
+          <div class="swiper rounded-lg overflow-hidden">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="relative bg-white py-3 px-3 rounded">
+                  <img src="../images/Abt-vi-Image.png" alt="Slide 1" class="w-full object-cover right-0 ">
+                  <img src="../images/Group 12 (1).png" alt=""
+                    class="absolute left-[23%] top-[35%] items-center px-[20%] ">
+                  <div class="absolute inset-0 flex items-center justify-center">
+                  </div>
+                </div>
+                <!-- Add more slides as needed -->
+              </div>
             </div>
-       </div>
-  </div>
-</main>
-
-<!-- Tag Section End -->
-
-     <!-- Footer Section Start -->
-    <footer class="w-full h-[643px] py-12  flex items-center relative bg-gradient-to-r from-[#86BBF1] to-[#8DBEC9]">
-      <div class="absolute top-0 left-0 ">
-        <img src="../images//Mask group.png" alt="object">
+          </div>
+        </div>
       </div>
-      <div class="absolute bottom-0 right-0 ">
-        <img src="../images//Mask group (2).png" alt="object">
+
+  </section>
+  <!-- Our Video Section End -->
+
+  <!-- Tag Section Start -->
+  <main class="py-12">
+    <div class="container rounded-full mx-auto px-4 xl:w-[1260px]">
+      <div class="bg-white  shadow-lg rounded-3xl flex items-center overflow-hidden">
+        <div class="p-8 lg:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 leading-tight">
+            We Always Ready To <br />
+            Help Your
+          </h2>
+          <p class="text-gray-600 mb-6">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The
+            point of using Lorem Ipsum is that it has.
+          </p>
+          <a href="#"
+            class="inline-flex items-center bg-red-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-red-600 transition">
+            Get In Touch
+            <img src="../images/next.png" alt="next" class="inline-block w-[18px] ml-2" />
+          </a>
+        </div>
+        <div class="relative lg:w-1/2 flex justify-center items-center p-6 ">
+          <div class="absolute top-4 left-4  flex items-center justify-center p-6">
+            <div class="text-center">
+              <img src="../images/DoctoreIcon.png" alt="Doctor Icon" class="max-w-full h-auto relative z-10" />
+            </div>
+          </div>
+          <img src="../images/TagSectionDoctore.png" alt="Doctor" class="max-w-full h-auto relative z-10" />
+        </div>
       </div>
+    </div>
+  </main>
+
+  <!-- Tag Section End -->
+
+  <!-- Footer Section Start -->
+  <footer class="w-full h-[643px] py-12  flex items-center relative bg-gradient-to-r from-[#86BBF1] to-[#8DBEC9]">
+    <div class="absolute top-0 left-0 ">
+      <img src="../images//Mask group.png" alt="object">
+    </div>
+    <div class="absolute bottom-0 right-0 ">
+      <img src="../images//Mask group (2).png" alt="object">
+    </div>
     <div class="absolute bottom-0 left-0 w-full h-full z-0">
       <!-- <img src="../images/Vector2.png" alt="Blue Background" class="w-full h-full object-cover" /> -->
     </div>
-    <div class="first absolute top-[-0%] left-[0%] w-full  z-20" >
+    <div class="first absolute top-[-0%] left-[0%] w-full  z-20">
       <img src="../images/form-background-1.png" alt="form">
     </div>
 
-      <div class="relative items-center  w-full px-4 mx-auto">
-        <div class="container mx-auto flex flex-wrap justify-center pb-10 border-b-2">
-          <div class="w-4/12"> 
-            <div>
-              <a href="#"><img src="../images/logo.png" alt="logo" class="object-cover h-[90px] w-[322px]"></a>
-              <p class="text-[20px] leading-8 text-[#ffff]">Jeevan Jyot Hospital is situated at Navi Mumbai, This hospital is a well known centre
-                 for surgery and medical care. We are a professional health medical care services provider
-                  serving every kinds of people very carefully & Patient happy.</p>
-            </div>
-            <div class="h-[90px] w-[322px] flex items-center">
-              <h3 class="text-[25px] leading-8 text-[#064681] relative before:absolute before:top-[38px] before:left-0
+    <div class="relative items-center  w-full px-4 mx-auto">
+      <div class="container mx-auto flex flex-wrap justify-center pb-10 border-b-2">
+        <div class="w-4/12">
+          <div>
+            <a href="#"><img src="../images/logo.png" alt="logo" class="object-cover h-[90px] w-[322px]"></a>
+            <p class="text-[20px] leading-8 text-[#ffff]">Jeevan Jyot Hospital is situated at Navi Mumbai, This hospital
+              is a well known centre
+              for surgery and medical care. We are a professional health medical care services provider
+              serving every kinds of people very carefully & Patient happy.</p>
+          </div>
+          <div class="h-[90px] w-[322px] flex items-center">
+            <h3 class="text-[25px] leading-8 text-[#064681] relative before:absolute before:top-[38px] before:left-0
                         before:content[''] before:bg-[#064681] before:w-[27px] before:h-[3px] ">Follows</h3>
-            </div>
-            <div class="flex space-x-4">
-                <a href="#" class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
-                  <img src="../images/facebook.png" alt="fa-facebook" class="w-[25px] h-[25px]">
-                </a>
-                <a href="#" class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
-                  <img src="../images/instagram.png" alt="fa-facebook" class="w-[25px] h-[25px]">
-                </a>
-                <a href="#" class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
-                  <img src="../images/twiter.png" alt="fa-facebook" class="w-[25px] h-[25px]">
-                </a>
-            </div>
           </div>
-          <div class="w-4/12 flex justify-end">
-            <div class="ml-[100px]">
-              <div class="h-[90px] w-[322px] flex items-center">
-                <h3 class="text-[25px] leading-8 text-[#064681] font-semibold relative before:absolute before:top-[38px] before:left-0
-                          before:content[''] before:bg-[#064681] before:w-[27px] before:h-[3px] ">Pages</h3>
-              </div>
-              
-              <ul>
-                <li><a href="#" class="text-[20px] text-[#ffff]">Home</a></li>
-                <li><a href="#" class="text-[20px] text-[#ffff]">About</a></li>
-                <li><a href="#" class="text-[20px] text-[#ffff]">Maternity</a></li>
-                <li><a href="#" class="text-[20px] text-[#ffff]">Department</a></li>
-                <li><a href="#" class="text-[20px] text-[#ffff]">Gallery</a></li>
-                <li><a href="#" class="text-[20px] text-[#ffff]">Doctors</a></li>
-                <li><a href="#" class="text-[20px] text-[#ffff]">Caseless Mediclaim</a></li>
-                <li><a href="#" class="text-[20px] text-[#ffff]">Appointment</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="w-4/12  flex justify-center relative z-20">
-                <div class="">
-                  <div class="w-[322px] h-[90px] flex items-center">
-                    <h3 class="text-[25px] leading-8 text-[#064681] relative before:absolute before:top-[38px] before:left-0
-                            before:content[''] before:bg-[#064681] before:w-[27px] before:h-[3px] ">Address</h3>
-                  </div>
-                  <div class="flex">
-                    <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
-                      <img src="../images/location.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
-                    </div>
-                   <div class="w-[340px] ml-3">
-                      <p class="text-[20px] leading-[30px] text-[#fff]">Subh Avenue Building, Ground & First Floor, Plot No. 59C, Sector-21, Opp. Khandeswar Station, Khandeswar Kamothe-II, Navi Mumbai.</p>
-                   </div>
-                  </div>
-                  <div class="my-3 flex items-center">
-                    <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
-                      <img src="../images/sms.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
-                    </div>
-                   <div class="w-[340px] ml-3 flex items-center">
-                      <p class="text-[20px] leading-[30px] text-[#fff]">jeevanjyothospital12@gmail.com</p>
-                   </div>
-                  </div>
-                  <div class="my-3 flex items-center">
-                    <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
-                      <img src="../images/call.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
-                    </div>
-                   <div class="w-[340px] ml-3">
-                      <p class="text-[20px] leading-[30px] text-[#fff]">93218 42721 , 83691 59505 , 022-27431626</p>
-                   </div>
-                  </div>
-                </div>
+          <div class="flex space-x-4">
+            <a href="#" class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
+              <img src="../images/facebook.png" alt="fa-facebook" class="w-[25px] h-[25px]">
+            </a>
+            <a href="#" class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
+              <img src="../images/instagram.png" alt="fa-facebook" class="w-[25px] h-[25px]">
+            </a>
+            <a href="#" class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
+              <img src="../images/twiter.png" alt="fa-facebook" class="w-[25px] h-[25px]">
+            </a>
           </div>
         </div>
-        <br>
-        <br>
-        <div class="text-center  text-[#ffff] text-[18px]">
-          © 2020 Jeevan Jyot Hospital. All Rights Reserved. Designed by WEBINBOX
+        <div class="w-4/12 flex justify-end">
+          <div class="ml-[100px]">
+            <div class="h-[90px] w-[322px] flex items-center">
+              <h3 class="text-[25px] leading-8 text-[#064681] font-semibold relative before:absolute before:top-[38px] before:left-0
+                          before:content[''] before:bg-[#064681] before:w-[27px] before:h-[3px] ">Pages</h3>
+            </div>
+            <ul>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Home</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">About</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Maternity</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Department</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Gallery</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Doctors</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Caseless Mediclaim</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Appointment</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-4/12  flex justify-center relative z-20">
+          <div class="">
+            <div class="w-[322px] h-[90px] flex items-center">
+              <h3 class="text-[25px] leading-8 text-[#064681] relative before:absolute before:top-[38px] before:left-0
+                            before:content[''] before:bg-[#064681] before:w-[27px] before:h-[3px] ">Address</h3>
+            </div>
+            <div class="flex">
+              <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
+                <img src="../images/location.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
+              </div>
+              <div class="w-[340px] ml-3">
+                <p class="text-[20px] leading-[30px] text-[#fff]">Subh Avenue Building, Ground & First Floor, Plot No.
+                  59C, Sector-21, Opp. Khandeswar Station, Khandeswar Kamothe-II, Navi Mumbai.</p>
+              </div>
+            </div>
+            <div class="my-3 flex items-center">
+              <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
+                <img src="../images/sms.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
+              </div>
+              <div class="w-[340px] ml-3 flex items-center">
+                <p class="text-[20px] leading-[30px] text-[#fff]">jeevanjyothospital12@gmail.com</p>
+              </div>
+            </div>
+            <div class="my-3 flex items-center">
+              <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
+                <img src="../images/call.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
+              </div>
+              <div class="w-[340px] ml-3">
+                <p class="text-[20px] leading-[30px] text-[#fff]">93218 42721 , 83691 59505 , 022-27431626</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <br>
+      <br>
+      <div class="text-center  text-[#ffff] text-[18px]">
+        © 2020 Jeevan Jyot Hospital. All Rights Reserved. Designed by WEBINBOX
+      </div>
+    </div>
   </footer>
-    <!-- Footer Section End -->
+  <!-- Footer Section End -->
 
 
 
-       <!-- j-query cdn -->
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- j-query cdn -->
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <script>
-      $(document).ready(function () {
-        $("#sidebar-toggle").click(function () {
-          $("#sidebar").toggleClass("transform-none");
-        });
+  <script>
+    $(document).ready(function () {
+      $("#sidebar-toggle").click(function () {
+        $("#sidebar").toggleClass("transform-none");
+      });
+    });
+
+    // Add event listeners to the dropdown menu
+    document
+      .querySelector(".dropdown")
+      .addEventListener("click", function () {
+        this.classList.toggle("show");
       });
 
-      // Add event listeners to the dropdown menu
-      document
-        .querySelector(".dropdown")
-        .addEventListener("click", function () {
-          this.classList.toggle("show");
-        });
-
-      // Close the dropdown menu if the user clicks outside of it
-      window.addEventListener("click", function (event) {
-        if (!event.target.matches(".dropbtn")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
-            }
+    // Close the dropdown menu if the user clicks outside of it
+    window.addEventListener("click", function (event) {
+      if (!event.target.matches(".dropbtn")) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains("show")) {
+            openDropdown.classList.remove("show");
           }
         }
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const swiper = new Swiper(".swiper-container", {
+        loop: true, // Enables continuous loop mode
+        autoplay: {
+          delay: 5000, // Time between slides (in milliseconds)
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        effect: "slide", // Choose 'slide', 'fade', 'cube', etc.
       });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const swiper = new Swiper(".swiper-container", {
-          loop: true, // Enables continuous loop mode
-          autoplay: {
-            delay: 5000, // Time between slides (in milliseconds)
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          effect: "slide", // Choose 'slide', 'fade', 'cube', etc.
-        });
-      }); 
-
-    </script>
+    });
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper1 = new Swiper('.swiper-container4', {
+      loop: true,
+      navigation: {
+        nextEl: '.swipers-button-next4',
+        prevEl: '.swipers-button-prev4',
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+      },
+    });
+  </script>
 </body>
 </html>
-

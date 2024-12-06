@@ -1,964 +1,715 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jeevan Jyot Hospital</title>
-    <link rel="icon" href="../images/logo.png" type="image">
-    <link rel="stylesheet" href="../src/Font/Font.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- remixicon -->
-    <link rel="stylesheet" href="../dist/remix/remixicon.css" type="text/css" />
-    <!-- main-css -->
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeevan Jyot Hospital</title>
+  <link rel="icon" href="../images/logo.png" type="image">
+  <link rel="stylesheet" href="../src/Font/Font.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- remixicon -->
+  <link rel="stylesheet" href="../dist/remix/remixicon.css" type="text/css" />
+  <!-- main-css -->
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-      }
-      /* .container {
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+    /* .container {
         width: 1320px;
         margin: 0 auto;
         padding: 0 15px;
       } */
-    </style>
-  </head>
+  </style>
+</head>
 
-  <body>
-    <!-- header section Start-->
+<body>
+  <!-- header section Start-->
 
-    <header class="bg-white transition-all duration-300 
+  <header class="bg-white transition-all duration-300 
      shadow sm:py-5 pt-[18px] pb-[18px]">
-      <div class="2xl:w-[1320px] xl:w-[1260px] w-full max-xl:px-4 mx-auto">
-        <div class="flex items-center gap-10 w-full justify-between">
-          <!-- logo -->
-          <div class="flex items-center justify-center">
-             <a href="../src/Home.html">
-              <img
-                src="../images/logo.png"
-                alt="Jeevan-Jyot-Hospital"
-                class="w-[222px] h-[60px] object-contain pr-[5%]"
-              />
-            </a>
-          </div>          
-          <nav class="xl:block hidden">
-            <ul class="flex gap-5">
-              <li>
-                <a
-                  href="./Home.html"
-                  data-nav="home"
-                  class="inline-block  relative group text-[#064681] font-bold text-[18px]  hover:text-[#064681] hover:font-normal transition"
-                  >Home<span
-                    class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                    style="bottom: -6px"
-                  ></span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="./About.html"
-                  data-nav="about"
-                  class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                  >About<span
-                    class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                    style="bottom: -6px"
-                  ></span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="./Maternity.html"
-                  data-nav="maternity"
-                  class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                  >Maternity<span
-                    class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                    style="bottom: -6px"
-                  ></span>
-                </a>
-              </li>
-              <!-- Dropdown Example -->
-              <li class="relative group">
-                <a href="./Department.html">
-                  <button
-                    data-nav="department"
-                    class="relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                  >
-                    Department<i class="ri-arrow-down-s-line text-lg"></i>
-                    <span
-                      class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                      style="bottom: -6px"
-                    ></span>
-                  </button>
-                  <div
-                    class="absolute z-10 top-full left-[50%] translate-x-[-50%] min-w-[220px] hidden group-hover:block"
-                  >
-                    <ul
-                      class="mt-5 transition duration-700 overflow-hidden ease-in-out rounded-3xl bg-white shadow-lg mb-2"
-                    >
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Gynecology</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Pediatric</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Heart Specialist</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Pulmonology</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Neurology</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Neprology</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Orthopaedic</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >General Surgery</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Urology</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Cardiology</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Sonography</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Phychiatrist</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100"
-                          >Skin Care</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="./Gallery.html"
-                  data-nav="gallery"
-                  class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                  >Gallery
+    <div class="2xl:w-[1320px] xl:w-[1260px] w-full max-xl:px-4 mx-auto">
+      <div class="flex items-center gap-10 w-full justify-between">
+        <!-- logo -->
+        <div class="flex items-center justify-center">
+          <a href="../src/Home.html">
+            <img src="../images/logo.png" alt="Jeevan-Jyot-Hospital"
+              class="w-[222px] h-[60px] object-contain pr-[5%]" />
+          </a>
+        </div>
+        <nav class="xl:block hidden">
+          <ul class="flex gap-5">
+            <li>
+              <a href="./Home.html" data-nav="home"
+                class="inline-block  relative group text-[#064681] font-bold text-[18px]  hover:text-[#064681] hover:font-normal transition">Home<span
+                  class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
+                  style="bottom: -6px"></span>
+              </a>
+            </li>
+            <li>
+              <a href="./About.html" data-nav="about"
+                class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition">About<span
+                  class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
+                  style="bottom: -6px"></span>
+              </a>
+            </li>
+            <li>
+              <a href="./Maternity.html" data-nav="maternity"
+                class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition">Maternity<span
+                  class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
+                  style="bottom: -6px"></span>
+              </a>
+            </li>
+            <!-- Dropdown Example -->
+            <li class="relative group">
+              <a href="./Department.html">
+                <button data-nav="department"
+                  class="relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition">
+                  Department<i class="ri-arrow-down-s-line text-lg"></i>
                   <span
                     class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                    style="bottom: -6px"
-                  ></span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="./Doctors.html"
-                  data-nav="doctors"
-                  class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                  >Doctors
-                  <span
-                    class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                    style="bottom: -6px"
-                  ></span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="./CashlessMediclaim.html"
-                  data-nav="cashless"
-                  class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                  >Cashless&nbsp;Mediclaim
-                  <span
-                    class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                    style="bottom: -6px"
-                  ></span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="./OurServices.html"
-                  data-nav="cashless"
-                  class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                  >Our&nbsp;Services
-                  <span
-                    class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                    style="bottom: -6px"
-                  ></span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="./Appointment.html"
-                  data-nav="appointment"
-                  class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                  >Appointment
-                  <span
-                    class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                    style="bottom: -6px"
-                  ></span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <!-- Contact Us Button -->
-          <div>
-            <a href="../src/ContactUs.html">
-            <div class="btn  bg-red-500 text-white px-7 py-3 rounded-full flex items-center justify-between  hover:bg-red-600 transition">
+                    style="bottom: -6px"></span>
+                </button>
+                <div
+                  class="absolute z-10 top-full left-[50%] translate-x-[-50%] min-w-[220px] hidden group-hover:block">
+                  <ul
+                    class="mt-5 transition duration-700 overflow-hidden ease-in-out rounded-3xl bg-white shadow-lg mb-2">
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Gynecology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Pediatric</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Heart
+                        Specialist</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Pulmonology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Neurology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Neprology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Orthopaedic</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">General
+                        Surgery</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Urology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Cardiology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Sonography</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Phychiatrist</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100">Skin
+                        Care</a>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./Gallery.html" data-nav="gallery"
+                class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition">Gallery
+                <span
+                  class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
+                  style="bottom: -6px"></span>
+              </a>
+            </li>
+            <li>
+              <a href="./Doctors.html" data-nav="doctors"
+                class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition">Doctors
+                <span
+                  class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
+                  style="bottom: -6px"></span>
+              </a>
+            </li>
+            <li>
+              <a href="./CashlessMediclaim.html" data-nav="cashless"
+                class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition">Cashless&nbsp;Mediclaim
+                <span
+                  class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
+                  style="bottom: -6px"></span>
+              </a>
+            </li>
+            <li>
+              <a href="./OurServices.html" data-nav="cashless"
+                class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition">Our&nbsp;Services
+                <span
+                  class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
+                  style="bottom: -6px"></span>
+              </a>
+            </li>
+            <li>
+              <a href="./Appointment.html" data-nav="appointment"
+                class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition">Appointment
+                <span
+                  class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
+                  style="bottom: -6px"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Contact Us Button -->
+        <div>
+          <a href="../src/ContactUs.html">
+            <div
+              class="btn  bg-red-500 text-white px-7 py-3 rounded-full flex items-center justify-between  hover:bg-red-600 transition">
               <div class="content mr-2">
                 ContactUs
               </div>
               <div class="btn-img w-5 mb-1">
-                <img src="../images/next.png" 
-                alt="next"
-                class="inline-block w-[50px]">
+                <img src="../images/next.png" alt="next" class="inline-block w-[50px]">
               </div>
             </div>
 
             <a href="#" class="xl:hidden block">
-              <img
-                src="../images/Frame.jpg"
-                alt="next"
-                class="inline-block w-[18px]"
-              />
+              <img src="../images/Frame.jpg" alt="next" class="inline-block w-[18px]" />
             </a>
           </a>
-          </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- header section End -->
+  <!-- header section End -->
 
-    <main>
-      <!-- Banner section Start-->
+  <main>
+    <!-- Banner section Start-->
 
-      <div class="swiper-container   relative ">
-        <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide relative banner-img0">
-            <div class="absolute inset-0 bg-opacity-40">
-              <div class="container   bottom-10  mx-auto px-4 h-full flex items-center">
-                <div class="top-8   left-4 max-w-2xl">
-                  <div class="py-[%]">
-                  <h1
-                    class="text-4xl lg:text-6xl  font-bold mb-4 text-[#064681] "
-                  >   Your Partner in Health 
-                  <div class="py-[4%]">
-                  <span>And Wellness</span>
-                </div>
+    <div class="swiper-container   relative ">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide relative banner-img0">
+          <div class="absolute inset-0 bg-opacity-40">
+            <div class="container   bottom-10  mx-auto px-4 h-full flex items-center">
+              <div class="top-8   left-4 max-w-2xl">
+                <div class="py-[%]">
+                  <h1 class="text-4xl lg:text-6xl  font-bold mb-4 text-[#064681] "> Your Partner in Health
+                    <div class="py-[4%]">
+                      <span>And Wellness</span>
+                    </div>
                   </h1>
                 </div>
-                  <p class="text-lg   text-[#274760]">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                  <div class="flex flex-col py-[5%]  md:flex-row gap-4">
-                    <a href="../src/Appointment.html"
-                      class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full"
-                    >
-                      Book An Appointment
+                <p class="text-lg   text-[#274760]">
+                  It is a long established fact that a reader will be
+                  distracted by the readable content of a page when looking at
+                  its layout.
+                </p>
+                <div class="flex flex-col py-[5%]  md:flex-row gap-4">
+                  <a href="../src/Appointment.html"
+                    class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full">
+                    Book An Appointment
                   </a>
-                   <button class="flex items-center text-[#274760]">
-                      <span
-                        class="w-12 h-12 flex items-center justify-center border-2 border-dotted border-[#064681] rounded-full mr-4"
-                      >
-                        ▶
-                      </span>
-                      See How we work
-                    </button>     
-                  </div>
-                  <div
-                  class="absolute py-[-1%] ml-11 left-2/2 -translate-x-1/2 flex gap-2"
-                >
-                <div class="flex items-center justify-center  space-x-4 p-4 rounded-lg">
-                  <div class="w-4 h-4 rounded-full bg-blue-900 border-2  ring-1 ring-blue-900"></div>
-                  <div class="w-4 h-4 rounded-full bg-white"></div>
-                  <div class="w-4 h-4 rounded-full bg-white"></div>
+                  <button class="flex items-center text-[#274760]">
+                    <span
+                      class="w-12 h-12 flex items-center justify-center border-2 border-dotted border-[#064681] rounded-full mr-4">
+                      ▶
+                    </span>
+                    See How we work
+                  </button>
                 </div>
-                </div>
-                  <div
-                    class="absolute my-20
-                     right-40 top-1/2 transform -translate-y-1/2"
-                  >
-                    <img
-                      src="../images/banner_img.png"
-                      alt="Doctor"
-                      class="h-full w-auto rounded-lg" 
-                    />
+                <div class="absolute py-[-1%] ml-11 left-2/2 -translate-x-1/2 flex gap-2">
+                  <div class="flex items-center justify-center  space-x-4 p-4 rounded-lg">
+                    <div class="w-4 h-4 rounded-full bg-blue-900 border-2  ring-1 ring-blue-900"></div>
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
                   </div>
                 </div>
-              </div>
-              <div>
-                <div class="line-sec ">
-                  <div class="first-line absolute  left-[4.6%] top-[18%] z-20 ">
-                    <img src="../images/BannerLine1.png" alt="banner-line">
-                  </div>
-                  <div class="first-line absolute left-[4.6%] top-[56%]  w-ful">
-                    <img src="../images/BannerLine2.png" alt="bannerline">
-                  </div>
+                <div class="absolute my-20
+                     right-40 top-1/2 transform -translate-y-1/2">
+                  <img src="../images/banner_img.png" alt="Doctor" class="h-full w-auto rounded-lg" />
                 </div>
-                <img src="../images/facebook.svg" alt="" class="absolute top-72  left-10 z-20">
-                <img src="../images/Instagram.svg" alt="" class="absolute top-72 py-12 left-10 z-20">
-                <img src="../images/Twitter.svg" alt="" class="absolute top-72 py-24 left-10 z-20">
               </div>
             </div>
-          </div> 
-          <!-- Slide 2 -->
-          <div class="swiper-slide relative banner-img0">
-            <div class="absolute inset-0 bg-opacity-40">
-              <div class="container  bottom-10  mx-auto px-4 h-full flex items-center">
-                 <div class="top-8   left-4 max-w-2xl">
-                  <div class="py-[%]">
-                  <h1
-                    class="text-4xl lg:text-6xl  font-bold mb-4 text-[#064681] "
-                  >   Your Partner in Health 
-                  <div class="py-[4%]">
-                  <span>And Wellness</span>
+            <div>
+              <div class="line-sec ">
+                <div class="first-line absolute  left-[4.6%] top-[18%] z-20 ">
+                  <img src="../images/BannerLine1.png" alt="banner-line">
                 </div>
-                  </h1>
-                </div>
-                  <p class="text-lg   text-[#274760]">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                  <div class="flex flex-col py-[5%]  md:flex-row gap-4">
-                    <button
-                      class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full"
-                    >
-                      Book An Appointment
-                    </button>
-                   <button class="flex items-center text-[#274760]">
-                      <span
-                        class="w-12 h-12 flex items-center justify-center border-2 border-dotted border-[#064681] rounded-full mr-4"
-                      >
-                        ▶
-                      </span>
-                      See How we work
-                    </button>     
-                  </div>
-                  <div
-                  class="absolute py-[-1%] ml-11 left-2/2 -translate-x-1/2 flex gap-2"
-                >
-                <div class="flex items-center justify-center  space-x-4 p-4 rounded-lg">               
-                  <div class="w-4 h-4 rounded-full bg-white"></div>
-                  <div class="w-4 h-4 rounded-full bg-blue-900 border-2  ring-1 ring-blue-900"></div>
-                  <div class="w-4 h-4 rounded-full bg-white"></div>
-                </div>
-                </div>
-                  <div
-                    class="absolute my-20
-                     right-40 top-1/2 transform -translate-y-1/2"
-                  >
-                    <img
-                      src="../images/banner_img.png"
-                      alt="Doctor"
-                      class="h-full w-auto rounded-lg" 
-                    />
-                  </div>
+                <div class="first-line absolute left-[4.6%] top-[56%]  w-ful">
+                  <img src="../images/BannerLine2.png" alt="bannerline">
                 </div>
               </div>
-              <div>
-                <div class="line-sec ">
-                  <div class="first-line absolute  left-[4.6%] top-[18%] z-20 ">
-                    <img src="../images/BannerLine1.png" alt="banner-line">
-                  </div>
-                  <div class="first-line absolute left-[4.6%] top-[56%]  w-ful">
-                    <img src="../images/BannerLine2.png" alt="bannerline">
-                  </div>
-                </div>
-                <img src="../images/facebook.svg" alt="" class="absolute top-72  left-10 z-20">
-                <img src="../images/Instagram.svg" alt="" class="absolute top-72 py-12 left-10 z-20">
-                <img src="../images/Twitter.svg" alt="" class="absolute top-72 py-24 left-10 z-20">
-              </div>
-            </div>
-          </div>  
-
-
-          <!-- Slide 3 -->
-          <div class="swiper-slide relative banner-img0">
-            <div class="absolute inset-0 bg-opacity-40">
-              <div class="container  bottom-10  mx-auto px-4 h-full flex items-center">
-                <div class="top-8   left-4 max-w-2xl">
-                  <div class="py-[%]">
-                  <h1
-                    class="text-4xl lg:text-6xl  font-bold mb-4 text-[#064681] "
-                  >   Your Partner in Health 
-                  <div class="py-[4%]">
-                  <span>And Wellness</span>
-                </div>
-                  </h1>
-                </div>
-                  <p class="text-lg   text-[#274760]">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                  <div class="flex flex-col py-[5%]  md:flex-row gap-4">
-                    <button
-                      class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full"
-                    >
-                      Book An Appointment
-                    </button>
-                   <button class="flex items-center text-[#274760]">
-                      <span
-                        class="w-12 h-12 flex items-center justify-center border-2 border-dotted border-[#064681] rounded-full mr-4"
-                      >
-                        ▶
-                      </span>
-                      See How we work
-                    </button>     
-                  </div>
-                  <div
-                  class="absolute py-[-1%] ml-11 left-2/2 -translate-x-1/2 flex gap-2"
-                >
-                <div class="flex items-center justify-center  space-x-4 p-4 rounded-lg">
-                  <div class="w-4 h-4 rounded-full bg-white"></div>
-                  <div class="w-4 h-4 rounded-full bg-white"></div>
-                  <div class="w-4 h-4 rounded-full bg-blue-900 border-2  ring-1 ring-blue-900"></div>
-                </div>
-                </div>
-                  <div
-                    class="absolute my-20
-                     right-40 top-1/2 transform -translate-y-1/2"
-                  >
-                    <img
-                      src="../images/banner_img.png"
-                      alt="Doctor"
-                      class="h-full w-auto rounded-lg" 
-                    />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="line-sec ">
-                  <div class="first-line absolute  left-[4.6%] top-[18%] z-20 ">
-                    <img src="../images/BannerLine1.png" alt="banner-line">
-                  </div>
-                  <div class="first-line absolute left-[4.6%] top-[56%]  w-ful">
-                    <img src="../images/BannerLine2.png" alt="bannerline">
-                  </div>
-                </div>
-                <img src="../images/facebook.svg" alt="" class="absolute top-72  left-10 z-20">
-                <img src="../images/Instagram.svg" alt="" class="absolute top-72 py-12 left-10 z-20">
-                <img src="../images/Twitter.svg" alt="" class="absolute top-72 py-24 left-10 z-20">
-              </div>
+              <img src="../images/facebook.svg" alt="" class="absolute top-72  left-10 z-20">
+              <img src="../images/Instagram.svg" alt="" class="absolute top-72 py-12 left-10 z-20">
+              <img src="../images/Twitter.svg" alt="" class="absolute top-72 py-24 left-10 z-20">
             </div>
           </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide relative banner-img0">
+          <div class="absolute inset-0 bg-opacity-40">
+            <div class="container  bottom-10  mx-auto px-4 h-full flex items-center">
+              <div class="top-8   left-4 max-w-2xl">
+                <div class="py-[%]">
+                  <h1 class="text-4xl lg:text-6xl  font-bold mb-4 text-[#064681] "> Your Partner in Health
+                    <div class="py-[4%]">
+                      <span>And Wellness</span>
+                    </div>
+                  </h1>
+                </div>
+                <p class="text-lg   text-[#274760]">
+                  It is a long established fact that a reader will be
+                  distracted by the readable content of a page when looking at
+                  its layout.
+                </p>
+                <div class="flex flex-col py-[5%]  md:flex-row gap-4">
+                  <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full">
+                    Book An Appointment
+                  </button>
+                  <button class="flex items-center text-[#274760]">
+                    <span
+                      class="w-12 h-12 flex items-center justify-center border-2 border-dotted border-[#064681] rounded-full mr-4">
+                      ▶
+                    </span>
+                    See How we work
+                  </button>
+                </div>
+                <div class="absolute py-[-1%] ml-11 left-2/2 -translate-x-1/2 flex gap-2">
+                  <div class="flex items-center justify-center  space-x-4 p-4 rounded-lg">
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
+                    <div class="w-4 h-4 rounded-full bg-blue-900 border-2  ring-1 ring-blue-900"></div>
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
+                  </div>
+                </div>
+                <div class="absolute my-20
+                     right-40 top-1/2 transform -translate-y-1/2">
+                  <img src="../images/banner_img.png" alt="Doctor" class="h-full w-auto rounded-lg" />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="line-sec ">
+                <div class="first-line absolute  left-[4.6%] top-[18%] z-20 ">
+                  <img src="../images/BannerLine1.png" alt="banner-line">
+                </div>
+                <div class="first-line absolute left-[4.6%] top-[56%]  w-ful">
+                  <img src="../images/BannerLine2.png" alt="bannerline">
+                </div>
+              </div>
+              <img src="../images/facebook.svg" alt="" class="absolute top-72  left-10 z-20">
+              <img src="../images/Instagram.svg" alt="" class="absolute top-72 py-12 left-10 z-20">
+              <img src="../images/Twitter.svg" alt="" class="absolute top-72 py-24 left-10 z-20">
+            </div>
+          </div>
+        </div>
 
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide relative banner-img0">
+          <div class="absolute inset-0 bg-opacity-40">
+            <div class="container  bottom-10  mx-auto px-4 h-full flex items-center">
+              <div class="top-8   left-4 max-w-2xl">
+                <div class="py-[%]">
+                  <h1 class="text-4xl lg:text-6xl  font-bold mb-4 text-[#064681] "> Your Partner in Health
+                    <div class="py-[4%]">
+                      <span>And Wellness</span>
+                    </div>
+                  </h1>
+                </div>
+                <p class="text-lg   text-[#274760]">
+                  It is a long established fact that a reader will be
+                  distracted by the readable content of a page when looking at
+                  its layout.
+                </p>
+                <div class="flex flex-col py-[5%]  md:flex-row gap-4">
+                  <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full">
+                    Book An Appointment
+                  </button>
+                  <button class="flex items-center text-[#274760]">
+                    <span
+                      class="w-12 h-12 flex items-center justify-center border-2 border-dotted border-[#064681] rounded-full mr-4">
+                      ▶
+                    </span>
+                    See How we work
+                  </button>
+                </div>
+                <div class="absolute py-[-1%] ml-11 left-2/2 -translate-x-1/2 flex gap-2">
+                  <div class="flex items-center justify-center  space-x-4 p-4 rounded-lg">
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
+                    <div class="w-4 h-4 rounded-full bg-white"></div>
+                    <div class="w-4 h-4 rounded-full bg-blue-900 border-2  ring-1 ring-blue-900"></div>
+                  </div>
+                </div>
+                <div class="absolute my-20
+                     right-40 top-1/2 transform -translate-y-1/2">
+                  <img src="../images/banner_img.png" alt="Doctor" class="h-full w-auto rounded-lg" />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="line-sec ">
+                <div class="first-line absolute  left-[4.6%] top-[18%] z-20 ">
+                  <img src="../images/BannerLine1.png" alt="banner-line">
+                </div>
+                <div class="first-line absolute left-[4.6%] top-[56%]  w-ful">
+                  <img src="../images/BannerLine2.png" alt="bannerline">
+                </div>
+              </div>
+              <img src="../images/facebook.svg" alt="" class="absolute top-72  left-10 z-20">
+              <img src="../images/Instagram.svg" alt="" class="absolute top-72 py-12 left-10 z-20">
+              <img src="../images/Twitter.svg" alt="" class="absolute top-72 py-24 left-10 z-20">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Banner section End-->
+
+    <!-- About section start -->
+
+    <div class="w-full flex flex-col py-[80px] justify-center items-center">
+      <div class="relative 2xl:w-[1320px]  xl:w-[1200px] flex justify-between gap-[50px] items-center">
+        <div class="h-full relative flex justify-start items-center">
+          <div
+            class="w-[581px]  h-[590px] bg-[white] relative z-10 shrink-0 p-4 flex justify-center items-center rounded-[70px] shadow-[0_0_40px_0_#0000001a]">
+            <img src="../images/about-1.png" alt="next" class="w-full h-full object-cover rounded-[70px]" />
+          </div>
+          <div class="absolute -bottom-[25%] right-[-25%] my-[6%] w-[256px] h-[256px] z-0">
+            <img src="../images/pngwing 1.png" alt="next" class="w-full h-full object-cover" />
+          </div>
+        </div>
+        <div class="absolute top-[-5%] right-[-20%]">
+          <img src="../images/PluseObject.png" alt="object" class="w-ful h-full">
+        </div>
+        <div class="flex mt-[-10%] flex-col w-full gap-10">
+          <div class="flex top-0 flex-col gap-2">
+            <h1 class="font-bold lato text-[40px] leading-[48px] text-[#064681]">
+              About Us
+            </h1>
+            <div class="flex gap-3">
+              <div class="w-[87px] h-[6px] bg-[#064681] rounded-full"></div>
+              <div class="w-[20px] h-[6px] bg-[#064681] rounded-full"></div>
+            </div>
+          </div>
+          <div class="w-full gap-4 flex flex-col">
+            <h1 class="text-[40px] leading-[48px] font-bold text-[#333333]">
+              Welcome to Jeevan Jyot Hospital
+            </h1>
+            <p class="text-[20px] leading-[30px] font-[400] text-[#7F7F7F]">
+              Jeevan Jyot Hospital is situated at Navi Mumbai with a 10 bedded
+              ICU.This Maternity and Multispeciality hospital is a well known
+              centre for complete medical care.
+            </p>
+            <p class="text-[20px] lato  leading-[30px] font-[400] text-[#7F7F7F]">
+              The services provided are Laparoscopic & General surgery
+              including all superspeciality branches and other specialities
+              like Opthalmology,otorhinolarynogology,dermatology,
+              pediatric,psychiatry,Haemotology,Oncology, Urology, Orthopaedic
+              & Plastic Surgery.
+            </p>
+          </div>
         </div>
       </div>
-
-      <!-- Banner section End-->
-
-      <!-- About section start -->
-
-      <div class="w-full flex flex-col py-[80px] justify-center items-center">
-        <div
-          class="2xl:w-[1320px]  xl:w-[1200px] flex justify-between gap-[50px] items-center"
-        >
-          <div class="h-full relative flex justify-start items-center">
+      <a href="../src/About.html"
+        class="flex items-center absolute mt-[-10%] ml-[3%] leading-3-[21.6px]  font-lato bg-red-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-red-600 transition">View
+        All
+        <img src="../images/next.png" alt="next" class="inline-block w-[18px]" />
+      </a>
+      <div class="2xl:w-[1320px] xl:w-[1200px] w-full flex justify-between gap-[50px] items-center">
+        <!-- target -->
+        <div class="w-full">
+          <div class="flex flex-col w-full gap-10 relative">
             <div
-              class="w-[581px]  h-[590px] bg-[white] relative z-10 shrink-0 p-4 flex justify-center items-center rounded-[70px] shadow-[0_0_40px_0_#0000001a]"
-            >
-              <img
-                src="../images/about-1.png"
-                alt="next"
-                class="w-full h-full object-cover rounded-[70px]"
-              />
-            </div>
-            <div
-              class="absolute -bottom-[25%] right-[-25%] my-[6%] w-[256px] h-[256px] z-0"
-            >
-              <img
-                src="../images/pngwing 1.png"
-                alt="next"
-                class="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-
-          <div class="flex mt-[-10%] flex-col w-full gap-10">
-            <div class="flex top-0 flex-col gap-2">
-              <h1 class="font-bold text-[40px] leading-[48px] text-[#064681]">
-                About Us
-              </h1>
-              <div class="flex gap-3">
-                <div class="w-[87px] h-[6px] bg-[#064681] rounded-full"></div>
-                <div class="w-[20px] h-[6px] bg-[#064681] rounded-full"></div>
+              class="w-[720px] min-h-[186px] relative z-50 bg-[white] text-[white] shadow-[0_0_35px_0_#0000000d] rounded-[20px] overflow-hidden flex gap-5 justify-center items-center">
+              <div
+                class="w-[170px] h-[170px] shrink-0 rounded-[0_0_60%_0] bg-[#0646811a] relative flex justify-center items-center self-start">
+                <img src="../images/eye.png" alt="next"
+                  class="w-[70px] h-[70px] object-cover rounded-[70px] absolute top-[50%] left-[50%] translate-x-[-60%] translate-y-[-60%]" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <h1 class="font-semibold text-[30px] leading-[36px] text-[#333333]">
+                  Our vision
+                </h1>
+                <p class="text-[20px] leading-[30px] font-[400] text-[#7F7F7F]">
+                  To ensure accessible and affordable quality healthcare by
+                  compassionate medical professionals for all medical
+                  specialities.
+                </p>
               </div>
             </div>
-            <div class="w-full gap-4 flex flex-col">
-              <h1 class="text-[40px] leading-[48px] font-bold text-[#333333]">
-                Welcome to Jeevan Jyot Hospital
-              </h1>
-              <p class="text-[20px] leading-[30px] font-[400] text-[#7F7F7F]">
-                Jeevan Jyot Hospital is situated at Navi Mumbai with a 10 bedded
-                ICU.This Maternity and Multispeciality hospital is a well known
-                centre for complete medical care.
-              </p>
-              <p class="text-[20px] lato  leading-[30px] font-[400] text-[#7F7F7F]">
-                The services provided are Laparoscopic & General surgery
-                including all superspeciality branches and other specialities
-                like Opthalmology,otorhinolarynogology,dermatology,
-                pediatric,psychiatry,Haemotology,Oncology, Urology, Orthopaedic
-                & Plastic Surgery.
-              </p>
-            </div>
-          </div>
-        </div>
-        <a
-            href="../src/About.html"
-            class="flex items-center absolute mt-[-10%] ml-[3%] leading-3-[21.6px]  font-lato bg-red-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-red-600 transition"
-            >View All
-            <img
-              src="../images/next.png"
-              alt="next"
-              class="inline-block w-[18px]"
-            />
-          </a>
-        <div
-          class="2xl:w-[1320px] xl:w-[1200px] w-full flex justify-between gap-[50px] items-center"
-        >
-          <!-- target -->
-          <div class="w-full">
-            <div class="flex flex-col w-full gap-10 relative">
+            <div class="relative z-20 w-full min-h-[186px]">
+              <div class="absolute left-[15px] top-[-100px]  rotate-[10deg] w-[334px]">
+                <img src="../images/Vector.jpg" alt="next" class="w-full h-full object-fill" />
+              </div>
               <div
-                class="w-[720px] min-h-[186px] relative z-50 bg-[white] text-[white] shadow-[0_0_35px_0_#0000000d] rounded-[20px] overflow-hidden flex gap-5 justify-center items-center"
-              >
+                class="w-[720px] bg-[white] absolute h-full left-[220px] text-[white] shadow-[0_0_35px_0_#0000000d] rounded-[20px] overflow-hidden flex gap-5 justify-center items-center">
                 <div
-                  class="w-[170px] h-[170px] shrink-0 rounded-[0_0_60%_0] bg-[#0646811a] relative flex justify-center items-center self-start"
-                >
-                  <img
-                    src="../images/eye.png"
-                    alt="next"
-                    class="w-[70px] h-[70px] object-cover rounded-[70px] absolute top-[50%] left-[50%] translate-x-[-60%] translate-y-[-60%]"
-                  />
+                  class="w-[170px] h-[170px] shrink-0 rounded-[0_0_60%_0] bg-[#0646811a] relative flex justify-center items-center self-start">
+                  <img src="../images/training.png" alt="next"
+                    class="w-[70px] h-[70px] object-cover rounded-[70px] absolute top-[50%] left-[50%] translate-x-[-60%] translate-y-[-60%]" />
                 </div>
                 <div class="flex flex-col gap-2">
-                  <h1
-                    class="font-semibold text-[30px] leading-[36px] text-[#333333]"
-                  >
-                    Our vision
+                  <h1 class="font-semibold text-[30px] leading-[36px] text-[#333333]">
+                    Our Mission
                   </h1>
-                  <p
-                    class="text-[20px] leading-[30px] font-[400] text-[#7F7F7F]"
-                  >
-                    To ensure accessible and affordable quality healthcare by
-                    compassionate medical professionals for all medical
-                    specialities.
+                  <p class="text-[20px] leading-[30px] font-[400] text-[#7F7F7F]">
+                    To provide our patients and their families a safe,clean
+                    and perfect environment where they would receive ethical
+                    health care, at a reasonable cost at...
                   </p>
                 </div>
               </div>
-              <div class="relative z-20 w-full min-h-[186px]">
-                <div
-                  class="absolute left-[15px] top-[-100px]  rotate-[10deg] w-[334px]"
-                >
-                  <img
-                    src="../images/Vector.jpg"
-                    alt="next"
-                    class="w-full h-full object-fill"
-                  />
-                </div>
-                <div
-                  class="w-[720px] bg-[white] absolute h-full left-[220px] text-[white] shadow-[0_0_35px_0_#0000000d] rounded-[20px] overflow-hidden flex gap-5 justify-center items-center"
-                >
-                  <div
-                    class="w-[170px] h-[170px] shrink-0 rounded-[0_0_60%_0] bg-[#0646811a] relative flex justify-center items-center self-start"
-                  >
-                    <img
-                      src="../images/training.png"
-                      alt="next"
-                      class="w-[70px] h-[70px] object-cover rounded-[70px] absolute top-[50%] left-[50%] translate-x-[-60%] translate-y-[-60%]"
-                    />
-                  </div>
-                  <div class="flex flex-col gap-2">
-                    <h1
-                      class="font-semibold text-[30px] leading-[36px] text-[#333333]"
-                    >
-                      Our Mission
-                    </h1>
-                    <p
-                      class="text-[20px] leading-[30px] font-[400] text-[#7F7F7F]"
-                    >
-                      To provide our patients and their families a safe,clean
-                      and perfect environment where they would receive ethical
-                      health care, at a reasonable cost at...
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full h-full relative flex justify-end items-end">
-            <div
-              class="w-[581px] h-[590px] bg-[white] relative z-10 shrink-0 p-4 flex justify-center items-center rounded-[70px] shadow-[0_0_40px_0_#0000001a]"
-            >
-              <img
-                src="../images/about-2.png"
-                alt="next"
-                class="w-full h-full object-cover rounded-[70px]"
-              />
             </div>
           </div>
         </div>
+        <div class="w-full h-full relative flex justify-end items-end">
+          <div
+            class="w-[581px] h-[590px] bg-[white] relative z-10 shrink-0 p-4 flex justify-center items-center rounded-[70px] shadow-[0_0_40px_0_#0000001a]">
+            <img src="../images/about-2.png" alt="next" class="w-full h-full object-cover rounded-[70px]" />
+          </div>
+        </div>
       </div>
+    </div>
 
-      <!-- About section start -->
+    <!-- About section start -->
 
-      <!-- The Best For Your Health section Start-->
+    <!-- The Best For Your Health section Start-->
 
-      <section
-        class="relative bg-[#8bbef1] w-full h-[763px] justify-center items-center py-[80px]"
-      >
+    <section class="relative w-full h-[763px] justify-center items-center py-[80px]">
+      <div class="absolute w-[77.51px] h-[66.99px] top-[9%] left-[12%] z-20">
+        <img src="../images/Hicon-1.png" alt="icon">
+      </div>
+      <div class="absolute w-[82.59px] h-[67.75px] bottom-[11%] right-[11.5%] z-20">
+        <img src="../images/Hicon-2.png" alt="icon">
+      </div>
       <div class="absolute bottom-0 left-0 w-full h-full z-0">
         <img src="../images/Vector2.png" alt="Blue Background" class="w-full h-full object-cover" />
-      </div>    
-        <div class="relative py-[2%] 2xl:w-[1320px] xl:w-[1260px] w-full mx-auto">
-          <h4 class="text-[20px] text-[#ffff]">
-            Why Choose Jeevan Jyoti Hospital
-          </h4>
-          <div class="flex justify-between">
-            <h1 class="font-bold text-[40px] leading-[48px] text-[#064681]">
-              The Best For Your Health
-            </h1>
-            <a
-              href="../src/Appointment.html"
-              class="flex items-center bg-red-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-red-600 transition"
-              >Book An Appointment
-              <img
-                src="../images/next.png"
-                alt="next"
-                class="inline-block w-[18px]"
-              />
-            </a>
-          </div>
-          <div class="flex gap-3 py-[1%]">
-            <div class="w-[87px] h-[6px] bg-[#064681] rounded-full"></div>
-            <div class="w-[20px] h-[6px] bg-[#064681] rounded-full"></div>
-          </div>
-          <div class="flex flex-wrap mt-[50px]">
-            <!-- col-1 -->
-
-            <div class="w-1/3 h-[190px]">
-              <div class="bg-slate-100 rounded-2xl p-[25px] mr-[10px]">
-                <div class="flex">
-                  <div
-                    class="bg-[#ffff] border-2 border-sky-400 rounded-2xl shadow w-[65px] h-[65px] flex justify-center items-center"
-                  >
-                    <img
-                      src="../images/task-square.png"
-                      alt="task-square"
-                      class="w-[39px] h-[39px]"
-                    />
-                  </div>
-                  <h3
-                    class="text-[25px] font-medium leading-8 flex justify-center items-center ms-5"
-                  >
-                    Medical Counseling
-                  </h3>
-                </div>
-                <p
-                  class="text-[20px] text-[#7F7F7F] leading-8 font-normal mt-3"
-                >
-                  Jeevanjyot Hospital has provides best medical counseling.
-                </p>
-              </div>
-            </div>
-
-            <!-- col-2 -->
-
-            <div class="w-1/3 h-[190px]">
-              <div class="bg-slate-100  rounded-2xl p-[25px] mr-[10px]">
-                <div class="flex">
-                  <div
-                    class="bg-[#ffff] border-2 border-sky-400 rounded-2xl shadow w-[65px] h-[65px] flex justify-center items-center"
-                  >
-                    <img
-                      src="../images/Frame9.png"
-                      alt="task-square"
-                      class="w-[39px] h-[39px]"
-                    />
-                  </div>
-                  <h3
-                    class="text-[25px] font-medium leading-8 flex justify-center items-center ms-5"
-                  >
-                    Top Level Doctors
-                  </h3>
-                </div>
-                <p
-                  class="text-[20px] text-[#7F7F7F] leading-8 font-normal mt-3"
-                >
-                  We have a team of experienced and Highly qualified doctors
-                </p>
-              </div>
-            </div>
-
-            <!-- col-3 -->
-
-            <div class="w-1/3 h-[190px]">
-              <div class="bg-slate-100  rounded-2xl p-[25px] w-full h-full">
-                <div class="flex">
-                  <div
-                    class="bg-[#ffff] border-2 border-sky-400 rounded-2xl shadow w-[65px] h-[65px] flex justify-center items-center"
-                  >
-                    <img
-                      src="../images/Microscope.png"
-                      alt="task-square"
-                      class="w-[39px] h-[39px]"
-                    />
-                  </div>
-                  <h3
-                    class="text-[25px] font-medium leading-8 flex justify-center items-center ms-5"
-                  >
-                    Medical Facilities
-                  </h3>
-                </div>
-                <p
-                  class="text-[20px] text-[#7F7F7F] leading-8 font-normal mt-3"
-                >
-                  Jeevan Jyot Hospital Has Medical Facilites.
-                </p>
-              </div>
-            </div>
-
-            <!-- col-4 -->
-
-            <div class="w-1/3 h-[190px]">
-              <div class="bg-slate-100   rounded-2xl p-[25px] mt-[10px] mr-[10px]">
-                <div class="flex">
-                  <div
-                    class="bg-[#ffff] border-2 border-sky-400 rounded-2xl shadow w-[65px] h-[65px] flex justify-center items-center"
-                  >
-                    <img
-                      src="../images/Frame10.png"
-                      alt="task-square"
-                      class="w-[39px] h-[39px]"
-                    />
-                  </div>
-                  <h3
-                    class="text-[25px] font-medium leading-8 flex justify-center items-center ms-5"
-                  >
-                    24 Hours Services
-                  </h3>
-                </div>
-                <p
-                  class="text-[20px]  text-[#7F7F7F] leading-8 font-normal mt-3"
-                >
-                  Jeevan jyot Hospital Has 24/7 Hours Services.
-                </p>
-              </div>
-            </div>
-
-            <!-- col-5 -->
-
-            <div class="w-1/3 h-[190px]">
-              <div
-                class="bg-slate-100   rounded-2xl p-[25px] mt-[10px] h-full mr-[10px]"
-              >
-                <div class="flex">
-                  <div
-                    class="bg-[#ffff] border-2 border-sky-400 rounded-2xl shadow w-[65px] h-[65px] flex justify-center items-center"
-                  >
-                    <img
-                      src="../images/Frame2.png"
-                      alt="task-square"
-                      class="w-[39px] h-[39px]"
-                    />
-                  </div>
-                  <h3
-                    class="text-[25px] font-medium leading-8 flex justify-center items-center ms-5"
-                  >
-                    Personal Services
-                  </h3>
-                </div>
-                <p
-                  class="text-[20px] text-[#7F7F7F] leading-8 font-normal mt-3"
-                >
-                  Jeevan jyot Hospital  Has Personal Services.
-                </p>
-              </div>
-            </div>
-
-            <!-- col-6 -->
-
-            <div class="w-1/3 h-[190px]">
-              <div class="bg-slate-100  rounded-2xl p-[25px] mt-[10px]">
-                <div class="flex">
-                  <div
-                    class="bg-[#ffff] border-2 border-sky-400 rounded-2xl shadow w-[65px] h-[65px] flex justify-center items-center"
-                  >
-                    <img
-                      src="../images/Group.png"
-                      alt="task-square"
-                      class="w-[39px] h-[39px]"
-                    />
-                  </div>
-                  <h3
-                    class="text-[25px] font-medium leading-8 flex justify-center items-center ms-5"
-                  >
-                    Dedicated Patient Care
-                  </h3>
-                </div>
-                <p
-                  class="text-[20px] text-[#7F7F7F] leading-8 font-normal mt-3"
-                >
-                  Jeevanjyot Hospital  Have (Nurses) for Patient Care.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="backgrounds ">
-          <div class="first absolute top-[-0%] left-[0%] w-full  z-20" >
-            <img src="../images/form-background-1.png" alt="form">
-          </div>
-          <div class="first absolute bottom-[-2.9%] left-0 w-full">
-            <img src="../images/background-2.png" alt="background">
-          </div>
-        </div>
-      </section>
-
-      <!-- The Best For Your Health section End -->
-
-     <!--Our Services Section Start  -->
-     
-     <main class="py-[40px]">
-      <div class="py-[3%]  relative pl-[15%] flex justify-between">
-      <h1 class="font-medium text-[40px] leading-[48px] text-[#064681]">
-        Our Services
-      </h1>
-    </h1>
-    <div class="flex absolute  gap-3 py-[3%]">
-      <div class="w-[87px] h-[6px] bg-[#064681] rounded-full"></div>
-      <div class="w-[20px] h-[6px] bg-[#064681] rounded-full"></div>
-    </div>
-     <a
-      href="../src/OurServices.html"
-      class="flex items-center leading-3-[21.6px] mr-[18%] font-lato bg-red-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-red-600 transition"
-      >View All
-      <img
-      src="../images/next.png"
-      alt="next"
-      class="inline-block "
-      />
-      </a>
-    </div>
-      <div
-        class="container mx-auto 2xl:w-[1320px] xl:w-[1260px] w-full grid grid-cols-2 relative gap-[70px]"
-      >
-      <div class="absolute w-[50%] right-[-4%] top-[80px]  h-[75%]">
-        <img
-                src="../images/Vector 3.png"
-                alt="next"
-                class="w-full h-full object-fill"
-              />
       </div>
+      <div class="relative py-[2%] 2xl:w-[1320px] xl:w-[1260px] w-full mx-auto">
+        <h4 class="text-[20px] lato text-[#ffff]">
+          Why Choose Jeevan Jyoti Hospital
+        </h4>
+        <div class="flex justify-between">
+          <h1 class="font-bold text-[40px] lato leading-[48px] text-[#064681]">
+            The Best For Your Health
+          </h1>
+          <a href="../src/Appointment.html"
+            class="flex items-center bg-red-500 lato text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-red-600 transition">Book
+            An Appointment
+            <img src="../images/next.png" alt="next" class="inline-block w-[18px]" />
+          </a>
+        </div>
+        <div class="flex gap-3 py-[1%]">
+          <div class="w-[87px] h-[6px] bg-[#064681] rounded-full"></div>
+          <div class="w-[20px] h-[6px] bg-[#064681] rounded-full"></div>
+        </div>
+        <div class="flex flex-wrap mt-[50px]">
+          <!-- col-1 -->
+
+          <div class="w-1/3 h-[190px]">
+            <div class="bg-slate-100 rounded-2xl p-[25px] mr-[10px]">
+              <div class="flex">
+                <div
+                  class="bg-[#ffff] border-2 border-sky-400 rounded-2xl shadow w-[65px] h-[65px] flex justify-center items-center">
+                  <img src="../images/task-square.png" alt="task-square" class="w-[39px] h-[39px]" />
+                </div>
+                <h3 class="text-[25px] font-medium lato leading-8 flex justify-center items-center ms-5">
+                  Medical Counseling
+                </h3>
+              </div>
+              <p class="text-[20px] text-[#7F7F7F] lato leading-8 font-normal mt-3">
+                Jeevanjyot Hospital has provides best medical counseling.
+              </p>
+            </div>
+          </div>
+
+          <!-- col-2 -->
+
+          <div class="w-1/3 h-[190px]">
+            <div class="bg-slate-100  rounded-2xl p-[25px] mr-[10px]">
+              <div class="flex">
+                <div
+                  class="bg-[#ffff] border-2 border-sky-400 rounded-2xl shadow w-[65px] h-[65px] flex justify-center items-center">
+                  <img src="../images/Frame9.png" alt="task-square" class="w-[39px] h-[39px]" />
+                </div>
+                <h3 class="text-[25px] font-medium leading-8 flex justify-center items-center ms-5">
+                  Top Level Doctors
+                </h3>
+              </div>
+              <p class="text-[20px] text-[#7F7F7F] leading-8 font-normal mt-3">
+                We have a team of experienced and Highly qualified doctors
+              </p>
+            </div>
+          </div>
+
+          <!-- col-3 -->
+
+          <div class="w-1/3 h-[190px]">
+            <div class="bg-slate-100  rounded-2xl p-[25px] w-full h-full">
+              <div class="flex">
+                <div
+                  class="bg-[#ffff] border-2 border-sky-400 rounded-2xl shadow w-[65px] h-[65px] flex justify-center items-center">
+                  <img src="../images/Microscope.png" alt="task-square" class="w-[39px] h-[39px]" />
+                </div>
+                <h3 class="text-[25px] font-medium lato leading-8 flex justify-center items-center ms-5">
+                  Medical Facilities
+                </h3>
+              </div>
+              <p class="text-[20px] text-[#7F7F7F] lato leading-8 font-normal mt-3">
+                Jeevan Jyot Hospital Has Medical Facilites.
+              </p>
+            </div>
+          </div>
+
+          <!-- col-4 -->
+
+          <div class="w-1/3 h-[190px]">
+            <div class="bg-slate-100   rounded-2xl p-[25px] mt-[10px] mr-[10px]">
+              <div class="flex">
+                <div
+                  class="bg-[#ffff] border-2 border-sky-400 rounded-2xl shadow w-[65px] h-[65px] flex justify-center items-center">
+                  <img src="../images/Frame10.png" alt="task-square" class="w-[39px] h-[39px]" />
+                </div>
+                <h3 class="text-[25px] lato font-medium leading-8 flex justify-center items-center ms-5">
+                  24 Hours Services
+                </h3>
+              </div>
+              <p class="text-[20px] lato text-[#7F7F7F] leading-8 font-normal mt-3">
+                Jeevan jyot Hospital Has 24/7 Hours Services.
+              </p>
+            </div>
+          </div>
+
+          <!-- col-5 -->
+
+          <div class="w-1/3 h-[190px]">
+            <div class="bg-slate-100   rounded-2xl p-[25px] mt-[10px] h-full mr-[10px]">
+              <div class="flex">
+                <div
+                  class="bg-[#ffff] border-2 border-sky-400 rounded-2xl shadow w-[65px] h-[65px] flex justify-center items-center">
+                  <img src="../images/Frame2.png" alt="task-square" class="w-[39px] h-[39px]" />
+                </div>
+                <h3 class="text-[25px] lato font-medium leading-8 flex justify-center items-center ms-5">
+                  Personal Services
+                </h3>
+              </div>
+              <p class="text-[20px] lato text-[#7F7F7F] leading-8 font-normal mt-3">
+                Jeevan jyot Hospital  Has Personal Services.
+              </p>
+            </div>
+          </div>
+
+          <!-- col-6 -->
+
+          <div class="w-1/3 h-[190px]">
+            <div class="bg-slate-100  rounded-2xl p-[25px] mt-[10px]">
+              <div class="flex">
+                <div
+                  class="bg-[#ffff] border-2 border-sky-400 rounded-2xl shadow w-[65px] h-[65px] flex justify-center items-center">
+                  <img src="../images/Group.png" alt="task-square" class="w-[39px] h-[39px]" />
+                </div>
+                <h3 class="text-[25px]  lato font-medium leading-8 flex justify-center items-center ms-5">
+                  Dedicated Patient Care
+                </h3>
+              </div>
+              <p class="text-[20px] lato text-[#7F7F7F] leading-8 font-normal mt-3">
+                Jeevanjyot Hospital  Have (Nurses) for Patient Care.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="backgrounds ">
+        <div class="first absolute top-[-0%] left-[0%] w-full  z-20">
+          <img src="../images/form-background-1.png" alt="form">
+        </div>
+        <div class="first absolute bottom-[-2.9%] left-0 w-full">
+          <img src="../images/background-2.png" alt="background">
+        </div>
+      </div>
+    </section>
+
+    <!-- The Best For Your Health section End -->
+
+    <!--Our Services Section Start  -->
+
+    <main class="py-[40px]">
+      <div class="py-[3%]  relative pl-[15%] flex justify-between">
+        <h1 class="font-medium  lato text-[40px] leading-[48px] text-[#064681]">
+          Our Services
+        </h1>
+        </h1>
+        <div class="flex absolute  gap-3 py-[3%]">
+          <div class="w-[87px] h-[6px] bg-[#064681] rounded-full"></div>
+          <div class="w-[20px] h-[6px] bg-[#064681] rounded-full"></div>
+        </div>
+        <a href="../src/OurServices.html"
+          class="flex items-center leading-3-[21.6px] lato mr-[18%] font-lato bg-red-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-red-600 transition">View
+          All
+          <img src="../images/next.png" alt="next" class="inline-block " />
+        </a>
+      </div>
+      <div class="container mx-auto 2xl:w-[1320px] xl:w-[1260px] w-full grid grid-cols-2 relative gap-[70px]">
+        <div class="absolute w-[50%] right-[-4%] top-[80px]  h-[75%]">
+          <img src="../images/Vector 3.png" alt="next" class="w-full h-full object-fill" />
+        </div>
         <!-- one -->
         <div class="relative w-full h-[465px]">
-          <div
-            class="w-[260px] h-[328px] relative z-10 flex justify-center items-center"
-          >
+          <div class="w-[260px] h-[328px] relative z-10 flex justify-center items-center">
             <div class="absolute w-full h-full">
-              <img
-                src="../images/Rectangle1.png"
-                alt="next"
-                class="w-full h-full object-fill"
-              />
+              <img src="../images/Rectangle1.png" alt="next" class="w-full h-full object-fill" />
             </div>
             <div class="absolute left-[245px] top-[100px] w-full h-full">
-              <img
-                src="../images/Rectangle2.png"
-                alt="next"
-                class="w-full h-full object-fill"
-              />
+              <img src="../images/Rectangle2.png" alt="next" class="w-full h-full object-fill" />
             </div>
           </div>
           <div
-            class="absolute w-[300px] h-[300px] bg-[rgba(6,70,129,50%)] blur-[150px] rounded-full top-[50%] left-[18%] translate-y-[-50%]"
-          ></div>
+            class="absolute w-[300px] h-[300px] bg-[rgba(6,70,129,50%)] blur-[150px] rounded-full top-[50%] left-[18%] translate-y-[-50%]">
+          </div>
         </div>
-        <div
-          class="w-full h-full flex flex-col justify-center items-start gap-[10px]"
-        >
+        <div class="w-full h-full flex flex-col justify-center items-start gap-[10px]">
           <h1
-            class="font-bold text-[100px] leading-[120px] bg-clip-text text-transparent bg-[linear-gradient(#064681,#FFFFFF)] opacity-20"
-          >
+            class="font-bold text-[100px] lato leading-[120px] bg-clip-text text-transparent bg-[linear-gradient(#064681,#FFFFFF)] opacity-20">
             01
           </h1>
-          <h2 class="font-bold text-[40px] leading-[48px] text-black">
+          <h2 class="font-semibold lato text-[40px] leading-[48px] text-black">
             Obstetrician
           </h2>
-          <p class="text-[20px] leading-[30px] font-[400] text-[#7F7F7F]">
+          <p class="text-[20px] lato leading-[30px] font-normal text-[#7F7F7F]">
             The services provided are Laparoscopic & General surgery including
             all superspeciality branches and other specialities like
             Opthalmology,otorhinolarynogology,dermatology,
@@ -968,18 +719,15 @@
         </div>
 
         <!-- two -->
-        <div
-          class="w-full h-full flex flex-col justify-center items-start gap-[10px]"
-        >
+        <div class="w-full h-full flex flex-col justify-center items-start gap-[10px]">
           <h1
-            class="font-bold text-[100px] leading-[120px] bg-clip-text text-transparent bg-[linear-gradient(#064681,#FFFFFF)] opacity-20"
-          >
+            class="font-bold text-[100px] leading-[120px] bg-clip-text text-transparent bg-[linear-gradient(#064681,#FFFFFF)] opacity-20">
             02
           </h1>
-          <h2 class="font-bold text-[40px] leading-[48px] text-black">
+          <h2 class="font-semibold lato text-[40px] leading-[48px] text-black">
             Gynecologist
           </h2>
-          <p class="text-[20px] leading-[30px] font-[400] text-[#7F7F7F]">
+          <p class="text-[20px] lato leading-[30px] font-normal text-[#7F7F7F]">
             A Gynecologist Is A Doctor Who Specializes In Female Reproductive
             Helth, They Diagnose And Treat Issues Related To The Female
             Reproductive Tract, This Includes The Uterus, Fallopian Tubes, And
@@ -988,66 +736,43 @@
         </div>
 
         <div class="relative w-full h-[465px] flex justify-center items-center">
-          <div
-            class="w-[260px] h-[328px] relative z-10 flex justify-center items-center"
-          >
+          <div class="w-[260px] h-[328px] relative z-10 flex justify-center items-center">
             <div class="absolute w-full h-full top-[-50px] left-[-80px]">
-              <img
-                src="../images/Rectangle3.png"
-                alt="next"
-                class="w-full h-full object-fill"
-              />
+              <img src="../images/Rectangle3.png" alt="next" class="w-full h-full object-fill" />
             </div>
             <div class="absolute left-[180px] top-[20px] w-full h-full">
-              <img
-                src="../images/Rectangle4.png"
-                alt="next"
-                class="w-full h-full object-fill"
-              />
+              <img src="../images/Rectangle4.png" alt="next" class="w-full h-full object-fill" />
             </div>
           </div>
           <div
-            class="absolute w-[300px] h-[300px] bg-[rgba(6,70,129,50%)] blur-[150px] rounded-full top-[50%] left-[18%] translate-y-[-50%]"
-          ></div>
+            class="absolute w-[300px] h-[300px] bg-[rgba(6,70,129,50%)] blur-[150px] rounded-full top-[50%] left-[18%] translate-y-[-50%]">
+          </div>
         </div>
 
         <!-- one -->
         <div class="relative w-full h-[465px]">
-          <div
-            class="w-[260px] h-[328px] relative z-10 flex justify-center items-center"
-          >
+          <div class="w-[260px] h-[328px] relative z-10 flex justify-center items-center">
             <div class="absolute w-full h-full">
-              <img
-                src="../images/Rectangle6.png"
-                alt="next"
-                class="w-full h-full object-fill"
-              />
+              <img src="../images/Rectangle6.png" alt="next" class="w-full h-full object-fill" />
             </div>
             <div class="absolute left-[245px] top-[100px] w-full h-full">
-              <img
-                src="../images/Rectangle7.png"
-                alt="next"
-                class="w-full h-full object-fill"
-              />
+              <img src="../images/Rectangle7.png" alt="next" class="w-full h-full object-fill" />
             </div>
           </div>
           <div
-            class="absolute w-[300px] h-[300px] bg-[rgba(6,70,129,50%)] blur-[150px] rounded-full top-[50%] left-[18%] translate-y-[-50%]"
-          ></div>
+            class="absolute w-[300px] h-[300px] bg-[rgba(6,70,129,50%)] blur-[150px] rounded-full top-[50%] left-[18%] translate-y-[-50%]">
+          </div>
         </div>
-        <div
-          class="w-full h-full flex flex-col justify-center items-start gap-[10px]"
-        >
+        <div class="w-full h-full flex flex-col justify-center items-start gap-[10px]">
           <h1
-            class="font-bold text-[100px] leading-[120px] bg-clip-text text-transparent bg-[linear-gradient(#064681,#FFFFFF)] opacity-20"
-          >
+            class="font-bold lato text-[100px] leading-[120px] bg-clip-text text-transparent bg-[linear-gradient(#064681,#FFFFFF)] opacity-20">
             03
           </h1>
-          <h2 class="font-bold text-[40px] leading-[48px] text-black">
+          <h2 class="font-semibold text-[40px] lato leading-[48px] text-black">
             Infertility Specialist
           </h2>
-          <p class="text-[20px] leading-[30px] font-[400] text-[#7F7F7F]">
-            Infertility Means Not Being To Become Pregnant After A Year Of
+          <p class="text-[20px] leading-[30px] font-normal text-[#7F7F7F]">
+            Infertility Means Not Being To Become Pregnant After A Year Of  
             Trying. If Woman Can Get Pregnant But Keeps Having Miscarriages Or
             Stillibirths, That’s Also Called Infertillity,Infertility Is Fairly
             Common.
@@ -1058,561 +783,820 @@
 
     <!--Our Services Section End -->
 
-      <!--Our Gallery Section Start  -->
+    <!--Our Gallery Section Start  -->
 
-      <section
-        class="relative justify-center items-center py-[80px]"
-      >
+    <section class="relative justify-center items-center py-[80px]">
       <div class="absolute bottom-0 left-0 w-full h-full z-0">
         <img src="../images/Vector2.png" alt="Blue Background" class="w-full h-full object-cover" />
       </div>
-        <div
-          class="2xl:w-[1320px] xl:w-[1260px] w-full mx-auto flex flex-col gap-8"
-        >
-          <div class=" relative flex flex-col gap-2">
-            <div class="flex justify-between">
-              <h1 class="font-bold text-[40px] leading-[48px] text-[#064681]">
-                Our Gallery
-              </h1>
-              <a
-                href="../src/Gallery.html"
-                class="flex items-center bg-red-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-red-600 transition"
-                >View All
-                <img
-                  src="../images/next.png"
-                  alt="next"
-                  class="inline-block w-[18px]"
-                />
-              </a>
-            </div>
-            <div class="flex gap-3">
-              <div class="w-[87px] h-[6px] bg-[#064681] rounded-full"></div>
-              <div class="w-[20px] h-[6px] bg-[#064681] rounded-full"></div>
-            </div>
+      <div class="2xl:w-[1320px] xl:w-[1260px] w-full mx-auto flex flex-col gap-8">
+        <div class=" relative flex flex-col gap-2">
+          <div class="flex justify-between">
+            <h1 class="font-bold lato text-[40px] leading-[48px] text-[#064681]">
+              Our Gallery
+            </h1>
+            <a href="../src/Gallery.html"
+              class="flex items-center lato bg-red-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-red-600 transition">View
+              All
+              <img src="../images/next.png" alt="next" class="inline-block w-[18px]" />
+            </a>
           </div>
-
-          <div
-            class="grid w-full grid-cols-[1fr_0.6fr_1fr_0.8fr_0.8fr] grid-rows-[repeat(2,273px)] gap-5"
-          >
-            <!-- img-1 -->
-            <div
-              class="col-span-1 relative group"
-            >       
-              <div
-                class="w-full h-full absolute z-10 rounded-[20px]   group-hover:bg-[#070707a1] group-hover:border-[5px] group-hover:border-white transition-all duration-200 ease-in-out cursor-pointer flex justify-center items-center"
-              >
-                <p
-                  class="hidden w-full px-10 text-center group-hover:block text-[30px] leading-[36px] font-semibold text-white text-wrap"
-                >
-                  Reception Area
-                </p>
-              </div>
-              <div class="w-full h-full">
-                <img
-                  src="../images/gallery1.png"
-                  alt="gallery1"
-                  class="w-full h-full rounded-[20px]"
-                />
-              </div>
-            </div>
-            <!-- img-2 -->
-            <div
-              class="col-span-2 relative group "
-            >
-              <div
-                class="w-full h-full absolute z-10 rounded-[20px] group-hover:bg-[#070707a1] group-hover:border-[5px] group-hover:border-white transition-all duration-200 ease-in-out cursor-pointer flex justify-center items-center"
-              >
-                <p
-                  class="hidden w-full px-10 text-center group-hover:block text-[30px] leading-[36px] font-semibold text-white text-wrap"
-                >
-                  Reception Area
-                </p>
-              </div>
-              <div class="w-full h-full">
-                <img
-                  src="../images/gallery2.png"
-                  alt="gallery2"
-                  class="w-full h-full rounded-[20px]"
-                />
-              </div>
-            </div>
-            <!-- img-3 -->
-
-            <div
-              class="col-span-1 relative group"
-            >
-              <div
-                class="w-full h-full absolute z-10 rounded-[20px] group-hover:bg-[#070707a1] group-hover:border-[5px] group-hover:border-white ease-in-out cursor-pointer flex justify-center items-center"
-              >
-                <p
-                  class="hidden w-full px-10 text-center group-hover:block text-[30px] leading-[36px] font-semibold text-white text-wrap"
-                >
-                  Reception Area
-                </p>
-              </div>
-              <div class="w-full h-full">
-                <img
-                  src="../images/gallery3.png"
-                  alt="gallery3"
-                  class="w-full h-full rounded-[20px]"
-                />
-              </div>
-            </div>
-            <!-- img-4 -->
-
-            <div
-              class="col-span-1 relative group"
-            >
-              <div
-                class="w-full h-full absolute z-10 rounded-[20px] group-hover:bg-[#070707a1] group-hover:border-[5px] group-hover:border-white transition-all duration-200 ease-in-out cursor-pointer flex justify-center items-center"
-              >
-                <p
-                  class="hidden w-full px-10 text-center group-hover:block text-[30px] leading-[36px] font-semibold text-white text-wrap"
-                >
-                  Reception Area
-                </p>
-              </div>
-              <div class="w-full h-full">
-                <img
-                  src="../images/gallery4.png"
-                  alt="gallery4"
-                  class="w-full h-full rounded-[20px]"
-                />
-              </div>
-            </div>
-
-            <!-- img-5 -->
-
-            <div
-              class="col-span-2 relative group"
-            >
-              <div
-                class="w-full h-full absolute z-10 rounded-[20px] group-hover:bg-[#070707a1] group-hover:border-[5px] group-hover:border-white ease-in-out cursor-pointer flex justify-center items-center"
-              >
-                <p
-                  class="hidden w-full px-10 text-center group-hover:block text-[30px] leading-[36px] font-semibold text-white text-wrap"
-                >
-                  Reception Area
-                </p>
-              </div>
-              <div class="w-full h-full">
-                <img
-                  src="../images/gallery5.png"
-                  alt="gallery5"
-                  class="w-full h-full rounded-[20px]"
-                />
-              </div>
-            </div>
-            <!-- img-6 -->
-
-            <div
-              class="col-span-1 relative group"
-            >
-              <div
-                class="w-full h-full absolute z-10 rounded-[20px] group-hover:bg-[#070707a1] group-hover:border-[5px] group-hover:border-white ease-in-out cursor-pointer flex justify-center items-center"
-              >
-                <p
-                  class="hidden w-full px-10 text-center group-hover:block text-[30px] leading-[36px] font-semibold text-white text-wrap"
-                >
-                  Reception Area
-                </p>
-              </div>
-              <div class="w-full h-full">
-                <img
-                  src="../images/gallery6.png"
-                  alt="gallery6"
-                  class="w-full h-full rounded-[20px]"
-                />
-              </div>
-            </div>
-
-            <!-- img-7 -->
-            <div
-              class="col-span-2 relative group"
-            >
-              <div
-                class="w-full h-full absolute z-10 rounded-[20px] group-hover:bg-[#070707a1] group-hover:border-[5px] group-hover:border-white transition-all duration-200 ease-in-out cursor-pointer flex justify-center items-center"
-              >
-                <p
-                  class="hidden w-full px-10 text-center group-hover:block text-[30px] leading-[36px] font-semibold text-white text-wrap"
-                >
-                  Reception Area
-                </p>
-              </div>
-              <div class="w-full h-full">
-                <img
-                  src="../images/gallery7.png"
-                  alt="gallery7"
-                  class="w-full h-full rounded-[20px]"
-                />
-              </div>
-            </div>
+          <div class="flex gap-3">
+            <div class="w-[87px] h-[6px] bg-[#064681] rounded-full"></div>
+            <div class="w-[20px] h-[6px] bg-[#064681] rounded-full"></div>
           </div>
         </div>
-        <div class="backgrounds ">
-          <div class="first absolute top-[-0%] left-[0%] w-full  z-20" >
-            <img src="../images/form-background-1.png" alt="form">
-          </div>
-          <div class="first absolute bottom-[-2.9%] left-0 w-full">
-            <img src="../images/background-2.png" alt="background">
-          </div>
-        </div>
-      </section> 
-    </main>
-      <!--Our Gallery Section End  -->
-     
-           <!-- Our Testimonial Section Start -->
-<section class="bg-cover bg-center py-[9%]">
-  <div class="container mx-auto px-4">
-    <!-- Section Title -->
-    <h1 class="text-3xl font-semibold text-center mb-4 text-[#064681]">
-      Our Testimonial
-    </h1>
-    <div class="flex justify-center gap-3">
-      <div class="w-[87px] h-[5px] bg-[#064681] rounded-full"></div>
-      <div class="w-[20px] h-[5px] bg-[#064681] rounded-full"></div>
-    </div>
-    <!-- Swiper Slider -->
-    <div class="swiper relative mt-8">
-      <div class="swiper-wrapper flex gap-6"> <!-- Ensure horizontal alignment -->
-        <!-- Testimonial Slide 1 -->
-        <div class="swiper-slide flex-shrink-0 w-[300px] h-[470px]">
-          <div
-            class=" shadow-lg border-cyan-500 rounded-[15px] p-6 text-center"
-          >
-            <div class="mb-6">
-              <img
-                src="../images/TestiImage-1.png"
-                alt="CA Prateek Tosniwal"
-                class="w-24 h-24 mx-auto rounded-lg shadow-lg"
-              />
-              <img src="../images/TestiIcon1.png" alt="icon" class="absolute top-7 right-5">
-            </div>
-            
-            <h3 class="text-xl font-bold text-gray-800">
-              CA Prateek Tosniwal
-            </h3>
-            <p class="text-sm text-gray-500 mb-4">CA Tosniwal & Co.</p>
-            <!-- Star Ratings -->
-            <div class="flex justify-center space-x-1 mb-4">
-              <span class="text-yellow-500 text-lg">&#9733;</span>
-              <span class="text-yellow-500 text-lg">&#9733;</span>
-              <span class="text-yellow-500 text-lg">&#9733;</span>
-              <span class="text-yellow-500 text-lg">&#9733;</span>
-              <span class="text-yellow-500 text-lg">&#9733;</span>
-            </div>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
-            </p>
-          </div>
-        </div>
-        <!-- Testimonial Slide 2 -->
-        <div class="swiper-slide flex-shrink-0 w-[460px] h-[418px]">
-          <div
-            class="bg-white shadow-md rounded-[15px] p-6 text-center"
-          >
-            <div class="mb-6">
-              <img
-                src="../images/TestiImage-2.png"
-                alt="Lindsey Torff"
-                class="w-24 h-24 mx-auto rounded-lg shadow-lg"
-              />
-            </div>
-            <h3 class="text-xl font-bold text-gray-800">Lindsey Torff</h3>
-            <p class="text-sm text-gray-500 mb-4">California, USA</p>
-            <div class="flex justify-center space-x-1 mb-4">
-              <span class="text-yellow-500 text-lg">&#9733;</span>
-              <span class="text-yellow-500 text-lg">&#9733;</span>
-              <span class="text-yellow-500 text-lg">&#9733;</span>
-              <span class="text-yellow-500 text-lg">&#9733;</span>
-              <span class="text-yellow-500 text-lg">&#9733;</span>
-            </div>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
-            </p>
-          </div>
-        </div>
-         <div class="flex absolute items-center justify-center  bottom-[0%] pl-[45%] space-x-4 p-4 rounded-lg">
-                <div class="w-4 h-4 rounded-full bg-blue-900 border-2  ring-1 ring-blue-900"></div>
-                <div class="w-4 h-4 rounded-full bg-[#7F7F7F]"></div>
-                <div class="w-4 h-4 rounded-full bg-[#7F7F7F]"></div>
-                <div class="w-4 h-4 rounded-full bg-[#7F7F7F]"></div>
-              </div>
-        <!-- Testimonial Slide 3 -->
-        <div class="swiper-slide flex-shrink-0 w-[460px] h-[418px]">
-          <div
-            class="bg-white shadow-md rounded-[15px] p-6 text-center"
-          >
-            <div class="mb-6">
-              <img
-                src="../images/TestiImage-3.png"
-                alt="Dulce Rosser"
-                class="w-24 h-24 mx-auto rounded-lg shadow-lg"
-              />
-            </div>
-            <h3 class="text-xl font-bold text-gray-800">Dulce Rosser</h3>
-            <p class="text-sm text-gray-500 mb-4">Florida</p>
-            <div class="flex justify-center space-x-1 mb-4">
-              <span class="text-yellow-500 text-lg">&#9733;</span>
-              <span class="text-yellow-500 text-lg">&#9733;</span>
-              <span class="text-yellow-500 text-lg">&#9733;</span>
-              <span class="text-yellow-500 text-lg">&#9733;</span>
-              <span class="text-yellow-500 text-lg">&#9733;</span>
-            </div>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- Swiper Pagination -->
-      <!-- <div class="swiper-pagination mt-4"></div> -->
-    </div>
-  </div>
-</section>
-<!-- Our Testimonial Section End -->
 
+        <div class="grid w-full grid-cols-[1fr_0.6fr_1fr_0.8fr_0.8fr] grid-rows-[repeat(2,273px)] gap-5">
+          <!-- img-1 -->
+          <div class="col-span-1 relative group">
+            <div
+              class="w-full h-full absolute z-10 rounded-[20px]   group-hover:bg-[#070707a1] group-hover:border-[5px] group-hover:border-white transition-all duration-200 ease-in-out cursor-pointer flex justify-center items-center">
+              <p
+                class="hidden w-full px-10 text-center group-hover:block text-[30px] leading-[36px] font-semibold text-white text-wrap">
+                Reception Area
+              </p>
+            </div>
+            <div class="w-full h-full">
+              <img src="../images/gallery1.png" alt="gallery1" class="w-full h-full rounded-[20px]" />
+            </div>
+          </div>
+          <!-- img-2 -->
+          <div class="col-span-2 relative group ">
+            <div
+              class="w-full h-full absolute z-10 rounded-[20px] group-hover:bg-[#070707a1] group-hover:border-[5px] group-hover:border-white transition-all duration-200 ease-in-out cursor-pointer flex justify-center items-center">
+              <p
+                class="hidden w-full px-10 text-center group-hover:block text-[30px] leading-[36px] font-semibold text-white text-wrap">
+                Reception Area
+              </p>
+            </div>
+            <div class="w-full h-full">
+              <img src="../images/gallery2.png" alt="gallery2" class="w-full h-full rounded-[20px]" />
+            </div>
+          </div>
+          <!-- img-3 -->
 
-  <!--Our Video Section Start -->
-    <section
-      class="relative bg-gradient-to-b from-blue-100 to-blue-200 min-h-screen flex items-center justify-center">
-      <div class="absolute bottom-0 left-0 w-full h-full z-0">
-        <img src="../images/Vector2.png" alt="Blue Background" class="w-full h-full object-cover" />
-      </div>
-      <div class="max-w-[1280px] mx-auto p-6 flex flex-col gap-10">
-        <h1
-          class="font-bold text-[40px] leading-[48px] lato  text-[#064681] text-center relative before:absolute before:content[''] before:top-[120%] before:left-[45%] before:w-[87px] before:h-[6px] before:bg-[#064681] before:rounded-full after:absolute after:content[''] after:top-[120%] after:left-[53.5%] after:w-[20px] after:h-[6px] after:bg-[#064681] after:rounded-full"
-        >
-          Our Video
-        </h1>  
-        <div class="grid py-[2%] grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4"> 
-          <div
-            class="col-span-2 row-span-2 bg-white shadow-lg rounded-lg overflow-hidden relative p-4"
-          >
-            <img src="../images/video1.png" alt="video1" class="w-full h-full
-            object-cover">
-            <button class="absolute inset-0 flex items-center justify-center">
-              <div class="w-[65px] h-[65px]">
-                <img
-                  src="../images/Group 1116601951.png"
-                  alt="video2"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-            </button>
+          <div class="col-span-1 relative group">
+            <div
+              class="w-full h-full absolute z-10 rounded-[20px] group-hover:bg-[#070707a1] group-hover:border-[5px] group-hover:border-white ease-in-out cursor-pointer flex justify-center items-center">
+              <p
+                class="hidden w-full px-10 text-center group-hover:block text-[30px] leading-[36px] font-semibold text-white text-wrap">
+                Reception Area
+              </p>
+            </div>
+            <div class="w-full h-full">
+              <img src="../images/gallery3.png" alt="gallery3" class="w-full h-full rounded-[20px]" />
+            </div>
+          </div>
+          <!-- img-4 -->
+
+          <div class="col-span-1 relative group">
+            <div
+              class="w-full h-full absolute z-10 rounded-[20px] group-hover:bg-[#070707a1] group-hover:border-[5px] group-hover:border-white transition-all duration-200 ease-in-out cursor-pointer flex justify-center items-center">
+              <p
+                class="hidden w-full px-10 text-center group-hover:block text-[30px] leading-[36px] font-semibold text-white text-wrap">
+                Reception Area
+              </p>
+            </div>
+            <div class="w-full h-full">
+              <img src="../images/gallery4.png" alt="gallery4" class="w-full h-full rounded-[20px]" />
+            </div>
           </div>
 
-          <!-- Side Thumbnails -->
-          <!-- Thumbnail 1 -->
-          <div
-            class="relative w-full  h-full bg-white col-span-1 row-span-1 shadow-lg rounded-lg overflow-hidden"
-          >
-            <img
-              src="../images/video2.png"
-              alt="video2"
-              class="w-full h-full pl-[20%] object-cover"
-            />
-            <button class="absolute inset-0 flex items-center justify-center">
-              <div class="w-[45px] h-[45px]">
-                <img
-                  src="../images/Group 1116601951.png"
-                  alt="video2"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-            </button>
+          <!-- img-5 -->
+
+          <div class="col-span-2 relative group">
+            <div
+              class="w-full h-full absolute z-10 rounded-[20px] group-hover:bg-[#070707a1] group-hover:border-[5px] group-hover:border-white ease-in-out cursor-pointer flex justify-center items-center">
+              <p
+                class="hidden w-full px-10 text-center group-hover:block text-[30px] leading-[36px] font-semibold text-white text-wrap">
+                Reception Area
+              </p>
+            </div>
+            <div class="w-full h-full">
+              <img src="../images/gallery5.png" alt="gallery5" class="w-full h-full rounded-[20px]" />
+            </div>
           </div>
-          <!-- Thumbnail 2 -->
-          <div
-            class="relative w-full h-full bg-white col-span-1 row-span-1 shadow-lg rounded-lg overflow-hidden"
-          >
-            <img
-              src="../images/video3.png"
-              alt="video3"
-              class="w-full h-full object-cover"
-            />
-            <button class="absolute inset-0 flex items-center justify-center">
-              <div class="w-[45px] h-[45px]">
-                <img
-                  src="../images/Group 1116601951.png"
-                  alt="video2"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-            </button>
+          <!-- img-6 -->
+
+          <div class="col-span-1 relative group">
+            <div
+              class="w-full h-full absolute z-10 rounded-[20px] group-hover:bg-[#070707a1] group-hover:border-[5px] group-hover:border-white ease-in-out cursor-pointer flex justify-center items-center">
+              <p
+                class="hidden w-full px-10 text-center group-hover:block text-[30px] leading-[36px] font-semibold text-white text-wrap">
+                Reception Area
+              </p>
+            </div>
+            <div class="w-full h-full">
+              <img src="../images/gallery6.png" alt="gallery6" class="w-full h-full rounded-[20px]" />
+            </div>
+          </div>
+
+          <!-- img-7 -->
+          <div class="col-span-2 relative group">
+            <div
+              class="w-full h-full absolute z-10 rounded-[20px] group-hover:bg-[#070707a1] group-hover:border-[5px] group-hover:border-white transition-all duration-200 ease-in-out cursor-pointer flex justify-center items-center">
+              <p
+                class="hidden w-full px-10 text-center group-hover:block text-[30px] leading-[36px] font-semibold text-white text-wrap">
+                Reception Area
+              </p>
+            </div>
+            <div class="w-full h-full">
+              <img src="../images/gallery7.png" alt="gallery7" class="w-full h-full rounded-[20px]" />
+            </div>
           </div>
         </div>
       </div>
       <div class="backgrounds ">
-        <div class="first absolute top-[-0%] left-[0%] w-full  z-20" >
+        <div class="first absolute top-[-0%] left-[0%] w-full  z-20">
           <img src="../images/form-background-1.png" alt="form">
         </div>
-        <div class="first absolute bottom-[-1%] left-0 w-full">
+        <div class="first absolute bottom-[-2.9%] left-0 w-full">
           <img src="../images/background-2.png" alt="background">
         </div>
       </div>
     </section>
+  </main>
+  <!--Our Gallery Section End  -->
 
-    <!-- Tag Section Start -->
+  <!-- Our Testimonial Section Start -->
+  <section class="bg-cover bg-center py-[9%] relative z-0">
+    <div class="container  mx-auto px-4  ">
+      <!-- Section Title -->
 
-    <main class="bg-gray-100 py-12">
-      <div class="container rounded-full mx-auto px-4 xl:w-[1260px]">
-        <div
-          class="bg-white shadow-lg rounded-3xl flex items-center overflow-hidden"
-        >
-          <div class="p-8 lg:w-1/2">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4 leading-tight">
-              We Always Ready To <br />
-              Help Your
-            </h2>
-            <p class="text-gray-600 mb-6">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has.
-            </p>
-            <a
-              href="#"
-              class="inline-flex items-center bg-red-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-red-600 transition"
-            >
-              Get In Touch
-              <img
-                src="../images/next.png"
-                alt="next"
-                class="inline-block w-[18px] ml-2"
-              />
-            </a>
-          </div>
-          <div class="relative lg:w-1/2 flex justify-center items-center p-6">
+      <h1 class="text-3xl font-bold lato text-center leading-[48px] mb-4 text-[#064681]">
+        Our Testimonial
+      </h1>
+      <div class="flex justify-center gap-3">
+        <div class="w-[87px] h-[5px] bg-[#064681] rounded-full"></div>
+        <div class="w-[20px] h-[5px] bg-[#064681] rounded-full"></div>
+      </div>
+      <!-- Swiper Slider -->
+      <div class="swiper-container2 overflow-hidden">
+        <div class="swiper-wrapper w-10/12 "> <!-- Ensure horizontal alignment -->
+          <!-- Testimonial Slide 1 -->
+          <div class="swiper-slide relative mb-14">
             <div
-              class="absolute top-4 left-4 flex items-center justify-center p-6"
-            >
-              <div class="text-center">
-                <img
-                  src="../images/DoctoreIcon.png"
-                  alt="Doctor Icon"
-                  class="max-w-full h-auto relative z-10"
-                />
+            class="flex absolute items-center justify-center bottom-[-8%] left-[45%]  my-[-2%] mr-[15%] space-x-4 p-4 rounded-lg z-20">
+            <div class="w-4 h-4 rounded-full bg-[#064681] border-2  ring-1 ring-blue-900"></div>
+            <div class="w-4 h-4 rounded-full bg-[#7F7F7F]"></div>
+            <div class="w-4 h-4 rounded-full bg-[#7F7F7F]"></div>
+            <div class="w-4 h-4 rounded-full bg-[#7F7F7F]"></div>
+          </div>
+            <div class="flex flex-wrap mt-[80px]">
+              <div class="w-4/12">
+                <div class="h-[418px] mx-5">
+                  <div class=" border-cyan-500 rounded-[15px] p-8 bg-[#fff]"
+                    style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    <div class="mb-10 flex justify-between relative">
+                      <div>
+                        <img src="../images/TestiImage-1.png" alt="CA Prateek Tosniwal"
+                          class=" absolute -top-[70px] left-0 rounded-xl drop-shadow-sm" />
+                      </div>
+                      <div class="w-[91px] h-[67px]">
+                        <img src="../images/TestiIcon1.png" alt="icon">
+                      </div>
+                    </div>
+
+                    <h3 class="text-[30px] lato font-bold text-[#000]">
+                      CA Prateek Tosniwal
+                    </h3>
+                    <p class="text-[20px] text-[#7F7F7F] lato mb-4 font-normal leading-[30px]">CA Tosniwal & Co.</p>
+                    <hr>
+                    <!-- Star Ratings -->
+                    <div class="flex  space-x-1 mb-4">
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                    </div>
+                    <p class="text-[#7F7F7F] text-[20px] lato leading-[30px]">
+                      It is a long established fact that a reader will be distracted by
+                      the readable content of a page when looking at its layout.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-4/12">
+                <div class="h-[418px] mx-5">
+                  <div class=" border-cyan-500 rounded-[15px] p-8 bg-[#fff]"
+                    style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    <div class="mb-10 flex justify-between relative">
+                      <div>
+                        <img src="../images/TestiImage-2.png" alt="CA Prateek Tosniwal"
+                          class=" absolute -top-[70px] left-0 rounded-xl drop-shadow-sm" />
+                      </div>
+                      <div class="w-[91px] h-[67px]">
+                        <img src="../images/TestiIcon1.png" alt="icon">
+                      </div>
+                    </div>
+
+                    <h3 class="text-[30px] lato font-bold text-[#000]">
+                      CA Prateek Tosniwal
+                    </h3>
+                    <p class="text-[20px] text-[#7F7F7F] mb-4 font-normal leading-[30px]">CA Tosniwal & Co.</p>
+                    <hr>
+                    <!-- Star Ratings -->
+                    <div class="flex  space-x-1 mb-4">
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                    </div>
+                    <p class="text-[#7F7F7F] lato text-[20px] leading-[30px]">
+                      It is a long established fact that a reader will be distracted by
+                      the readable content of a page when looking at its layout.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-4/12">
+                <div class="h-[418px] mx-5">
+                  <div class=" border-cyan-500 rounded-[15px] p-8 bg-[#fff]"
+                    style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    <div class="mb-10 flex justify-between relative">
+                      <div>
+                        <img src="../images/TestiImage-3.png" alt="CA Prateek Tosniwal"
+                          class=" absolute -top-[70px] left-0 rounded-xl drop-shadow-sm" />
+                      </div>
+                      <div class="w-[91px] h-[67px]">
+                        <img src="../images/TestiIcon1.png" alt="icon">
+                      </div>
+                    </div>
+
+                    <h3 class="text-[30px] lato font-bold text-[#000]">
+                      CA Prateek Tosniwal
+                    </h3>
+                    <p class="text-[20px] text-[#7F7F7F] lato mb-4 font-normal leading-[30px]">CA Tosniwal & Co.</p>
+                    <hr>
+                    <!-- Star Ratings -->
+                    <div class="flex  space-x-1 mb-4">
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                    </div>
+                    <p class="text-[#7F7F7F] lato text-[20px] leading-[30px]">
+                      It is a long established fact that a reader will be distracted by
+                      the readable content of a page when looking at its layout.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <img
-              src="../images/TagSectionDoctore.png"
-              alt="Doctor"
-              class="max-w-full h-auto relative z-10"
-            />
           </div>
+          <!-- Testimonial Slide 2  -->
+          <div class="swiper-slide relative mb-14">
+            <div
+            class="flex absolute items-center justify-center bottom-[-8%] left-[45%]  my-[-2%] mr-[15%] space-x-4 p-4 rounded-lg z-20">
+            <div class="w-4 h-4 rounded-full bg-[#7F7F7F]"></div>
+
+            <div class="w-4 h-4 rounded-full bg-[#064681] border-2  ring-1 ring-blue-900"></div>
+            <div class="w-4 h-4 rounded-full bg-[#7F7F7F]"></div>
+            <div class="w-4 h-4 rounded-full bg-[#7F7F7F]"></div>
+          </div>
+            <div class="flex flex-wrap mt-[80px]">
+              <div class="w-4/12">
+                <div class="h-[418px] mx-5">
+                  <div class=" border-cyan-500 rounded-[15px] p-8 bg-[#fff]"
+                    style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    <div class="mb-10 flex justify-between relative">
+                      <div>
+                        <img src="../images/TestiImage-1.png" alt="CA Prateek Tosniwal"
+                          class=" absolute -top-[70px] left-0 rounded-xl drop-shadow-sm" />
+                      </div>
+                      <div class="w-[91px] h-[67px]">
+                        <img src="../images/TestiIcon1.png" alt="icon">
+                      </div>
+                    </div>
+
+                    <h3 class="text-[30px] lato font-bold text-[#000]">
+                      CA Prateek Tosniwal
+                    </h3>
+                    <p class="text-[20px] text-[#7F7F7F] lato mb-4 font-normal leading-[30px]">CA Tosniwal & Co.</p>
+                    <hr>
+                    <!-- Star Ratings -->
+                    <div class="flex  space-x-1 mb-4">
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                    </div>
+                    <p class="text-[#7F7F7F] text-[20px] lato leading-[30px]">
+                      It is a long established fact that a reader will be distracted by
+                      the readable content of a page when looking at its layout.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-4/12">
+                <div class="h-[418px] mx-5">
+                  <div class=" border-cyan-500 rounded-[15px] p-8 bg-[#fff]"
+                    style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    <div class="mb-10 flex justify-between relative">
+                      <div>
+                        <img src="../images/TestiImage-2.png" alt="CA Prateek Tosniwal"
+                          class=" absolute -top-[70px] left-0 rounded-xl drop-shadow-sm" />
+                      </div>
+                      <div class="w-[91px] h-[67px]">
+                        <img src="../images/TestiIcon1.png" alt="icon">
+                      </div>
+                    </div>
+
+                    <h3 class="text-[30px] lato font-bold text-[#000]">
+                      CA Prateek Tosniwal
+                    </h3>
+                    <p class="text-[20px] text-[#7F7F7F] mb-4 font-normal leading-[30px]">CA Tosniwal & Co.</p>
+                    <hr>
+                    <!-- Star Ratings -->
+                    <div class="flex  space-x-1 mb-4">
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                    </div>
+                    <p class="text-[#7F7F7F] lato text-[20px] leading-[30px]">
+                      It is a long established fact that a reader will be distracted by
+                      the readable content of a page when looking at its layout.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-4/12">
+                <div class="h-[418px] mx-5">
+                  <div class=" border-cyan-500 rounded-[15px] p-8 bg-[#fff]"
+                    style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    <div class="mb-10 flex justify-between relative">
+                      <div>
+                        <img src="../images/TestiImage-3.png" alt="CA Prateek Tosniwal"
+                          class=" absolute -top-[70px] left-0 rounded-xl drop-shadow-sm" />
+                      </div>
+                      <div class="w-[91px] h-[67px]">
+                        <img src="../images/TestiIcon1.png" alt="icon">
+                      </div>
+                    </div>
+
+                    <h3 class="text-[30px] lato font-bold text-[#000]">
+                      CA Prateek Tosniwal
+                    </h3>
+                    <p class="text-[20px] text-[#7F7F7F] lato mb-4 font-normal leading-[30px]">CA Tosniwal & Co.</p>
+                    <hr>
+                    <!-- Star Ratings -->
+                    <div class="flex  space-x-1 mb-4">
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                    </div>
+                    <p class="text-[#7F7F7F] lato text-[20px] leading-[30px]">
+                      It is a long established fact that a reader will be distracted by
+                      the readable content of a page when looking at its layout.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial Slide 3  -->
+          <div class="swiper-slide relative mb-14">
+            <div
+            class="flex absolute items-center justify-center bottom-[-8%] left-[45%]  my-[-2%] mr-[15%] space-x-4 p-4 rounded-lg z-20">
+            <div class="w-4 h-4 rounded-full bg-[#7F7F7F]"></div>
+            <div class="w-4 h-4 rounded-full bg-[#7F7F7F]"></div>
+            <div class="w-4 h-4 rounded-full bg-[#064681] border-2  ring-1 ring-blue-900"></div>
+            <div class="w-4 h-4 rounded-full bg-[#7F7F7F]"></div>
+          </div>
+            <div class="flex flex-wrap mt-[80px]">
+              <div class="w-4/12">
+                <div class="h-[418px] mx-5">
+                  <div class=" border-cyan-500 rounded-[15px] p-8 bg-[#fff]"
+                    style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    <div class="mb-10 flex justify-between relative">
+                      <div>
+                        <img src="../images/TestiImage-1.png" alt="CA Prateek Tosniwal"
+                          class=" absolute -top-[70px] left-0 rounded-xl drop-shadow-sm" />
+                      </div>
+                      <div class="w-[91px] h-[67px]">
+                        <img src="../images/TestiIcon1.png" alt="icon">
+                      </div>
+                    </div>
+
+                    <h3 class="text-[30px] lato font-bold text-[#000]">
+                      CA Prateek Tosniwal
+                    </h3>
+                    <p class="text-[20px] text-[#7F7F7F] lato mb-4 font-normal leading-[30px]">CA Tosniwal & Co.</p>
+                    <hr>
+                    <!-- Star Ratings -->
+                    <div class="flex  space-x-1 mb-4">
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                    </div>
+                    <p class="text-[#7F7F7F] text-[20px] lato leading-[30px]">
+                      It is a long established fact that a reader will be distracted by
+                      the readable content of a page when looking at its layout.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-4/12">
+                <div class="h-[418px] mx-5">
+                  <div class=" border-cyan-500 rounded-[15px] p-8 bg-[#fff]"
+                    style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    <div class="mb-10 flex justify-between relative">
+                      <div>
+                        <img src="../images/TestiImage-2.png" alt="CA Prateek Tosniwal"
+                          class=" absolute -top-[70px] left-0 rounded-xl drop-shadow-sm" />
+                      </div>
+                      <div class="w-[91px] h-[67px]">
+                        <img src="../images/TestiIcon1.png" alt="icon">
+                      </div>
+                    </div>
+
+                    <h3 class="text-[30px] lato font-bold text-[#000]">
+                      CA Prateek Tosniwal
+                    </h3>
+                    <p class="text-[20px] text-[#7F7F7F] mb-4 font-normal leading-[30px]">CA Tosniwal & Co.</p>
+                    <hr>
+                    <!-- Star Ratings -->
+                    <div class="flex  space-x-1 mb-4">
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                    </div>
+                    <p class="text-[#7F7F7F] lato text-[20px] leading-[30px]">
+                      It is a long established fact that a reader will be distracted by
+                      the readable content of a page when looking at its layout.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-4/12">
+                <div class="h-[418px] mx-5">
+                  <div class=" border-cyan-500 rounded-[15px] p-8 bg-[#fff]"
+                    style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    <div class="mb-10 flex justify-between relative">
+                      <div>
+                        <img src="../images/TestiImage-3.png" alt="CA Prateek Tosniwal"
+                          class=" absolute -top-[70px] left-0 rounded-xl drop-shadow-sm" />
+                      </div>
+                      <div class="w-[91px] h-[67px]">
+                        <img src="../images/TestiIcon1.png" alt="icon">
+                      </div>
+                    </div>
+
+                    <h3 class="text-[30px] lato font-bold text-[#000]">
+                      CA Prateek Tosniwal
+                    </h3>
+                    <p class="text-[20px] text-[#7F7F7F] lato mb-4 font-normal leading-[30px]">CA Tosniwal & Co.</p>
+                    <hr>
+                    <!-- Star Ratings -->
+                    <div class="flex  space-x-1 mb-4">
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                    </div>
+                    <p class="text-[#7F7F7F] lato text-[20px] leading-[30px]">
+                      It is a long established fact that a reader will be distracted by
+                      the readable content of a page when looking at its layout.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- Testimonial Slide 4  -->
+            <div class="swiper-slide relative mb-14">
+              <div
+              class="flex absolute items-center justify-center bottom-[-8%] left-[45%]  my-[-2%] mr-[15%] space-x-4 p-4 rounded-lg z-20">
+              <div class="w-4 h-4 rounded-full bg-[#7F7F7F]"></div>
+              <div class="w-4 h-4 rounded-full bg-[#7F7F7F]"></div>
+              <div class="w-4 h-4 rounded-full bg-[#7F7F7F]"></div>
+              <div class="w-4 h-4 rounded-full bg-[#064681] border-2  ring-1 ring-blue-900"></div>
+            </div>
+              <div class="flex flex-wrap mt-[80px]">
+                <div class="w-4/12">
+                  <div class="h-[418px] mx-5">
+                    <div class=" border-cyan-500 rounded-[15px] p-8 bg-[#fff]"
+                      style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                      <div class="mb-10 flex justify-between relative">
+                        <div>
+                          <img src="../images/TestiImage-1.png" alt="CA Prateek Tosniwal"
+                            class=" absolute -top-[70px] left-0 rounded-xl drop-shadow-sm" />
+                        </div>
+                        <div class="w-[91px] h-[67px]">
+                          <img src="../images/TestiIcon1.png" alt="icon">
+                        </div>
+                      </div>
+  
+                      <h3 class="text-[30px] lato font-bold text-[#000]">
+                        CA Prateek Tosniwal
+                      </h3>
+                      <p class="text-[20px] text-[#7F7F7F] lato mb-4 font-normal leading-[30px]">CA Tosniwal & Co.</p>
+                      <hr>
+                      <!-- Star Ratings -->
+                      <div class="flex  space-x-1 mb-4">
+                        <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                        <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                        <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                        <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                        <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      </div>
+                      <p class="text-[#7F7F7F] text-[20px] lato leading-[30px]">
+                        It is a long established fact that a reader will be distracted by
+                        the readable content of a page when looking at its layout.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-4/12">
+                  <div class="h-[418px] mx-5">
+                    <div class=" border-cyan-500 rounded-[15px] p-8 bg-[#fff]"
+                      style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                      <div class="mb-10 flex justify-between relative">
+                        <div>
+                          <img src="../images/TestiImage-2.png" alt="CA Prateek Tosniwal"
+                            class=" absolute -top-[70px] left-0 rounded-xl drop-shadow-sm" />
+                        </div>
+                        <div class="w-[91px] h-[67px]">
+                          <img src="../images/TestiIcon1.png" alt="icon">
+                        </div>
+                      </div>
+  
+                      <h3 class="text-[30px] lato font-bold text-[#000]">
+                        CA Prateek Tosniwal
+                      </h3>
+                      <p class="text-[20px] text-[#7F7F7F] mb-4 font-normal leading-[30px]">CA Tosniwal & Co.</p>
+                      <hr>
+                      <!-- Star Ratings -->
+                      <div class="flex  space-x-1 mb-4">
+                        <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                        <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                        <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                        <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                        <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      </div>
+                      <p class="text-[#7F7F7F] lato text-[20px] leading-[30px]">
+                        It is a long established fact that a reader will be distracted by
+                        the readable content of a page when looking at its layout.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-4/12">
+                  <div class="h-[418px] mx-5">
+                    <div class=" border-cyan-500 rounded-[15px] p-8 bg-[#fff]"
+                      style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                      <div class="mb-10 flex justify-between relative">
+                        <div>
+                          <img src="../images/TestiImage-3.png" alt="CA Prateek Tosniwal"
+                            class=" absolute -top-[70px] left-0 rounded-xl drop-shadow-sm" />
+                        </div>
+                        <div class="w-[91px] h-[67px]">
+                          <img src="../images/TestiIcon1.png" alt="icon">
+                        </div>
+                      </div>
+  
+                      <h3 class="text-[30px] lato font-bold text-[#000]">
+                        CA Prateek Tosniwal
+                      </h3>
+                      <p class="text-[20px] text-[#7F7F7F] lato mb-4 font-normal leading-[30px]">CA Tosniwal & Co.</p>
+                      <hr>
+                      <!-- Star Ratings -->
+                      <div class="flex  space-x-1 mb-4">
+                        <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                        <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                        <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                        <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                        <span class="text-yellow-500 text-[25px]">&#9733;</span>
+                      </div>
+                      <p class="text-[#7F7F7F] lato text-[20px] leading-[30px]">
+                        It is a long established fact that a reader will be distracted by
+                        the readable content of a page when looking at its layout.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
-    </main>
-    <!-- Tag Section End -->
+    </div>
+  </section>
+  <!-- Our Testimonial Section End -->
 
-    <!-- Footer Section Start -->
-    <footer class="w-full h-[643px] py-12  flex items-center relative bg-gradient-to-r from-[#86BBF1] to-[#8DBEC9]">
-      <div class="absolute top-0 left-0 ">
-        <img src="../images//Mask group.png" alt="object">
+  <!--Our Video Section Start -->
+  <section class="relative bg-gradient-to-b from-blue-100 to-blue-200 min-h-screen flex items-center justify-center">
+    <div class="absolute bottom-0 left-0 w-full h-full z-0">
+      <img src="../images/Vector2.png" alt="Blue Background" class="w-full h-full object-cover" />
+    </div>
+    <div class="max-w-[1280px] mx-auto p-6 flex flex-col gap-10">
+      <h1
+        class="font-bold  text-[40px] leading-[48px] lato  text-[#064681] text-center relative before:absolute before:content[''] before:top-[120%] before:left-[45%] before:w-[87px] before:h-[6px] before:bg-[#064681] before:rounded-full after:absolute after:content[''] after:top-[120%] after:left-[53.5%] after:w-[20px] after:h-[6px] after:bg-[#064681] after:rounded-full">
+        Our Video
+      </h1>
+      <div class="grid py-[2%] grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4">
+        <div class="col-span-2 row-span-2 bg-white shadow-lg rounded-lg overflow-hidden relative p-4">
+          <img src="../images/video1.png" alt="video1" class="w-full bg-[#464646] insent-0 h-full
+            object-cover">
+          <button class="absolute inset-0 flex items-center justify-center">
+            <div class="w-[65px] h-[65px] py-[5%]">
+              <img src="../images/Group 1116601951.png" alt="video2" class="w-full h-full object-cover" />
+            </div>
+          </button>
+        </div>
+
+        <!-- Side Thumbnails -->
+        <!-- Thumbnail 1 -->
+        <div class="relative w-full  h-full bg-white col-span-1 row-span-1 shadow-lg rounded-lg overflow-hidden">
+          <img src="../images/video2.png" alt="video2" class="w-full h-full  object-cover" />
+          <button class="absolute inset-0 flex items-center justify-center">
+            <div class="w-[45px] h-[45px]">
+              <img src="../images/Group 1116601951.png" alt="video2" class="w-full h-full object-cover" />
+            </div>
+          </button>
+        </div>
+        <!-- Thumbnail 2 -->
+        <div class="relative w-full h-full bg-white col-span-1 row-span-1 shadow-lg rounded-lg overflow-hidden">
+          <img src="../images/video3.png" alt="video3" class="w-full h-full object-cover" />
+          <button class="absolute inset-0 flex items-center justify-center">
+            <div class="w-[45px] h-[45px]">
+              <img src="../images/Group 1116601951.png" alt="video2" class="w-full h-full object-cover" />
+            </div>
+          </button>
+        </div>
       </div>
-      <div class="absolute bottom-0 right-0 ">
-        <img src="../images//Mask group (2).png" alt="object">
+    </div>
+    <div class="backgrounds ">
+      <div class="first absolute top-[-0%] left-[0%] w-full  z-20">
+        <img src="../images/form-background-1.png" alt="form">
       </div>
+      <div class="first absolute bottom-[-1%] left-0 w-full">
+        <img src="../images/background-2.png" alt="background">
+      </div>
+    </div>
+  </section>
+
+  <!-- Tag Section Start -->
+  <main class=" py-12 relative">
+    <div class="container rounded-full mx-auto px-4 xl:w-[1260px]">
+      <div class="bg-white shadow-lg rounded-3xl flex items-center overflow-hidden">
+        <div class="p-8 lg:w-1/2">
+          <h2 class="text-3xl lato font-bold absolute top-[30%] text-[#000000] mb-4 leading-tight">
+            We Always Ready To <br />
+            Help Your
+          </h2>
+          <img src="../images/Vector (8).png" alt="relative top-0 left-0 opacity-[3%]">
+          <p class="text-gray-600 mb-6">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The
+            point of using Lorem Ipsum is that it has.
+          </p>
+          <a href="#"
+            class="inline-flex items-center bg-red-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-red-600 transition">
+            Get In Touch
+            <img src="../images/next.png" alt="next" class="inline-block w-[18px] ml-2" />
+          </a>
+        </div>
+        <div class="relative lg:w-1/2 flex justify-center items-center p-6 overflow-hidden">
+          <div class="absolute top-4 left-4 flex items-center justify-center p-6 w-full">
+            <div class="text-center w-full ">
+              <img src="../images/DoctoreIcon.png" alt="Doctor Icon" class=" w-4/12  absolute top-[90%] left-[5%] z-0" />
+            </div>
+          </div>
+          <img src="../images/TagSectionDoctore.png" alt="Doctor" class="max-w-full ab h-auto relative z-10" />
+        </div>
+        <div class=" absolute bottom-[8.5%] right-[17.5%]">
+          <img src="../images/HalfRoundedImage.png" alt="object">
+        </div>
+        <div class="">
+          <img src="../images/HalfShortCircle.png" alt="object" class="absolute bottom-[8.5%] right-[17.5%] z-40">
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Tag Section End -->
+
+  <!-- Footer Section Start -->
+  <footer class="w-full h-[643px] py-12  flex items-center relative bg-gradient-to-r from-[#86BBF1] to-[#8DBEC9]">
+    <div class="absolute top-0 left-0 ">
+      <img src="../images//Mask group.png" alt="object">
+    </div>
+    <div class="absolute bottom-0 right-0 ">
+      <img src="../images//Mask group (2).png" alt="object">
+    </div>
     <div class="absolute bottom-0 left-0 w-full h-full z-0">
       <!-- <img src="../images/Vector2.png" alt="Blue Background" class="w-full h-full object-cover" /> -->
     </div>
-    <div class="first absolute top-[-0%] left-[0%] w-full  z-20" >
+    <div class="first absolute top-[-0%] left-[0%] w-full  z-20">
       <img src="../images/form-background-1.png" alt="form">
     </div>
 
-      <div class="relative items-center  w-full px-4 mx-auto">
-        <div class="container mx-auto flex flex-wrap justify-center pb-10 border-b-2">
-          <div class="w-4/12"> 
-            <div>
-              <a href="#"><img src="../images/logo.png" alt="logo" class="object-cover h-[90px] w-[322px]"></a>
-              <p class="text-[20px] leading-8 text-[#ffff]">Jeevan Jyot Hospital is situated at Navi Mumbai, This hospital is a well known centre
-                 for surgery and medical care. We are a professional health medical care services provider
-                  serving every kinds of people very carefully & Patient happy.</p>
-            </div>
-            <div class="h-[90px] w-[322px] flex items-center">
-              <h3 class="text-[25px] leading-8 text-[#064681] relative before:absolute before:top-[38px] before:left-0
+    <div class="relative items-center  w-full px-4 mx-auto">
+      <div class="container mx-auto flex flex-wrap justify-center pb-10 border-b-2">
+        <div class="w-4/12">
+          <div>
+            <a href="#"><img src="../images/logo.png" alt="logo" class="object-cover h-[90px] w-[322px]"></a>
+            <p class="text-[20px] leading-8 text-[#ffff]">Jeevan Jyot Hospital is situated at Navi Mumbai, This hospital
+              is a well known centre
+              for surgery and medical care. We are a professional health medical care services provider
+              serving every kinds of people very carefully & Patient happy.</p>
+          </div>
+          <div class="h-[90px] w-[322px] flex items-center">
+            <h3 class="text-[25px] leading-8 text-[#064681] relative before:absolute before:top-[38px] before:left-0
                         before:content[''] before:bg-[#064681] before:w-[27px] before:h-[3px] ">Follows</h3>
-            </div>
-            <div class="flex space-x-4">
-                <a href="#" class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
-                  <img src="../images/facebook.png" alt="fa-facebook" class="w-[25px] h-[25px]">
-                </a>
-                <a href="#" class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
-                  <img src="../images/instagram.png" alt="fa-facebook" class="w-[25px] h-[25px]">
-                </a>
-                <a href="#" class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
-                  <img src="../images/twiter.png" alt="fa-facebook" class="w-[25px] h-[25px]">
-                </a>
-            </div>
           </div>
-          <div class="w-4/12 flex justify-end">
-            <div class="ml-[100px]">
-              <div class="h-[90px] w-[322px] flex items-center">
-                <h3 class="text-[25px] leading-8 text-[#064681] font-semibold relative before:absolute before:top-[38px] before:left-0
-                          before:content[''] before:bg-[#064681] before:w-[27px] before:h-[3px] ">Pages</h3>
-              </div>
-              
-              <ul>
-                <li><a href="#" class="text-[20px] text-[#ffff]">Home</a></li>
-                <li><a href="#" class="text-[20px] text-[#ffff]">About</a></li>
-                <li><a href="#" class="text-[20px] text-[#ffff]">Maternity</a></li>
-                <li><a href="#" class="text-[20px] text-[#ffff]">Department</a></li>
-                <li><a href="#" class="text-[20px] text-[#ffff]">Gallery</a></li>
-                <li><a href="#" class="text-[20px] text-[#ffff]">Doctors</a></li>
-                <li><a href="#" class="text-[20px] text-[#ffff]">Caseless Mediclaim</a></li>
-                <li><a href="#" class="text-[20px] text-[#ffff]">Appointment</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="w-4/12  flex justify-center relative z-20">
-                <div class="">
-                  <div class="w-[322px] h-[90px] flex items-center">
-                    <h3 class="text-[25px] leading-8 text-[#064681] relative before:absolute before:top-[38px] before:left-0
-                            before:content[''] before:bg-[#064681] before:w-[27px] before:h-[3px] ">Address</h3>
-                  </div>
-                  <div class="flex">
-                    <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
-                      <img src="../images/location.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
-                    </div>
-                   <div class="w-[340px] ml-3">
-                      <p class="text-[20px] leading-[30px] text-[#fff]">Subh Avenue Building, Ground & First Floor, Plot No. 59C, Sector-21, Opp. Khandeswar Station, Khandeswar Kamothe-II, Navi Mumbai.</p>
-                   </div>
-                  </div>
-                  <div class="my-3 flex items-center">
-                    <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
-                      <img src="../images/sms.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
-                    </div>
-                   <div class="w-[340px] ml-3 flex items-center">
-                      <p class="text-[20px] leading-[30px] text-[#fff]">jeevanjyothospital12@gmail.com</p>
-                   </div>
-                  </div>
-                  <div class="my-3 flex items-center">
-                    <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
-                      <img src="../images/call.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
-                    </div>
-                   <div class="w-[340px] ml-3">
-                      <p class="text-[20px] leading-[30px] text-[#fff]">93218 42721 , 83691 59505 , 022-27431626</p>
-                   </div>
-                  </div>
-                </div>
+          <div class="flex space-x-4">
+            <a href="#" class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
+              <img src="../images/facebook.png" alt="fa-facebook" class="w-[25px] h-[25px]">
+            </a>
+            <a href="#" class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
+              <img src="../images/instagram.png" alt="fa-facebook" class="w-[25px] h-[25px]">
+            </a>
+            <a href="#" class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
+              <img src="../images/twiter.png" alt="fa-facebook" class="w-[25px] h-[25px]">
+            </a>
           </div>
         </div>
-        <br>
-        <br>
-        <div class="text-center  text-[#ffff] text-[18px]">
-          © 2020 Jeevan Jyot Hospital. All Rights Reserved. Designed by WEBINBOX
+        <div class="w-4/12 flex justify-end">
+          <div class="ml-[100px]">
+            <div class="h-[90px] w-[322px] flex items-center">
+              <h3 class="text-[25px] leading-8 text-[#064681] font-semibold relative before:absolute before:top-[38px] before:left-0
+                          before:content[''] before:bg-[#064681] before:w-[27px] before:h-[3px] ">Pages</h3>
+            </div>
+
+            <ul>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Home</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">About</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Maternity</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Department</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Gallery</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Doctors</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Caseless Mediclaim</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Appointment</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-4/12  flex justify-center relative z-20">
+          <div class="">
+            <div class="w-[322px] h-[90px] flex items-center">
+              <h3 class="text-[25px] leading-8 text-[#064681] relative before:absolute before:top-[38px] before:left-0
+                            before:content[''] before:bg-[#064681] before:w-[27px] before:h-[3px] ">Address</h3>
+            </div>
+            <div class="flex">
+              <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
+                <img src="../images/location.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
+              </div>
+              <div class="w-[340px] ml-3">
+                <p class="text-[20px] leading-[30px] text-[#fff]">Subh Avenue Building, Ground & First Floor, Plot No.
+                  59C, Sector-21, Opp. Khandeswar Station, Khandeswar Kamothe-II, Navi Mumbai.</p>
+              </div>
+            </div>
+            <div class="my-3 flex items-center">
+              <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
+                <img src="../images/sms.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
+              </div>
+              <div class="w-[340px] ml-3 flex items-center">
+                <p class="text-[20px] leading-[30px] text-[#fff]">jeevanjyothospital12@gmail.com</p>
+              </div>
+            </div>
+            <div class="my-3 flex items-center">
+              <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
+                <img src="../images/call.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
+              </div>
+              <div class="w-[340px] ml-3">
+                <p class="text-[20px] leading-[30px] text-[#fff]">93218 42721 , 83691 59505 , 022-27431626</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <br>
+      <br>
+      <div class="text-center  text-[#ffff] text-[18px]">
+        © 2020 Jeevan Jyot Hospital. All Rights Reserved. Designed by WEBINBOX
+      </div>
+    </div>
   </footer>
-    <!-- Footer Section End -->
+  <!-- Footer Section End -->
 
-    <!-- j-query cdn -->
-    <script src="../dist/js/jquery.min.js" type="text/javascript"></script>
-    <script src="../dist/js/Script.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-   
-  </body>
+  <!-- j-query cdn -->
+  <script src="../dist/js/jquery.min.js" type="text/javascript"></script>
+  <script src="../dist/js/Script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</body>
+
 </html>
