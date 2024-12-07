@@ -1,4 +1,6 @@
-
+/* *{
+  outline: 1px solid red; 
+} */
 
 
 *, ::before, ::after {
@@ -1746,6 +1748,8 @@ video {
   background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
+
 }
 
 
