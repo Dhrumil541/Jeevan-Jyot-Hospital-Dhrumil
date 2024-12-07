@@ -27,259 +27,135 @@
       </style>
 </head>
 <body>
-     <!-- header Start-->
-
-     <header class="bg-white shadow sm:py-5 pt-[18px] pb-[18px]">
-        <div class="2xl:w-[1320px] xl:w-[1260px] w-full max-xl:px-4 mx-auto">
-          <div class="flex items-center gap-10 w-full justify-between">
-            <!-- logo -->
-          <div class="flex items-center justify-center">
-             <a href="../src/Home.html">
-              <img
-                src="../images/logo.png"
-                alt="Jeevan-Jyot-Hospital"
-                class="w-[222px] h-[60px] object-contain pr-[5%]"
-              />
-            </a>
-          </div>
-            <nav class="xl:block hidden">
-              <ul class="flex gap-5">
-                <li>
-                  <a
-                    href="./Home.html"
-                    data-nav="home"
-                    class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                    >Home<span
-                      class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                      style="bottom: -6px"
-                    ></span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="./About.html"
-                    data-nav="about"
-                    class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                    >About<span
-                      class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                      style="bottom: -6px"
-                    ></span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="./Maternity.html"
-                    data-nav="maternity"
-                    class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                    >Maternity<span
-                      class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                      style="bottom: -6px"
-                    ></span>
-                  </a>
-                </li>
-                <!-- Dropdown Example -->
-                <li class="relative group">
-                  <a href="./Department.html">
-                  <button
-                    data-nav="department"
-                    class="relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                  >
-                    Department<i class="ri-arrow-down-s-line text-lg"></i>
-                    <span
-                      class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                      style="bottom: -6px"
-                    ></span>
-                  </button>
-                  <div
-                    class="absolute z-10 top-full left-[50%] translate-x-[-50%] min-w-[220px] hidden group-hover:block"
-                  >
-                    <ul
-                      class="mt-5 transition duration-700 overflow-hidden ease-in-out rounded-3xl bg-white shadow-lg mb-2"
-                    >
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Gynecology</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Pediatric</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Heart Specialist</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Pulmonology</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Neurology</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Neprology</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Orthopaedic</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >General Surgery</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Urology</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Cardiology</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Sonography</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]"
-                          >Phychiatrist</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100"
-                          >Skin Care</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
+     <!-- Header Section Start-->
+  <header class="bg-white shadow py-[18px] w-full">
+    <div class="container px-4 mx-auto">
+      <div class="flex items-center  justify-between">
+        <!-- logo -->
+        <a href="../src/Home.html">
+          <img src="../images/logo.png" alt="Jeevan-Jyot-Hospital" class="w-[222px] h-[60px] object-contain "/>
+        </a>
+        <!-- Navbar section -->
+        <nav class="xl:block hidden">
+          <ul class="flex justify-center space-x-2 gap-5 items-center">
+            <li>
+                <a href="../src/Home.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
+                    hover:text-[#064681] hover:font-normal  ease-in delay-150 duration-300 before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100
+                    before:ease-in  before:delay-150  before:duration-300">Home
                 </a>
-                </li>
-                <li>
-                  <a
-                    href="./Gallery.html"
-                    data-nav="gallery"
-                    class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                    >Gallery
-                    <span
-                      class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                      style="bottom: -6px"
-                    ></span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="./Doctors.html"
-                    data-nav="doctors"
-                    class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                    >Doctors
-                    <span
-                      class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                      style="bottom: -6px"
-                    ></span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="./CashlessMediclaim.html"
-                    data-nav="cashless"
-                    class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                    >CashlessMediclaim
-                    <span
-                      class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                      style="bottom: -6px"
-                    ></span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="./OurServices.html"
-                    data-nav="cashless"
-                    class="inline-block relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold transition"
-                    >OurServices
-                    <span
-                      class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                      style="bottom: -6px"
-                    ></span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="./Appointment.html"
-                    data-nav="appointment"
-                    class="inline-block relative group text-[#064681]  font-bold text-[18px] hover:text-[#064681] hover:font-normal transition"
-                    >Appointment
-                    <span
-                      class="absolute left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
-                      style="bottom: -6px"
-                    ></span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <!-- Contact Us Button -->
-            <div>
-              <a href="../src/ContactUs.html">
-              <div class="btn  bg-red-500 text-white px-7 py-3 rounded-full flex items-center justify-between  hover:bg-red-600 transition">
-                <div class="content mr-3">
-                  ContactUs
-                </div>
-                <div class="btn-img w-full">
-                  <img src="../images/next.png" 
-                  alt="next"
-                  class="inline-block w-[50px]">
-                </div>
+            </li>
+            <li>
+                <a href="../src/About.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
+                    hover:text-[#064681] hover:font-bold  ease-in delay-150 duration-300 before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100
+                    before:ease-in  before:delay-150  before:duration-300">About
+                </a>
+            </li>
+            <li>
+                <a href="../src/Maternity.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
+                hover:text-[#064681] hover:font-bold  ease-in delay-150 duration-300 before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100
+                before:ease-in  before:delay-150  before:duration-300">Maternity
+                </a>
+            </li>
+            <!-- Dropdown Example -->
+            <li class="relative group">
+              <a href="../src/Department.html">
+                <button data-nav="department" class="relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold ease-in delay-150 duration-300 lato  before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5
+                 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100 before:ease-in  before:delay-150  before:duration-300">Department<i class="ri-arrow-down-s-line text-lg"></i>
+                </button>
+              <div class="absolute z-10 top-full left-[50%] translate-x-[-50%] min-w-[220px] hidden group-hover:block">
+
+                <ul class="mt-5 transition duration-700 overflow-hidden ease-in-out rounded-3xl bg-white shadow-lg mb-2">
+                  <li>
+                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Gynecology</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Pediatric</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Heart Specialist</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Pulmonology</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Neurology</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Neprology</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Orthopaedic</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >General Surgery</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Urology</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Cardiology</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Sonography</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Phychiatrist</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100" >Skin Care</a>
+                  </li>
+                </ul>
               </div>
-  
-              <a href="#" class="xl:hidden block">
-                <img
-                  src="../images/Frame.jpg"
-                  alt="next"
-                  class="inline-block w-[18px]"
-                />
-              </a>
             </a>
-          </div>
-        </div>
-      </header>
-  
-      <!-- header End -->
+            </li>
+            <li>
+                <a href="../src/Gallery.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
+                hover:text-[#064681] hover:font-bold  ease-in delay-150 duration-300 before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100
+                before:ease-in  before:delay-150  before:duration-300">Gallery
+                </a>
+            </li>
+            <li>
+                <a href="../src/Doctors.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
+                    hover:text-[#064681] hover:font-bold  ease-in delay-150 duration-300 before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100
+                    before:ease-in  before:delay-150  before:duration-300">Doctors
+                </a>
+            </li>
+            <li>
+                <a href="../src/CashlessMediclaim.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
+                hover:text-[#064681] hover:font-bold  ease-in delay-150 duration-300 before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100
+                before:ease-in  before:delay-150  before:duration-300">Cashless&nbsp;Mediclaim
+                </a>
+            </li>
+            <li>
+              <a href="../src/OurServices.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
+              hover:text-[#064681] hover:font-bold  ease-in delay-150 duration-300 before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100
+              before:ease-in  before:delay-150  before:duration-300">Our&nbsp;Services
+              </a>
+          </li>
+            <li>
+                <a href="../src/Appointment.html" data-nav="home" class="inline-block lato relative group text-[#064681] font-bold text-[18px]
+                hover:text-[#064681] hover:font-normal  ease-in delay-150 duration-300 before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100
+                before:ease-in  before:delay-150  before:duration-300">Appointment
+                </a>
+                
+            </li>
+            <a href="../src/ContactUs.html">
+              <div class="btn  bg-red-500 text-white px-7 py-3 rounded-full flex items-center justify-between  hover:bg-red-600 transition">
+                <div class="content mr-3">Contac&nbsp;tUs</div>
+              <div class="btn-img w-full">
+                <img src="../images/next.png" alt="next" class="inline-block">
+              </div>
+            </div>
+            <a href="#" class="xl:hidden block">
+              <img src="../images/Frame.jpg" alt="next" class="inline-block w-[18px]"/>
+            </a>
+          </a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+       <!-- Header Section End-->
 
        <!-- Banner section Start-->
    <div class="swiper-container w-screen  relative">
