@@ -1,581 +1,598 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeevan Jyot Hospital</title>
-    <link rel="icon" href="../images/logo.png" type="image">
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"rel="stylesheet"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        * {
-          padding: 0;
-          margin: 0;
-          box-sizing: border-box;
-          text-decoration: none;
-        }
-        .w-77{
-        width:66.66%;
-      }
-      .w-33{
-        width:33.33%;
-      }
-      .contentP p{
-        width:295px;
-      } 
-        /* .container {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeevan Jyot Hospital</title>
+  <link rel="icon" href="../images/logo.png" type="image">
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+    .w-77 {
+      width: 66.66%;
+    }
+
+    .w-33 {
+      width: 33.33%;
+    }
+
+    .contentP p {
+      width: 295px;
+    }
+
+    /* .container {
           width: 1320px;
           margin: 0 auto;
           padding: 0 15px;
         } */
-      </style>
+  </style>
 </head>
+
 <body>
-    <!-- Header Section Start-->
+  <!-- Header Section Start-->
   <header class="bg-white shadow py-[18px] w-full">
     <div class="container px-4 mx-auto">
       <div class="flex items-center  justify-between">
         <!-- logo -->
         <a href="../src/Home.html">
-          <img src="../images/logo.png" alt="Jeevan-Jyot-Hospital" class="w-[222px] h-[60px] object-contain "/>
+          <img src="../images/logo.png" alt="Jeevan-Jyot-Hospital" class="w-[222px] h-[60px] object-contain " />
         </a>
         <!-- Navbar section -->
         <nav class="xl:block hidden">
           <ul class="flex justify-center space-x-2 gap-5 items-center">
             <li>
-                <a href="../src/Home.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
+              <a href="../src/Home.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
                     hover:text-[#064681] hover:font-normal  ease-in delay-150 duration-300 before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100
                     before:ease-in  before:delay-150  before:duration-300">Home
-                </a>
+              </a>
             </li>
             <li>
-                <a href="../src/About.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
+              <a href="../src/About.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
                     hover:text-[#064681] hover:font-bold  ease-in delay-150 duration-300 before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100
                     before:ease-in  before:delay-150  before:duration-300">About
-                </a>
+              </a>
             </li>
             <li>
-                <a href="../src/Maternity.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
+              <a href="../src/Maternity.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
                 hover:text-[#064681] hover:font-bold  ease-in delay-150 duration-300 before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100
                 before:ease-in  before:delay-150  before:duration-300">Maternity
-                </a>
+              </a>
             </li>
             <!-- Dropdown Example -->
             <li class="relative group">
               <a href="../src/Department.html">
-                <button data-nav="department" class="relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold ease-in delay-150 duration-300 lato  before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5
-                 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100 before:ease-in  before:delay-150  before:duration-300">Department<i class="ri-arrow-down-s-line text-lg"></i>
+                <button data-nav="department"
+                  class="relative group text-[#7F7F7F] font-normal text-[18px] hover:text-[#064681] hover:font-bold ease-in delay-150 duration-300 lato  before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5
+                 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100 before:ease-in  before:delay-150  before:duration-300">Department<i
+                    class="ri-arrow-down-s-line text-lg"></i>
                 </button>
-              <div class="absolute z-10 top-full left-[50%] translate-x-[-50%] min-w-[220px] hidden group-hover:block">
+                <div
+                  class="absolute z-10 top-full left-[50%] translate-x-[-50%] min-w-[220px] hidden group-hover:block">
 
-                <ul class="mt-5 transition duration-700 overflow-hidden ease-in-out rounded-3xl bg-white shadow-lg mb-2">
-                  <li>
-                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Gynecology</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Pediatric</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Heart Specialist</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Pulmonology</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Neurology</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Neprology</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Orthopaedic</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >General Surgery</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Urology</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Cardiology</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Sonography</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]" >Phychiatrist</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100" >Skin Care</a>
-                  </li>
-                </ul>
-              </div>
-            </a>
+                  <ul
+                    class="mt-5 transition duration-700 overflow-hidden ease-in-out rounded-3xl bg-white shadow-lg mb-2">
+                    <li>
+                      <a href="#"
+                        class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Gynecology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Pediatric</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Heart
+                        Specialist</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Pulmonology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Neurology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Neprology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Orthopaedic</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">General
+                        Surgery</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Urology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Cardiology</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Sonography</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100 border-b-[1px] border-[#7F7F7F]">Phychiatrist</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block lato px-4 py-2 text-[18px] text-[#7F7F7F] hover:text-black hover:bg-gray-100">Skin
+                        Care</a>
+                    </li>
+                  </ul>
+                </div>
+              </a>
             </li>
             <li>
-                <a href="../src/Gallery.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
+              <a href="../src/Gallery.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
                 hover:text-[#064681] hover:font-bold  ease-in delay-150 duration-300 before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100
                 before:ease-in  before:delay-150  before:duration-300">Gallery
-                </a>
+              </a>
             </li>
             <li>
-                <a href="../src/Doctors.html" data-nav="home" class="inline-block lato relative group text-[#064681] font-bold text-[18px]
+              <a href="../src/Doctors.html" data-nav="home" class="inline-block lato relative group text-[#064681] font-bold text-[18px]
                 hover:text-[#064681] hover:font-normal  ease-in delay-150 duration-300 before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100
                     before:ease-in  before:delay-150  before:duration-300">Doctors
-                </a>
+              </a>
             </li>
             <li>
-                <a href="../src/CashlessMediclaim.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
+              <a href="../src/CashlessMediclaim.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
                 hover:text-[#064681] hover:font-bold  ease-in delay-150 duration-300 before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100
                 before:ease-in  before:delay-150  before:duration-300">Cashless&nbsp;Mediclaim
-                </a>
+              </a>
             </li>
             <li>
               <a href="../src/OurServices.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
               hover:text-[#064681] hover:font-bold  ease-in delay-150 duration-300 before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100
               before:ease-in  before:delay-150  before:duration-300">Our&nbsp;Services
               </a>
-          </li>
+            </li>
             <li>
-                <a href="../src/Appointment.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
+              <a href="../src/Appointment.html" data-nav="home" class="inline-block lato relative group text-[#7F7F7F] font-normal text-[18px]
                 hover:text-[#064681] hover:font-bold  ease-in delay-150 duration-300 before:absolute before:content['']  before:left-1/2 before:bottom-[-8px] before:-translate-x-1/2 before:w-1.5 before:h-1.5 before:bg-blue-600  before:rounded-full  before:scale-0  before:hover:scale-100
                 before:ease-in  before:delay-150  before:duration-300">Appointment
-                </a>
-                
+              </a>
+
             </li>
             <a href="../src/ContactUs.html">
-              <div class="btn  bg-red-500 text-white px-7 py-3 rounded-full flex items-center justify-between  hover:bg-red-600 transition">
+              <div
+                class="btn  bg-red-500 text-white px-7 py-3 rounded-full flex items-center justify-between  hover:bg-red-600 transition">
                 <div class="content mr-3">Contact&nbsp;Us</div>
-              <div class="btn-img w-full">
-                <img src="../images/next.png" alt="next" class="inline-block">
+                <div class="btn-img w-full">
+                  <img src="../images/next.png" alt="next" class="inline-block">
+                </div>
               </div>
-            </div>
-            <a href="#" class="xl:hidden block">
-              <img src="../images/Frame.jpg" alt="next" class="inline-block w-[18px]"/>
+              <a href="#" class="xl:hidden block">
+                <img src="../images/Frame.jpg" alt="next" class="inline-block w-[18px]" />
+              </a>
             </a>
-          </a>
-        </ul>
-      </nav>
-    </div>
+          </ul>
+        </nav>
+      </div>
   </header>
-       <!-- Header Section End-->
+  <!-- Header Section End-->
 
-      
-   <!-- Banner section Start-->
-<div class="swiper-container w-screen  relative">
-  <div class=" absolute w-1/6 z-20 bottom-[5%] left-[7%]">
-    <img src="..//images/BannerPlusIcon.png" alt="icon">
-  </div>
-  <div class=" absolute z-20 top-[10%] left-[45%]">
-    <img src="..//images/BannerPlusIcon.png" alt="icon">
-  </div>  
-  <div class="absolute z-20  bottom-[30%] right-[3%]">
-    <img src="../images/Doctor.png" alt="icon" class="w-10/12">
-  </div>
-  <div class="swiper-wrapper">
-    <!-- Slide 1 -->
-    <div class="swiper-slide relative about-banner-img0">
-      <!-- Overlay Content -->
-      <div class="absolute inset-0 bg-opacity-40 flex">
-        <div class="container mx-auto  flex flex-col lg:flex-row justify-between mt-12">
-          <!-- Left Content -->
-          <div class="text-left max-w-2xl lg:w-1/2  items-center py-52">
-            <h1 class="text-4xl lg:text-6xl font-bold text-[#064681] mb-4 ">
-              Doctors
-            </h1>
-            <div class="flex gap-3">
-              <div class="w-[87px] h-[6px] bg-[#064681] rounded-full"></div>
-              <div class="w-[20px] h-[6px] bg-[#064681] rounded-full"></div>
+
+  <!-- Banner section Start-->
+  <div class="swiper-container w-screen  relative">
+    <div class=" absolute w-1/6 z-20 bottom-[5%] left-[7%]">
+      <img src="..//images/BannerPlusIcon.png" alt="icon">
+    </div>
+    <div class=" absolute z-20 top-[10%] left-[45%]">
+      <img src="..//images/BannerPlusIcon.png" alt="icon">
+    </div>
+    <div class="absolute z-20  bottom-[30%] right-[3%]">
+      <img src="../images/Doctor.png" alt="icon" class="w-10/12">
+    </div>
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide relative about-banner-img0">
+        <!-- Overlay Content -->
+        <div class="absolute inset-0 bg-opacity-40 flex">
+          <div class="container mx-auto  flex flex-col lg:flex-row justify-between mt-12">
+            <!-- Left Content -->
+            <div class="text-left max-w-2xl lg:w-1/2  items-center py-52">
+              <h1 class="text-4xl lg:text-6xl font-bold text-[#064681] mb-4 ">
+                Doctors
+              </h1>
+              <div class="flex gap-3">
+                <div class="w-[87px] h-[6px] bg-[#064681] rounded-full"></div>
+                <div class="w-[20px] h-[6px] bg-[#064681] rounded-full"></div>
+              </div>
             </div>
-          </div>
-          <!-- Right Image -->
-          <div class="lg:w-1/2 flex justify-end ">
-            <img
-              src="../images/SingleMaleDocter.png"
-              alt="Doctor"
-              class=" max-w-full "
-            />
+            <!-- Right Image -->
+            <div class="lg:w-1/2 flex justify-end ">
+              <img src="../images/SingleMaleDocter.png" alt="Doctor" class=" max-w-full " />
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <div class="line-sec">
-          <div class="first-line absolute  left-[4.6%] top-[8%] z-20 ">
-            <img src="../images/BannerLine1.png" alt="banner-line">
-          </div>
-          <div class="first-line absolute left-[4.6%] top-[65%]  w-full">-
-            <img src="../images/BannerLine2.png" alt="bannerline">
-          </div>
-        </div>
-        <div class="div absolute top-[32%] left-[2%] z-20">
-          <img src="../images/facebook.svg" alt="" class="">
-          <img src="../images/Instagram.svg" alt="" class="-mt-12">
-          <img src="../images/Twitter.svg" alt="" class="-mt-12">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="backgrounds ">
-    <div class="first absolute bottom-[-0%] left-[0%] w-full  z-20" >
-      <img src="../images/background-2.png" alt="form">
-    </div>
-  </div>
-</div>
-<!-- Banner section End -->
-
-<!-- Docter Section Start -->
-
-<main>
-  <section class="py-[80px] relative ">
-    <div class="absolute top-[4%] right-[0%]">
-      <img src="../images/GalleryCircle1.png" alt="icon">
-    </div>
-    <div class="absolute top-[30%]">
-      <img src="../images/GalleCircle2.png" alt="icon">
-    </div>
-    <div class="absolute top-[63%] right-[7%]">
-      <img src="../images/PlusIicon.png" alt="icon">
-    </div>
-        <div class="2xl:w-[1320px] xl:w-[1200px] mx-auto">
-          <!-- row-1 -->
-          <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
-            <div class="w-33">
-              <div class="contentP px-6 py-5 h-[150px] flex items-center">
-                  <p class="text-[20px] leading-8 border-r-2 ">Obstetrician, Gynaecologist, Infertility Specialist, Laparoscopic Surgeon, Sonologist</p> 
-              </div>
-            </div>
-            <div class="w-77">
-               <div class="flex items-center">
-                 <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr. Vaibhav Andhare</span>
-                <div class="w-[50px] h-[50px] bg-[#E6ECF2] mx-3 rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr. Pranjali Vaibhav Andhare</span>
-                <div class="w-[50px] h-[50px] bg-[#E6ECF2] mx-3 rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8">Dr. Vaibhav Andhare</span>
-               </div>
-            </div>
-          </div>
-
-          <!-- row-2 -->
-           <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
-            <div class="w-33">
-              <div class="contentP px-6 py-5 h-[95px] flex items-center">
-                  <p class="text-[20px] leading-8 relative border-r-2">Genral Surgeon</p> 
-              </div>
-            </div>
-            <div class="w-77">
-               <div class="flex items-center">
-                 <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr. Rahul Kadam</span>
-               </div>
-            </div>
-           </div>
-
-           <!-- row-3 -->
-           <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
-            <div class="w-33">
-              <div class="contentP px-6 py-5 h-[95px] flex items-center">
-                  <p class="text-[20px] leading-8 border-r-2">Paediatrician & Neonetologist</p> 
-              </div>
-            </div>
-            <div class="w-77">
-               <div class="flex items-center">
-                 <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr. Parmeshwar Taware</span>
-                <div class="w-[50px] h-[50px] bg-[#E6ECF2] mx-3 rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr. Santosh Kangule</span>
-               </div>
-            </div>
-           </div>
-
-           <!-- row-4 -->
-           <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
-            <div class="w-33">
-              <div class="contentP px-6 py-5 h-[95px] flex items-center">
-                  <p class="text-[20px] leading-8 border-r-2">ENT. Specialist</p> 
-              </div>
-            </div>
-            <div class="w-77">
-               <div class="flex items-center">
-                 <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr. Vasant Yeme</span>
-               </div>
-            </div>
-           </div>
-
-           <!-- row-5 -->
-           <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
-            <div class="w-33">
-              <div class="contentP px-6 py-5 h-[95px] flex items-center">
-                <p class="text-[20px] leading-8 border-r-2">Orthopedician</p> 
-              </div>
-            </div>
-            <div class="w-77">
-               <div class="flex items-center">
-                 <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr. Rahul Jagtap</span>
-                <div class="w-[50px] h-[50px] bg-[#E6ECF2] mx-3 rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr. Atul Patil</span>
-               </div>
-            </div>
-           </div>
-
-           <!-- row-6 -->
-           <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
-            <div class="w-33">
-              <div class="contentP px-6 py-5 h-[120px] flex items-center">
-                <p class="text-[20px] leading-8 border-r-2">Piles, Fissure Fistula, Laser Treatment</p> 
-              </div>
-            </div>
-            <div class="w-77">
-               <div class="flex items-center">
-                 <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr. Dinesh Waghmare</span>
-                <div class="w-[50px] h-[50px] bg-[#E6ECF2] mx-3 rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr. Vidya Dharne</span>
-               </div>
-            </div>
-           </div>
-
-           <!-- row-7 -->
-           <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
-            <div class="w-33">
-              <div class="contentP px-6 py-5 h-[95px] flex items-center">
-                <p class="text-[20px] leading-8 border-r-2">Urologist</p>  
-              </div>
-            </div>
-            <div class="w-77">
-               <div class="flex items-center">
-                 <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr. Ashish Dhande</span>
-               </div>
-            </div>
-           </div>
-
-           <!-- row-8 -->
-           <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
-            <div class="w-33">
-              <div class="contentP px-6 py-5 h-[120px] flex items-center">
-                <p class="text-[20px] leading-8 border-r-2">Radiologist, Sonography, ExpertLaser Surgeon</p>  
-              </div>
-            </div>
-            <div class="w-77">
-               <div class="flex items-center">
-                 <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr. Goviind Patil</span>
-                <div class="w-[50px] h-[50px] bg-[#E6ECF2] mx-3 rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr. Vikram Shende</span>
-               </div>
-            </div>
-           </div>
-
-           <!-- row-9 -->
-           <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
-            <div class="w-33">
-              <div class="contentP px-6 py-5 h-[95px] flex items-center">
-                <p class="text-[20px] leading-8 border-r-2">Nephrologist</p>  
-              </div>
-            </div>
-            <div class="w-77">
-               <div class="flex items-center">
-                 <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr. shrikant</span>
-               </div>
-            </div>
-           </div>
-
-           <!-- row-10 -->
-           <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
-            <div class="w-33">
-              <div class="contentP px-6 py-5 h-[120px] flex items-center">
-                <p class="text-[20px] leading-8 border-r-2">Foetal Medicine Expart & Sonologist</p>
-              </div>
-            </div>
-            <div class="w-77">
-               <div class="flex items-center">
-                 <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr. Kruti Nandu</span>
-               </div>
-            </div>
-           </div>
-
-           <!-- row-11 -->
-           <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
-            <div class="w-33">
-              <div class="contentP px-6 py-5 h-[95px] flex items-center">
-                <p class="text-[20px] leading-8 border-r-2">Oncosurgeon</p>
-              </div>
-            </div>
-            <div class="w-77">
-               <div class="flex items-center">
-                 <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr.Rahul Manjre</span>
-               </div>
-            </div>
-           </div>
-
-           <!-- row-12 -->
-           <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
-            <div class="w-33">
-              <div class="contentP px-6 py-5 h-[95px] flex items-center">
-                <p class="text-[20px] leading-8 border-r-2">Plastic Surgeon</p>
-              </div>
-            </div>
-            <div class="w-77">
-               <div class="flex items-center">
-                 <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr.Audumbar</span>
-               </div>
-            </div>
-           </div>
-
-           <!-- row-13 -->
-           <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
-            <div class="w-33">
-              <div class="contentP px-6 py-5 h-[95px] flex items-center">
-                <p class="text-[20px] leading-8 border-r-2">Genral Physician</p>
-              </div>
-            </div>
-            <div class="w-77">
-               <div class="flex items-center">
-                 <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr. Viraj Jadhav</span>
-                <div class="w-[50px] h-[50px] bg-[#E6ECF2] mx-3 rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8 ">Dr. Prashant Purkar</span>
-                <div class="w-[50px] h-[50px] bg-[#E6ECF2] mx-3 rounded-full flex justify-center items-center">
-                    <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
-                </div>
-                <span class="text-[20px] leading-8">Dr. Pankaj Bhirud</span>
-               </div>
-            </div>
-           </div>
-          </div>
-  </section>
-</main>
- <!-- Docter Section End -->
-            <!-- Tag Section Start -->
-
-<main class="py-12">
-  <div class="container rounded-full mx-auto px-4 xl:w-[1260px]">
-    <div class="bg-white  shadow-lg rounded-3xl flex items-center overflow-hidden">
-      <div class="p-8 lg:w-1/2">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4 leading-tight">
-          We Always Ready To <br />
-          Help Your
-        </h2>
-        <p class="text-gray-600 mb-6">
-          It is a long established fact that a reader will be distracted by
-          the readable content of a page when looking at its layout. The
-          point of using Lorem Ipsum is that it has.
-        </p>
-        <a
-          href="#"
-          class="inline-flex items-center bg-red-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-red-600 transition"
-        >
-          Get In Touch
-          <img
-            src="../images/next.png"
-            alt="next"
-            class="inline-block w-[18px] ml-2"
-          />
-        </a>
-      </div>
-      <div class="relative lg:w-1/2 flex justify-center items-center p-6 ">  
-        <div
-          class="absolute top-4 left-4  flex items-center justify-center p-6"
-        >
-          <div class="text-center">
-             <img
-              src="../images/DoctoreIcon.png"
-              alt="Doctor Icon"
-              class="max-w-full h-auto relative z-10"
-            />
-          </div>
-        </div>
-               <img
-          src="../images/TagSectionDoctore.png"
-          alt="Doctor"
-          class="max-w-full h-auto relative z-10"
-        />
-            </div>
-       </div>
-  </div>
-</main>
-
-<!-- Tag Section End -->
- <!-- Footer Section Start -->
- <footer class="w-full h-[643px] py-12  flex items-center relative bg-gradient-to-r from-[#86BBF1] to-[#8DBEC9]">
-  <div class="absolute top-0 left-0 ">
-    <img src="../images//Mask group.png" alt="object">
-  </div>
-  <div class="absolute bottom-0 right-0 ">
-    <img src="../images//Mask group (2).png" alt="object">
-  </div>
-<div class="absolute bottom-0 left-0 w-full h-full z-0">
-  <!-- <img src="../images/Vector2.png" alt="Blue Background" class="w-full h-full object-cover" /> -->
-</div>
-<div class="first absolute top-[-0%] left-[0%] w-full  z-20" >
-  <img src="../images/form-background-1.png" alt="form">
-</div>
-
-  <div class="relative items-center  w-full px-4 mx-auto">
-    <div class="container mx-auto flex flex-wrap justify-center pb-10 border-b-2">
-      <div class="w-4/12"> 
         <div>
-          <a href="#"><img src="../images/logo.png" alt="logo" class="object-cover h-[90px] w-[322px]"></a>
-          <p class="text-[20px] leading-8 text-[#ffff]">Jeevan Jyot Hospital is situated at Navi Mumbai, This hospital is a well known centre
-             for surgery and medical care. We are a professional health medical care services provider
+          <div class="line-sec">
+            <div class="first-line absolute  left-[4.6%] top-[8%] z-20 ">
+              <img src="../images/BannerLine1.png" alt="banner-line">
+            </div>
+            <div class="first-line absolute left-[4.6%] top-[65%]  w-full">-
+              <img src="../images/BannerLine2.png" alt="bannerline">
+            </div>
+          </div>
+          <div class="div absolute top-[32%] left-[2%] z-20">
+            <img src="../images/facebook.svg" alt="" class="">
+            <img src="../images/Instagram.svg" alt="" class="-mt-12">
+            <img src="../images/Twitter.svg" alt="" class="-mt-12">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="backgrounds ">
+      <div class="first absolute bottom-[-0%] left-[0%] w-full  z-20">
+        <img src="../images/background-2.png" alt="form">
+      </div>
+    </div>
+  </div>
+  <!-- Banner section End -->
+
+  <!-- Docter Section Start -->
+
+  <main>
+    <section class="py-[80px] relative ">
+      <div class="absolute top-[4%] right-[0%]">
+        <img src="../images/GalleryCircle1.png" alt="icon">
+      </div>
+      <div class="absolute top-[30%]">
+        <img src="../images/GalleCircle2.png" alt="icon">
+      </div>
+      <div class="absolute top-[63%] right-[7%]">
+        <img src="../images/PlusIicon.png" alt="icon">
+      </div>
+      <div class="2xl:w-[1320px] xl:w-[1200px] mx-auto">
+        <!-- row-1 -->
+        <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
+          <div class="w-33">
+            <div class="contentP px-6 py-5 h-[150px] flex items-center">
+              <p class="text-[20px] leading-8 border-r-2 ">Obstetrician, Gynaecologist, Infertility Specialist,
+                Laparoscopic Surgeon, Sonologist</p>
+            </div>
+          </div>
+          <div class="w-77">
+            <div class="flex items-center">
+              <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr. Vaibhav Andhare</span>
+              <div class="w-[50px] h-[50px] bg-[#E6ECF2] mx-3 rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr. Pranjali Vaibhav Andhare</span>
+              <div class="w-[50px] h-[50px] bg-[#E6ECF2] mx-3 rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8">Dr. Vaibhav Andhare</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- row-2 -->
+        <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
+          <div class="w-33">
+            <div class="contentP px-6 py-5 h-[95px] flex items-center">
+              <p class="text-[20px] leading-8 relative border-r-2">Genral Surgeon</p>
+            </div>
+          </div>
+          <div class="w-77">
+            <div class="flex items-center">
+              <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr. Rahul Kadam</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- row-3 -->
+        <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
+          <div class="w-33">
+            <div class="contentP px-6 py-5 h-[95px] flex items-center">
+              <p class="text-[20px] leading-8 border-r-2">Paediatrician & Neonetologist</p>
+            </div>
+          </div>
+          <div class="w-77">
+            <div class="flex items-center">
+              <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr. Parmeshwar Taware</span>
+              <div class="w-[50px] h-[50px] bg-[#E6ECF2] mx-3 rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr. Santosh Kangule</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- row-4 -->
+        <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
+          <div class="w-33">
+            <div class="contentP px-6 py-5 h-[95px] flex items-center">
+              <p class="text-[20px] leading-8 border-r-2">ENT. Specialist</p>
+            </div>
+          </div>
+          <div class="w-77">
+            <div class="flex items-center">
+              <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr. Vasant Yeme</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- row-5 -->
+        <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
+          <div class="w-33">
+            <div class="contentP px-6 py-5 h-[95px] flex items-center">
+              <p class="text-[20px] leading-8 border-r-2">Orthopedician</p>
+            </div>
+          </div>
+          <div class="w-77">
+            <div class="flex items-center">
+              <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr. Rahul Jagtap</span>
+              <div class="w-[50px] h-[50px] bg-[#E6ECF2] mx-3 rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr. Atul Patil</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- row-6 -->
+        <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
+          <div class="w-33">
+            <div class="contentP px-6 py-5 h-[120px] flex items-center">
+              <p class="text-[20px] leading-8 border-r-2">Piles, Fissure Fistula, Laser Treatment</p>
+            </div>
+          </div>
+          <div class="w-77">
+            <div class="flex items-center">
+              <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr. Dinesh Waghmare</span>
+              <div class="w-[50px] h-[50px] bg-[#E6ECF2] mx-3 rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr. Vidya Dharne</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- row-7 -->
+        <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
+          <div class="w-33">
+            <div class="contentP px-6 py-5 h-[95px] flex items-center">
+              <p class="text-[20px] leading-8 border-r-2">Urologist</p>
+            </div>
+          </div>
+          <div class="w-77">
+            <div class="flex items-center">
+              <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr. Ashish Dhande</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- row-8 -->
+        <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
+          <div class="w-33">
+            <div class="contentP px-6 py-5 h-[120px] flex items-center">
+              <p class="text-[20px] leading-8 border-r-2">Radiologist, Sonography, ExpertLaser Surgeon</p>
+            </div>
+          </div>
+          <div class="w-77">
+            <div class="flex items-center">
+              <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr. Goviind Patil</span>
+              <div class="w-[50px] h-[50px] bg-[#E6ECF2] mx-3 rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr. Vikram Shende</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- row-9 -->
+        <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
+          <div class="w-33">
+            <div class="contentP px-6 py-5 h-[95px] flex items-center">
+              <p class="text-[20px] leading-8 border-r-2">Nephrologist</p>
+            </div>
+          </div>
+          <div class="w-77">
+            <div class="flex items-center">
+              <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr. shrikant</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- row-10 -->
+        <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
+          <div class="w-33">
+            <div class="contentP px-6 py-5 h-[120px] flex items-center">
+              <p class="text-[20px] leading-8 border-r-2">Foetal Medicine Expart & Sonologist</p>
+            </div>
+          </div>
+          <div class="w-77">
+            <div class="flex items-center">
+              <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr. Kruti Nandu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- row-11 -->
+        <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
+          <div class="w-33">
+            <div class="contentP px-6 py-5 h-[95px] flex items-center">
+              <p class="text-[20px] leading-8 border-r-2">Oncosurgeon</p>
+            </div>
+          </div>
+          <div class="w-77">
+            <div class="flex items-center">
+              <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr.Rahul Manjre</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- row-12 -->
+        <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
+          <div class="w-33">
+            <div class="contentP px-6 py-5 h-[95px] flex items-center">
+              <p class="text-[20px] leading-8 border-r-2">Plastic Surgeon</p>
+            </div>
+          </div>
+          <div class="w-77">
+            <div class="flex items-center">
+              <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr.Audumbar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- row-13 -->
+        <div class="flex flex-wrap items-center my-3 shadow-[0_0_40px_0_#0000000D] rounded-[30px]">
+          <div class="w-33">
+            <div class="contentP px-6 py-5 h-[95px] flex items-center">
+              <p class="text-[20px] leading-8 border-r-2">Genral Physician</p>
+            </div>
+          </div>
+          <div class="w-77">
+            <div class="flex items-center">
+              <div class="imgDiv w-[50px] h-[50px] mx-3 bg-[#E6ECF2]  rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr. Viraj Jadhav</span>
+              <div class="w-[50px] h-[50px] bg-[#E6ECF2] mx-3 rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8 ">Dr. Prashant Purkar</span>
+              <div class="w-[50px] h-[50px] bg-[#E6ECF2] mx-3 rounded-full flex justify-center items-center">
+                <img src="../images/docters.png" alt="docters" width="20px" height="20px" class="inline-block">
+              </div>
+              <span class="text-[20px] leading-8">Dr. Pankaj Bhirud</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Docter Section End -->
+
+  <!-- Tag section start -->
+  <section class="py-12   relative w-full h-[643px]">
+    <div class="2xl:w-[1320px]  mx-auto px-4 xl:w-[1260px]">
+      <div class="flex flex-wrap bg-[#fff] shadow-lg rounded-lg ">
+        <div class="w-6/12">
+          <div class="p-10">
+            <div class="absolute">
+              <img src="../images/Vector12.png" alt="icon">
+            </div>
+            <h2 class="text-[40px] lato font-bold leading-[60px] lato">We Alway Ready To <br /> Help Your</h2>
+            <p class="text-[#7F7F7F] text-[20px] lato leading-[30px] font-normal my-8">It is a long established fact
+              that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p>
+            <a href="../src/Gallery.html"
+              class=" lato bg-red-500 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-red-600 transition">Get
+              In Touch
+              <img src="../images/next.png" alt="next" class="inline-block w-[18px]" />
+            </a>
+          </div>
+        </div>
+        <div class="w-6/12">
+
+          <div class="relative flex justify-center items-center  overflow-hidden">
+            <div class="absolute top-4 left-4 flex items-center justify-center p-6 w-full">
+              <div class="">
+                <img src="../images/DoctoreIcon.png" alt="Doctor Icon" class=" absolute top-[80%] left-[10%] z-0" />
+              </div>
+            </div>
+            <img src="../images/TagSectionDoctore.png" alt="Doctor" class="relative z-10" />
+            <div class=" absolute bottom-0 right-[-0%]">
+              <img src="../images/HalfRoundedImage.png" alt="object" class="w-full h-full">
+            </div>
+            <div class="absolute bottom-0 right-0 z-40">
+              <img src="../images/HalfShortCircle.png" alt="object" class="w-full h-full">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Tag section End -->
+
+  <!-- Footer Section Start -->
+  <footer class="w-full h-[643px] py-12  flex items-center relative bg-gradient-to-r from-[#86BBF1] to-[#8DBEC9]">
+    <div class="absolute top-0 left-0 ">
+      <img src="../images//Mask group.png" alt="object">
+    </div>
+    <div class="absolute bottom-0 right-0 ">
+      <img src="../images//Mask group (2).png" alt="object">
+    </div>
+    <div class="absolute bottom-0 left-0 w-full h-full z-0">
+      <!-- <img src="../images/Vector2.png" alt="Blue Background" class="w-full h-full object-cover" /> -->
+    </div>
+    <div class="first absolute top-[-0%] left-[0%] w-full  z-20">
+      <img src="../images/form-background-1.png" alt="form">
+    </div>
+
+    <div class="relative items-center  w-full px-4 mx-auto">
+      <div class="container mx-auto flex flex-wrap justify-center pb-10 border-b-2">
+        <div class="w-4/12">
+          <div>
+            <a href="#"><img src="../images/logo.png" alt="logo" class="object-cover h-[90px] w-[322px]"></a>
+            <p class="text-[20px] leading-8 text-[#ffff]">Jeevan Jyot Hospital is situated at Navi Mumbai, This hospital
+              is a well known centre
+              for surgery and medical care. We are a professional health medical care services provider
               serving every kinds of people very carefully & Patient happy.</p>
-        </div>
-        <div class="h-[90px] w-[322px] flex items-center">
-          <h3 class="text-[25px] leading-8 text-[#064681] relative before:absolute before:top-[38px] before:left-0
+          </div>
+          <div class="h-[90px] w-[322px] flex items-center">
+            <h3 class="text-[25px] leading-8 text-[#064681] relative before:absolute before:top-[38px] before:left-0
                     before:content[''] before:bg-[#064681] before:w-[27px] before:h-[3px] ">Follows</h3>
-        </div>
-        <div class="flex space-x-4">
+          </div>
+          <div class="flex space-x-4">
             <a href="#" class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
               <img src="../images/facebook.png" alt="fa-facebook" class="w-[25px] h-[25px]">
             </a>
@@ -585,120 +602,122 @@
             <a href="#" class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
               <img src="../images/twiter.png" alt="fa-facebook" class="w-[25px] h-[25px]">
             </a>
-        </div>
-      </div>
-      <div class="w-4/12 flex justify-end">
-        <div class="ml-[100px]">
-          <div class="h-[90px] w-[322px] flex items-center">
-            <h3 class="text-[25px] leading-8 text-[#064681] font-semibold relative before:absolute before:top-[38px] before:left-0
-                      before:content[''] before:bg-[#064681] before:w-[27px] before:h-[3px] ">Pages</h3>
           </div>
-          
-          <ul>
-            <li><a href="#" class="text-[20px] text-[#ffff]">Home</a></li>
-            <li><a href="#" class="text-[20px] text-[#ffff]">About</a></li>
-            <li><a href="#" class="text-[20px] text-[#ffff]">Maternity</a></li>
-            <li><a href="#" class="text-[20px] text-[#ffff]">Department</a></li>
-            <li><a href="#" class="text-[20px] text-[#ffff]">Gallery</a></li>
-            <li><a href="#" class="text-[20px] text-[#ffff]">Doctors</a></li>
-            <li><a href="#" class="text-[20px] text-[#ffff]">Caseless Mediclaim</a></li>
-            <li><a href="#" class="text-[20px] text-[#ffff]">Appointment</a></li>
-          </ul>
         </div>
-      </div>
-      <div class="w-4/12  flex justify-center relative z-20">
-            <div class="">
-              <div class="w-[322px] h-[90px] flex items-center">
-                <h3 class="text-[25px] leading-8 text-[#064681] relative before:absolute before:top-[38px] before:left-0
+        <div class="w-4/12 flex justify-end">
+          <div class="ml-[100px]">
+            <div class="h-[90px] w-[322px] flex items-center">
+              <h3 class="text-[25px] leading-8 text-[#064681] font-semibold relative before:absolute before:top-[38px] before:left-0
+                      before:content[''] before:bg-[#064681] before:w-[27px] before:h-[3px] ">Pages</h3>
+            </div>
+
+            <ul>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Home</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">About</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Maternity</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Department</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Gallery</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Doctors</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Caseless Mediclaim</a></li>
+              <li><a href="#" class="text-[20px] text-[#ffff]">Appointment</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-4/12  flex justify-center relative z-20">
+          <div class="">
+            <div class="w-[322px] h-[90px] flex items-center">
+              <h3 class="text-[25px] leading-8 text-[#064681] relative before:absolute before:top-[38px] before:left-0
                         before:content[''] before:bg-[#064681] before:w-[27px] before:h-[3px] ">Address</h3>
+            </div>
+            <div class="flex">
+              <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
+                <img src="../images/location.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
               </div>
-              <div class="flex">
-                <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
-                  <img src="../images/location.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
-                </div>
-               <div class="w-[340px] ml-3">
-                  <p class="text-[20px] leading-[30px] text-[#fff]">Subh Avenue Building, Ground & First Floor, Plot No. 59C, Sector-21, Opp. Khandeswar Station, Khandeswar Kamothe-II, Navi Mumbai.</p>
-               </div>
-              </div>
-              <div class="my-3 flex items-center">
-                <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
-                  <img src="../images/sms.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
-                </div>
-               <div class="w-[340px] ml-3 flex items-center">
-                  <p class="text-[20px] leading-[30px] text-[#fff]">jeevanjyothospital12@gmail.com</p>
-               </div>
-              </div>
-              <div class="my-3 flex items-center">
-                <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
-                  <img src="../images/call.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
-                </div>
-               <div class="w-[340px] ml-3">
-                  <p class="text-[20px] leading-[30px] text-[#fff]">93218 42721 , 83691 59505 , 022-27431626</p>
-               </div>
+              <div class="w-[340px] ml-3">
+                <p class="text-[20px] leading-[30px] text-[#fff]">Subh Avenue Building, Ground & First Floor, Plot No.
+                  59C, Sector-21, Opp. Khandeswar Station, Khandeswar Kamothe-II, Navi Mumbai.</p>
               </div>
             </div>
+            <div class="my-3 flex items-center">
+              <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
+                <img src="../images/sms.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
+              </div>
+              <div class="w-[340px] ml-3 flex items-center">
+                <p class="text-[20px] leading-[30px] text-[#fff]">jeevanjyothospital12@gmail.com</p>
+              </div>
+            </div>
+            <div class="my-3 flex items-center">
+              <div class="bg-[#fff] w-[50px] h-[50px] flex justify-center items-center rounded-full">
+                <img src="../images/call.png" alt="location" class="inline-block w-[30px] h-[30px] object-cover">
+              </div>
+              <div class="w-[340px] ml-3">
+                <p class="text-[20px] leading-[30px] text-[#fff]">93218 42721 , 83691 59505 , 022-27431626</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="text-center  text-[#ffff] text-[18px]">
+        © 2020 Jeevan Jyot Hospital. All Rights Reserved. Designed by WEBINBOX
       </div>
     </div>
-    <br>
-    <br>
-    <div class="text-center  text-[#ffff] text-[18px]">
-      © 2020 Jeevan Jyot Hospital. All Rights Reserved. Designed by WEBINBOX
-    </div>
-  </div>
-</footer>
-<!-- Footer Section End -->
+  </footer>
+  <!-- Footer Section End -->
 
 
-       <!-- j-query cdn -->
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- j-query cdn -->
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <script>
-      $(document).ready(function () {
-        $("#sidebar-toggle").click(function () {
-          $("#sidebar").toggleClass("transform-none");
-        });
+  <script>
+    $(document).ready(function () {
+      $("#sidebar-toggle").click(function () {
+        $("#sidebar").toggleClass("transform-none");
+      });
+    });
+
+    // Add event listeners to the dropdown menu
+    document
+      .querySelector(".dropdown")
+      .addEventListener("click", function () {
+        this.classList.toggle("show");
       });
 
-      // Add event listeners to the dropdown menu
-      document
-        .querySelector(".dropdown")
-        .addEventListener("click", function () {
-          this.classList.toggle("show");
-        });
-
-      // Close the dropdown menu if the user clicks outside of it
-      window.addEventListener("click", function (event) {
-        if (!event.target.matches(".dropbtn")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
-            }
+    // Close the dropdown menu if the user clicks outside of it
+    window.addEventListener("click", function (event) {
+      if (!event.target.matches(".dropbtn")) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains("show")) {
+            openDropdown.classList.remove("show");
           }
         }
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const swiper = new Swiper(".swiper-container", {
+        loop: true, // Enables continuous loop mode
+        autoplay: {
+          delay: 5000, // Time between slides (in milliseconds)
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        effect: "slide", // Choose 'slide', 'fade', 'cube', etc.
       });
+    });
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const swiper = new Swiper(".swiper-container", {
-          loop: true, // Enables continuous loop mode
-          autoplay: {
-            delay: 5000, // Time between slides (in milliseconds)
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          effect: "slide", // Choose 'slide', 'fade', 'cube', etc.
-        });
-      }); 
-
-    </script>
+  </script>
 </body>
+
 </html>

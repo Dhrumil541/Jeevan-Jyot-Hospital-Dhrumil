@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".swiper-container", {
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 9000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -70,6 +70,20 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   };
   
+});
+
+ // Mobile menu toggle
+ const menuToggle = document.getElementById("menu-toggle");
+ const menu = document.getElementById("menu");
+
+ menuToggle.addEventListener("click", () => {
+   menu.classList.toggle("hidden");
+ });  
+
+
+ document.getElementById("menu-toggle").addEventListener("click", function () {
+  const menu = document.getElementById("mobile-menu");
+  menu.classList.toggle("hidden");
 });
 
 
